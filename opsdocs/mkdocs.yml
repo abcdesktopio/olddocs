@@ -27,10 +27,10 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-site_name: www.abcdesktop.io
-repo_url: https://github.com/abcdesktopio/docs
-repo_name: abcdesktopio/docs
-site_url: https://www.abcdesktop.io
+site_name: old.abcdesktop.com
+repo_url: https://github.com/abcdesktopio/olddocs
+repo_name: abcdesktopio/olddocs
+site_url: https://old.abcdesktop.com
 edit_uri: 'edit/main/opsdocs/docs'
 nav:
 - About:
