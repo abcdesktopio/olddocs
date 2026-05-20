@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Inkscape (http://www.inkscape.org/) --><svg height="128.00000pt" id="svg1158" inkscape:version="0.39cvs" sodipodi:docbase="/home/andy/Desktop/etiquette-icons-0.3/scalable/apps" sodipodi:docname="gnome-terminal.svg" sodipodi:version="0.32" width="128.00000pt" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <metadata>
+    <rdf:RDF xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <cc:Work rdf:about="">
+        <dc:title>Etiquette Icons</dc:title>
+        <dc:description></dc:description>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>hash</rdf:li>
+            <rdf:li></rdf:li>
+            <rdf:li>application</rdf:li>
+            <rdf:li>computer</rdf:li>
+            <rdf:li>icons</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://www.openclipart.org">
+            <dc:title>Andy Fitzsimon</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Andy Fitzsimon</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Andy Fitzsimon</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:date></dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://web.resource.org/cc/PublicDomain"/>
+        <dc:language>en</dc:language>
+      </cc:Work>
+      <cc:License rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs id="defs1160">
+    <linearGradient id="linearGradient1722">
+      <stop id="stop1723" offset="0.0000000" style="stop-color:#ffffff;stop-opacity:1.0000000;"/>
+      <stop id="stop1724" offset="1.0000000" style="stop-color:#ffffff;stop-opacity:0.0000000;"/>
+    </linearGradient>
+    <linearGradient id="linearGradient1721" x1="0.85714287" x2="0.65517241" xlink:href="#linearGradient1722" y1="-0.46093750" y2="0.73437500"/>
+    <linearGradient id="linearGradient1518">
+      <stop id="stop1519" offset="0.0000000" style="stop-color:#000000;stop-opacity:0.70056498;"/>
+      <stop id="stop1520" offset="1.0000000" style="stop-color:#000000;stop-opacity:0.0000000;"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3045" x1="0.67729086" x2="0.50597608" xlink:href="#linearGradient1518" y1="-1.1290323" y2="0.87096775"/>
+    <linearGradient id="linearGradient1544">
+      <stop id="stop1545" offset="0.0000000" style="stop-color:#375367;stop-opacity:1.0000000;"/>
+      <stop id="stop1547" offset="0.43156424" style="stop-color:#3e6a8c;stop-opacity:1.0000000;"/>
+      <stop id="stop1546" offset="1.0000000" style="stop-color:#8cc6ee;stop-opacity:1.0000000;"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3046" x1="0.70531398" x2="0.73429954" xlink:href="#linearGradient1544" y1="-0.35937500" y2="1.4375000"/>
+    <linearGradient id="linearGradient1511">
+      <stop id="stop1512" offset="0" style="stop-color:#000;stop-opacity:1;"/>
+      <stop id="stop1513" offset="1" style="stop-color:#fff;stop-opacity:1;"/>
+    </linearGradient>
+    <linearGradient id="linearGradient1537" x1="0.77202070" x2="0.60621762" xlink:href="#linearGradient1511" y1="3.7954545" y2="-0.14393939"/>
+    <linearGradient id="linearGradient1806">
+      <stop id="stop1807" offset="0.0000000" style="stop-color:#000000;stop-opacity:0.40784314;"/>
+      <stop id="stop3276" offset="0.64777780" style="stop-color:#000000;stop-opacity:0.079096042;"/>
+      <stop id="stop1808" offset="1.0000000" style="stop-color:#000000;stop-opacity:0.0000000;"/>
+    </linearGradient>
+    <radialGradient cx="0.49032259" cy="0.50649351" fx="0.54355401" fy="0.19230770" id="radialGradient1528" r="0.46014288" xlink:href="#linearGradient1806"/>
+  </defs>
+  <sodipodi:namedview bordercolor="#666666" borderopacity="1.0" id="base" inkscape:cx="167.21490" inkscape:cy="30.732578" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="597" inkscape:window-width="783" inkscape:window-x="-5" inkscape:window-y="71" inkscape:zoom="1.5457391" pagecolor="#ffffff"/>
+  <path d="M 82.055313 175.83524 A 56.143108 56.143108 0 1 0 -30.230904,175.83524 A 56.143108 56.143108 0 1 0 82.055313 175.83524 z" id="path2673" sodipodi:cx="25.912205" sodipodi:cy="175.83524" sodipodi:rx="56.143108" sodipodi:ry="56.143108" sodipodi:type="arc" style="fill:url(#radialGradient1528);fill-opacity:1;fill-rule:evenodd;stroke-width:1.0000000pt;" transform="matrix(1.587174,0.000000,0.000000,0.357976,47.92672,58.01404)"/>
+  <path d="M 82.055313 175.83524 A 56.143108 56.143108 0 1 0 -30.230904,175.83524 A 56.143108 56.143108 0 1 0 82.055313 175.83524 z" id="path2449" sodipodi:cx="25.912205" sodipodi:cy="175.83524" sodipodi:rx="56.143108" sodipodi:ry="56.143108" sodipodi:type="arc" style="fill:url(#radialGradient1528);fill-opacity:1;fill-rule:evenodd;stroke-width:1.0000000pt;" transform="matrix(1.323512,0.000000,0.000000,0.314955,38.26060,61.71440)"/>
+  <path d="M 24.407378,21.127490 C 17.556701,21.164131 9.4239036,29.485587 10.492381,36.252497 L 21.382385,105.22252 C 22.252324,110.73210 26.695011,117.99947 32.272389,117.92752 L 126.04737,116.71752 C 131.18845,116.65118 136.43675,111.45374 137.54234,106.43252 L 152.06237,40.487498 C 153.83184,32.451093 145.77118,20.478482 137.54234,20.522489 L 24.407378,21.127490 z " id="path2653" sodipodi:nodetypes="czzzzzzzz" style="fill:url(#linearGradient1537);fill-rule:evenodd;stroke-width:2.1250000;stroke:none;stroke-opacity:1.0000000;"/>
+  <path d="M 23.802407,35.647493 L 33.482369,105.82751 L 130.28242,102.80252 L 138.75249,35.042502 L 23.802407,35.647493 z " id="path2654" sodipodi:nodetypes="ccccc" style="fill:url(#linearGradient3046);fill-rule:evenodd;stroke:url(#linearGradient3045);stroke-width:1.1471952;stroke-opacity:0.31284913;"/>
+  <path d="M 23.882518,20.650469 C 14.912781,20.683899 11.319079,26.989156 12.387556,32.970500 C 17.882996,27.576667 20.050831,25.464509 25.848781,25.341514 L 130.36251,24.445476 C 141.55504,23.672419 142.24193,27.098344 149.42000,34.446340 C 149.74354,30.905769 145.24632,20.198124 137.01747,20.228797 L 23.882518,20.650469 z " id="path2655" sodipodi:nodetypes="ccccczz" style="fill:#191919;fill-opacity:0.20754717;fill-rule:evenodd;stroke-width:2.1250000;"/>
+  <path d="M 23.358839,31.791296 C 23.358839,31.791296 38.117668,71.219157 62.038908,65.361657 C 85.960149,59.504157 117.43549,55.989664 124.98955,78.248181 C 132.54364,100.50669 130.02562,99.335187 130.02562,99.335187 L 33.536436,98.163687 L 23.358839,31.791296 z " id="path2658" sodipodi:nodetypes="cccccc" style="fill:url(#linearGradient1721);fill-opacity:1;fill-rule:evenodd;stroke-width:1.0000000pt;"/><text id="text1232" style="font-size:12.000000;stroke-width:1.0000000pt;font-family:helvetica;" x="1.0807761" xml:space="preserve" y="180.32835"><tspan id="tspan1233">Terminal</tspan></text><text id="text1235" style="font-size:12.000000;stroke-width:1.0000000pt;font-family:helvetica;" transform="scale(0.246729,0.246729)" x="23.188351" xml:space="preserve" y="752.42865"><tspan id="tspan1236">SVG  Image Created by Andrew Fitzsimon</tspan><tspan id="tspan2195" sodipodi:role="line" x="23.188351" y="764.42865">Icon inspired by Garrets Bluecurve Gaim icon</tspan></text>
+  <path d="M 72.777462,68.693568 L 72.777462,73.235588 L 57.601899,73.235588 L 57.601899,68.693568 L 72.777462,68.693568 z M 36.507296,47.603098 L 36.507296,43.201916 L 54.792137,51.352906 L 54.792137,55.507623 L 36.507296,63.658614 L 36.507296,59.257432 L 50.270847,53.447869 L 36.507296,47.603098 z " id="text937" style="font-size:24.000000;font-style:oblique;font-weight:bold;fill:#ffffff;fill-opacity:0.79874212;stroke-width:1.0000000pt;font-family:Bitstream Vera Sans;"/>
+</svg>
+

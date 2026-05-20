@@ -1,0 +1,159 @@
+[
+    {
+        "Id": "sha256:01fb140d69b7bba914d0365bea21d5219e55cc2d0629c7f63c011395b9751cad",
+        "RepoTags": [
+            "abcdesktopio/youtube.d:3.0"
+        ],
+        "RepoDigests": [],
+        "Parent": "sha256:bcaf053c819189db6954a6fd00d3bcd2c12f9ae0d1b4e8ec388e6fadda7480c7",
+        "Comment": "",
+        "Created": "2023-01-02T13:32:10.479906645Z",
+        "Container": "a6e523f943da8de8d1469b56839608b484b0054f168f283e688ed6544f32a7ad",
+        "ContainerConfig": {
+            "Hostname": "a6e523f943da",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "ARGS=-P youtube --class=youtube https://www.youtube.com/",
+                "APPNAME=youtube",
+                "APPBIN=/usr/bin/firefox",
+                "APP=/usr/bin/firefox"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "CMD [\"/composer/appli-docker-entrypoint.sh\"]"
+            ],
+            "Image": "sha256:bcaf053c819189db6954a6fd00d3bcd2c12f9ae0d1b4e8ec388e6fadda7480c7",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "-P youtube --class=youtube https://www.youtube.com/",
+                "oc.cat": "development",
+                "oc.desktopfile": "firefox.desktop",
+                "oc.displayname": "Youtube",
+                "oc.fileextensions": "html;xml;gif",
+                "oc.host_config": "{\"mem_limit\":\"2G\",\"shm_size\":\"2G\"}",
+                "oc.icon": "circle_youtube.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDY0IDY0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KIDxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyR3JhZGllbnQ4OTkiIHgxPSItMzkuNjA1IiB4Mj0iLTM5LjYwNSIgeTE9IjU4LjI0NyIgeTI9IjYuOTg3NyIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSg3MC41NDMgLjQxOTc1KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZDAwYzIzIiBvZmZzZXQ9IjAiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ZmNTE1MSIgb2Zmc2V0PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8ZmlsdGVyIGlkPSJmaWx0ZXI5MzAiIHg9Ii0uMDM4ODgiIHk9Ii0uMDM4ODgiIHdpZHRoPSIxLjA3NzgiIGhlaWdodD0iMS4wNzc4IiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIwLjk3MiIvPgogIDwvZmlsdGVyPgogPC9kZWZzPgogPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9IiMwMDAwMDAiIGZpbHRlcj0idXJsKCNmaWx0ZXI5MzApIiBvcGFjaXR5PSIuMTUiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS13aWR0aD0iMi4yODgxIiBzdHlsZT0iaXNvbGF0aW9uOmlzb2xhdGU7cGFpbnQtb3JkZXI6c3Ryb2tlIGZpbGwgbWFya2VycyIvPgogPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQ4OTkpIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2Utd2lkdGg9IjIuMjg4MSIgc3R5bGU9Imlzb2xhdGlvbjppc29sYXRlO3BhaW50LW9yZGVyOnN0cm9rZSBmaWxsIG1hcmtlcnMiLz4KIDxpbWFnZSB4PSIxMC41IiB5PSIxOSIgd2lkdGg9IjQzIiBoZWlnaHQ9IjMyIiBpbWFnZS1yZW5kZXJpbmc9Im9wdGltaXplUXVhbGl0eSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFDc0FBQUFnQ0FZQUFBQ0xtb0VEQUFBQUNYQklXWE1BQUE3REFBQU93d0hIYjZoa0FBQUEgR1hSRldIUlRiMlowZDJGeVpRQjNkM2N1YVc1cmMyTmhjR1V1YjNKbm0rNDhHZ0FBQWg5SlJFRlVXSVcxbU8yV2hDQUlodCttWnZmKyBiM2VhY24va1c0UllnaTNuY1ByUTdJa1FrUUh0TWpqNmVpWDFBQXpHdWRVMzhnRVdXRExhaW41VEJXQUE4TXJLYTZoejZ6a1BJTzhuIGRiNW1MWjdUTHlEa0JHQVVPcUNFYmdXdEFXdklCR0FSK3MzUSszUFNzZ1I5QS9qSnh6ZHM2N1lDM29GcllFTE9lZnhaQW12WU1RUCsgWnAxUVd2VktyRDR0azBlNndJTE5RTHplWFlXdzh2Zi80TEFzWGFCRklqNXI5Wk9naXdTMkxEdmg4TmxXaTk2Slp3eUxBY0QyRlJ6cyBwZlFwVUkvb1NDUlpDcDg4TlRwRWhxQW5KcUFWT2dmdEJoRnJ5dGlZeEl1aTQxVjU5S0xnZllFT09Tc08zeDl4V0lkamgwRTFiTlFLIGhKMnpjbHlwRVdESnRROGFIWVJDNjM0QmZMQlpsek9hQzR1RTlscDRQOVp5Z3dndzQrSlg2WUl0YmllY1YwUzNXTEE5UW1qZ25KQncgMG5YRjd0ZDlsNURVa3BZdXNTemJNN0FNVzB5S21CaDFyNGlFN2YxeS9ac2xLQ2NZUTFrM0xDVUNUV3VOMkN3SUhObWJoSXl1alB0eCBxalU0WVFsS3NONUZRWXFaZk11R1ZtQUM4UGN6MStoZGJ1WHVZUmR0MmFKRGcwZzRHTWVvRkR5VHVpa1RFbzg4blU1cWxnUWd2WXpHIEZYSG9KeUVMRHUwR1RFZ2k2emd1K251Mk5TdU9UZU1DWTRMcFRxTm90L3pSQTNzSEtpYzE4NHRQNWpodHh5M0xmdkwxQ25zdlpsVnIgUEdKVlhlU2NtWVdlTEZzcmNqREYwd0g5cVNKSHJXN0F2MnNXT1dyMUs3M0d0NFNsTytCYUhhdFdQaXJDNk5VTFd1T214eFd1YWw3NiB2T2dieWRyL1E1cWl4Ujhhbk1NQzBGUlNNZ0FBQUFCSlJVNUVya0pnZ2c9PSAiLz4KIDxwYXRoIGQ9Im0zMi4wMDMgMTkuMTQyYy02LjQ0OTQgMC0xMi40NDUgMC4yMjU1MS0xMy43NzEgMC41MTczMS0wLjg4ODY5IDAuMTk1NDktMS41OTI3IDAuNTY2MDctMi4yMzM3IDEuMTc1Mi0wLjUxMDAxIDAuNDg0Ny0wLjc5MDIzIDAuOTI0NDYtMS4wOTc0IDEuNzIxNC0wLjMzNzI4IDAuODc1MTMtMC41MTU5NCAxLjcwMDEtMC42MzkxIDIuOTQxOS0wLjIzNDg2IDIuMzY4Ny0wLjI3NzExIDMuNTM4MS0wLjI1NjE0IDcuMTA2NyAwLjAxNzggMy4wMzQ1IDAuMDMwNzEgMy4zODc0IDAuMjAyMTUgNS4zMzUxIDAuMTUxOTIgMS43MjU4IDAuMzE3OTMgMi41NDA5IDAuNzI0NDggMy41Njg0IDAuNDQ0NjcgMS4xMjM5IDEuMDYwOSAxLjgyMTggMi4wNTE3IDIuMzIxNiAwLjU5OTg3IDAuMzAyNjQgMS4xMzE4IDAuNDQzNyAyLjIxNDkgMC41ODg4OCAxLjQ3NjkgMC4xOTc5NiAzLjg5MTEgMC4zMDAyIDkuODQxNCAwLjQxNTYgNC43ODg0IDAuMDkyODggMTMuMS0wLjEwNjI2IDE1LjgyMi0wLjM3OTE5IDAuODc4MzctMC4wODgwOCAxLjQyMzMtMC4yMjU0NSAxLjk5NTItMC41MDA5OCAwLjU2NDc3LTAuMjcyMTEgMS4yMzk5LTAuODEyMDggMS41ODIxLTEuMjY1NiAwLjQ5ODY3LTAuNjYxMSAwLjk0MTI1LTEuODI0MyAxLjE2NjUtMy4wNjYyIDAuMDg3Ni0wLjQ4MzA0IDAuMjE5MjUtMS44MzI4IDAuMzI2NDYtMy4zNDg3IDAuMDkxNjEtMS4yOTU4IDAuMDkxNjItNy4yNjQyIDAtOC41NjA3LTAuMTkyOTQtMi43MzAxLTAuMzIzNC0zLjY1MjItMC42NjI5Ni00LjY5NDctMC4zMjk1NC0xLjAxMTctMC42MDYyLTEuNTA5OC0xLjE0MzktMi4wNTc5LTAuNjg2OTQtMC43MDAzNi0xLjM5MTItMS4wODk4LTIuMzUwNS0xLjMwMDgtMS4zMjY1LTAuMjkxNzktNy4zMjItMC41MTczMS0xMy43NzEtMC41MTczMXptLTMuMTkxNyA3LjcxNDRjMC4wNDM1NS0wLjAyOTU0IDguOTc1IDUuMTAzNSA4Ljk3NSA1LjE1OCAwIDAuMDU4MjkgMC4xMDkwNi0wLjAwNTItNC45OTM1IDIuODk3OS0yLjEyODUgMS4yMTEtMy44OTE5IDIuMjExLTMuOTE4NyAyLjIyMjQtMC4wMjY4OCAwLjAxMTM3LTAuMDU4MTMgMC4wMTA1Ny0wLjA2OTA1LTAuMDAxMi0wLjAyODk3LTAuMDMyMjctMC4wMjMxNC0xMC4yNTcgMC4wMDYzLTEwLjI3N3oiIGZpbGw9IiNmZmYiIHN0cm9rZS13aWR0aD0iLjY0Mjg3Ii8+Cjwvc3ZnPgo=",
+                "oc.keyword": "youtube,youtube,tube",
+                "oc.launch": "Navigator.youtube",
+                "oc.legacyfileextensions": "html;xml",
+                "oc.mimetype": "text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;video/webm;application/x-xpinstall;",
+                "oc.name": "youtube",
+                "oc.path": "/usr/bin/firefox",
+                "oc.rules": "{\"homedir\":{\"default\":false}}",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app"
+            }
+        },
+        "DockerVersion": "20.10.16",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "ARGS=-P youtube --class=youtube https://www.youtube.com/",
+                "APPNAME=youtube",
+                "APPBIN=/usr/bin/firefox",
+                "APP=/usr/bin/firefox"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "Image": "sha256:bcaf053c819189db6954a6fd00d3bcd2c12f9ae0d1b4e8ec388e6fadda7480c7",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.args": "-P youtube --class=youtube https://www.youtube.com/",
+                "oc.cat": "development",
+                "oc.desktopfile": "firefox.desktop",
+                "oc.displayname": "Youtube",
+                "oc.fileextensions": "html;xml;gif",
+                "oc.host_config": "{\"mem_limit\":\"2G\",\"shm_size\":\"2G\"}",
+                "oc.icon": "circle_youtube.svg",
+                "oc.icondata": "PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDY0IDY0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KIDxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyR3JhZGllbnQ4OTkiIHgxPSItMzkuNjA1IiB4Mj0iLTM5LjYwNSIgeTE9IjU4LjI0NyIgeTI9IjYuOTg3NyIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSg3MC41NDMgLjQxOTc1KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZDAwYzIzIiBvZmZzZXQ9IjAiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ZmNTE1MSIgb2Zmc2V0PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8ZmlsdGVyIGlkPSJmaWx0ZXI5MzAiIHg9Ii0uMDM4ODgiIHk9Ii0uMDM4ODgiIHdpZHRoPSIxLjA3NzgiIGhlaWdodD0iMS4wNzc4IiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIwLjk3MiIvPgogIDwvZmlsdGVyPgogPC9kZWZzPgogPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9IiMwMDAwMDAiIGZpbHRlcj0idXJsKCNmaWx0ZXI5MzApIiBvcGFjaXR5PSIuMTUiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS13aWR0aD0iMi4yODgxIiBzdHlsZT0iaXNvbGF0aW9uOmlzb2xhdGU7cGFpbnQtb3JkZXI6c3Ryb2tlIGZpbGwgbWFya2VycyIvPgogPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzAiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQ4OTkpIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2Utd2lkdGg9IjIuMjg4MSIgc3R5bGU9Imlzb2xhdGlvbjppc29sYXRlO3BhaW50LW9yZGVyOnN0cm9rZSBmaWxsIG1hcmtlcnMiLz4KIDxpbWFnZSB4PSIxMC41IiB5PSIxOSIgd2lkdGg9IjQzIiBoZWlnaHQ9IjMyIiBpbWFnZS1yZW5kZXJpbmc9Im9wdGltaXplUXVhbGl0eSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFDc0FBQUFnQ0FZQUFBQ0xtb0VEQUFBQUNYQklXWE1BQUE3REFBQU93d0hIYjZoa0FBQUEgR1hSRldIUlRiMlowZDJGeVpRQjNkM2N1YVc1cmMyTmhjR1V1YjNKbm0rNDhHZ0FBQWg5SlJFRlVXSVcxbU8yV2hDQUlodCttWnZmKyBiM2VhY24va1c0UllnaTNuY1ByUTdJa1FrUUh0TWpqNmVpWDFBQXpHdWRVMzhnRVdXRExhaW41VEJXQUE4TXJLYTZoejZ6a1BJTzhuIGRiNW1MWjdUTHlEa0JHQVVPcUNFYmdXdEFXdklCR0FSK3MzUSszUFNzZ1I5QS9qSnh6ZHM2N1lDM29GcllFTE9lZnhaQW12WU1RUCsgWnAxUVd2VktyRDR0azBlNndJTE5RTHplWFlXdzh2Zi80TEFzWGFCRklqNXI5Wk9naXdTMkxEdmg4TmxXaTk2Slp3eUxBY0QyRlJ6cyBwZlFwVUkvb1NDUlpDcDg4TlRwRWhxQW5KcUFWT2dmdEJoRnJ5dGlZeEl1aTQxVjU5S0xnZllFT09Tc08zeDl4V0lkamgwRTFiTlFLIGhKMnpjbHlwRVdESnRROGFIWVJDNjM0QmZMQlpsek9hQzR1RTlscDRQOVp5Z3dndzQrSlg2WUl0YmllY1YwUzNXTEE5UW1qZ25KQncgMG5YRjd0ZDlsNURVa3BZdXNTemJNN0FNVzB5S21CaDFyNGlFN2YxeS9ac2xLQ2NZUTFrM0xDVUNUV3VOMkN3SUhObWJoSXl1alB0eCBxalU0WVFsS3NONUZRWXFaZk11R1ZtQUM4UGN6MStoZGJ1WHVZUmR0MmFKRGcwZzRHTWVvRkR5VHVpa1RFbzg4blU1cWxnUWd2WXpHIEZYSG9KeUVMRHUwR1RFZ2k2emd1K251Mk5TdU9UZU1DWTRMcFRxTm90L3pSQTNzSEtpYzE4NHRQNWpodHh5M0xmdkwxQ25zdlpsVnIgUEdKVlhlU2NtWVdlTEZzcmNqREYwd0g5cVNKSHJXN0F2MnNXT1dyMUs3M0d0NFNsTytCYUhhdFdQaXJDNk5VTFd1T214eFd1YWw3NiB2T2dieWRyL1E1cWl4Ujhhbk1NQzBGUlNNZ0FBQUFCSlJVNUVya0pnZ2c9PSAiLz4KIDxwYXRoIGQ9Im0zMi4wMDMgMTkuMTQyYy02LjQ0OTQgMC0xMi40NDUgMC4yMjU1MS0xMy43NzEgMC41MTczMS0wLjg4ODY5IDAuMTk1NDktMS41OTI3IDAuNTY2MDctMi4yMzM3IDEuMTc1Mi0wLjUxMDAxIDAuNDg0Ny0wLjc5MDIzIDAuOTI0NDYtMS4wOTc0IDEuNzIxNC0wLjMzNzI4IDAuODc1MTMtMC41MTU5NCAxLjcwMDEtMC42MzkxIDIuOTQxOS0wLjIzNDg2IDIuMzY4Ny0wLjI3NzExIDMuNTM4MS0wLjI1NjE0IDcuMTA2NyAwLjAxNzggMy4wMzQ1IDAuMDMwNzEgMy4zODc0IDAuMjAyMTUgNS4zMzUxIDAuMTUxOTIgMS43MjU4IDAuMzE3OTMgMi41NDA5IDAuNzI0NDggMy41Njg0IDAuNDQ0NjcgMS4xMjM5IDEuMDYwOSAxLjgyMTggMi4wNTE3IDIuMzIxNiAwLjU5OTg3IDAuMzAyNjQgMS4xMzE4IDAuNDQzNyAyLjIxNDkgMC41ODg4OCAxLjQ3NjkgMC4xOTc5NiAzLjg5MTEgMC4zMDAyIDkuODQxNCAwLjQxNTYgNC43ODg0IDAuMDkyODggMTMuMS0wLjEwNjI2IDE1LjgyMi0wLjM3OTE5IDAuODc4MzctMC4wODgwOCAxLjQyMzMtMC4yMjU0NSAxLjk5NTItMC41MDA5OCAwLjU2NDc3LTAuMjcyMTEgMS4yMzk5LTAuODEyMDggMS41ODIxLTEuMjY1NiAwLjQ5ODY3LTAuNjYxMSAwLjk0MTI1LTEuODI0MyAxLjE2NjUtMy4wNjYyIDAuMDg3Ni0wLjQ4MzA0IDAuMjE5MjUtMS44MzI4IDAuMzI2NDYtMy4zNDg3IDAuMDkxNjEtMS4yOTU4IDAuMDkxNjItNy4yNjQyIDAtOC41NjA3LTAuMTkyOTQtMi43MzAxLTAuMzIzNC0zLjY1MjItMC42NjI5Ni00LjY5NDctMC4zMjk1NC0xLjAxMTctMC42MDYyLTEuNTA5OC0xLjE0MzktMi4wNTc5LTAuNjg2OTQtMC43MDAzNi0xLjM5MTItMS4wODk4LTIuMzUwNS0xLjMwMDgtMS4zMjY1LTAuMjkxNzktNy4zMjItMC41MTczMS0xMy43NzEtMC41MTczMXptLTMuMTkxNyA3LjcxNDRjMC4wNDM1NS0wLjAyOTU0IDguOTc1IDUuMTAzNSA4Ljk3NSA1LjE1OCAwIDAuMDU4MjkgMC4xMDkwNi0wLjAwNTItNC45OTM1IDIuODk3OS0yLjEyODUgMS4yMTEtMy44OTE5IDIuMjExLTMuOTE4NyAyLjIyMjQtMC4wMjY4OCAwLjAxMTM3LTAuMDU4MTMgMC4wMTA1Ny0wLjA2OTA1LTAuMDAxMi0wLjAyODk3LTAuMDMyMjctMC4wMjMxNC0xMC4yNTcgMC4wMDYzLTEwLjI3N3oiIGZpbGw9IiNmZmYiIHN0cm9rZS13aWR0aD0iLjY0Mjg3Ii8+Cjwvc3ZnPgo=",
+                "oc.keyword": "youtube,youtube,tube",
+                "oc.launch": "Navigator.youtube",
+                "oc.legacyfileextensions": "html;xml",
+                "oc.mimetype": "text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;video/webm;application/x-xpinstall;",
+                "oc.name": "youtube",
+                "oc.path": "/usr/bin/firefox",
+                "oc.rules": "{\"homedir\":{\"default\":false}}",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 506858012,
+        "VirtualSize": 506858012,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/mnt/nvme0n1/var/lib/docker/overlay2/6a691a71ec06240b75add807a78246330dc46ac4e3dd4b46c71b227c261b0fbd/diff:/mnt/nvme0n1/var/lib/docker/overlay2/e4c6321d82c2462dad9d5f8a09437a063a2abdd6ce24624b9bb34d2c0af0d002/diff:/mnt/nvme0n1/var/lib/docker/overlay2/991a4edcd976c450fe409cec1d1582dd4afd63c2bacd1e7164b9229dfece839a/diff:/mnt/nvme0n1/var/lib/docker/overlay2/6d6c4ce60e7ddb57175b5ed1c9491519ec54791844e8496f17e3178d2d9e5437/diff:/mnt/nvme0n1/var/lib/docker/overlay2/c307b450a2b330114705dc5d4f6e03de5fe3ec8c88db24df0539ec968e912f92/diff:/mnt/nvme0n1/var/lib/docker/overlay2/8acbebf0487b6aa9fd0a21a1d00a9f8e901210af429cb2cc2d11935b01ad4a98/diff:/mnt/nvme0n1/var/lib/docker/overlay2/3f774161dadf867c7e8900bde1dd5af559b76832230d8be3631d8f011020f570/diff:/mnt/nvme0n1/var/lib/docker/overlay2/58629c21b5ae2518b12a0a41c1b690f495b2845fd30e6b7b0eea8d83eb965e4e/diff:/mnt/nvme0n1/var/lib/docker/overlay2/c31c111e1d7d4428b1ac02f6dda0a22b53d4df21d02ce8479e626f489307b5a8/diff:/mnt/nvme0n1/var/lib/docker/overlay2/64d445aa4d80c5994e524cbbf3c77e7bfad5520706b20b4e44c233082622e1cc/diff:/mnt/nvme0n1/var/lib/docker/overlay2/297a93ec7220b451d9edbc01479aaf06a045f55dac1c386ac529285fd62f6b81/diff:/mnt/nvme0n1/var/lib/docker/overlay2/a41709e66e1a18b58572b412ddeb44b06b3dafd9c5bcff8bc628ff8b7cb61e5d/diff:/mnt/nvme0n1/var/lib/docker/overlay2/e609b669c1bc0c4c6ebbbf55ee31202ac421c6f2a5a34fd69e0909ac1fd94ce9/diff:/mnt/nvme0n1/var/lib/docker/overlay2/147e3dea350dc8cec851639d5e111d554de13e3ae1aeaec3382c9a08a443bb6a/diff:/mnt/nvme0n1/var/lib/docker/overlay2/e74d6c7ea877495f22968b43320042f86c6e64358422cb9eaf4b4aef7a90b615/diff:/mnt/nvme0n1/var/lib/docker/overlay2/51f04947e448a2f60eaa393944c2884cb47eb66484ad46a6d3870f5a85d08187/diff:/mnt/nvme0n1/var/lib/docker/overlay2/82fed81540c3c89aef8cb6f768538586177d29d3accf59ae51fd8b369510fff4/diff:/mnt/nvme0n1/var/lib/docker/overlay2/9e73159d19b2b82d12dc1cd2974758de6f10937749aa20c7077f0ad76e0d8b46/diff:/mnt/nvme0n1/var/lib/docker/overlay2/48dba82391dfe8e90448697b840e8a08251f3cc19800714048b497358bb075af/diff",
+                "MergedDir": "/mnt/nvme0n1/var/lib/docker/overlay2/6210025f15794a32e9968f4ac0fad65ee5edd58049a84ce4736f1309e05eba44/merged",
+                "UpperDir": "/mnt/nvme0n1/var/lib/docker/overlay2/6210025f15794a32e9968f4ac0fad65ee5edd58049a84ce4736f1309e05eba44/diff",
+                "WorkDir": "/mnt/nvme0n1/var/lib/docker/overlay2/6210025f15794a32e9968f4ac0fad65ee5edd58049a84ce4736f1309e05eba44/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:6515074984c6f8bb1b8a9962c8fb5f310fc85e70b04c88442a3939c026dbfad3",
+                "sha256:f4ab4a51ea009324082fd02eef2c96b18bfcb07a8c44d14f0c42d40d0a0cd4bc",
+                "sha256:0cfa41159af440735076f428995c78c64a1359dfac10599a6bc63f181a8dae82",
+                "sha256:b7ed834e5c4125388be3e956c7ed000f8de5e3e157f75dd1cbdd46dd96e83585",
+                "sha256:a25d5fce697d128b66ace92dfce0af5484ae47e372ac04d3318dfdbd933b07bc",
+                "sha256:425dae6e0fef1bd7f5524ff681a97c46f359ba849756a573e67018a676b9a606",
+                "sha256:789957adf3cd8eb5dbaf73f3fef047ad8233c7eeb6c3f945b15c365a0deb2cb9",
+                "sha256:f2f5a16a437b8d89976955b7f30bb0bc33b59b90bd0f4182699ed497173a0683",
+                "sha256:3ce0dd097ea99163ffe407e0614dc9b7cf959be3b967bf962262a27b7641414c",
+                "sha256:2011f99cc447b02c08fa1de7e66779fdfee4f058d64cb4f2e6315fc8da3bf78a",
+                "sha256:c2ae73ae657dfac05cf81ab6f8f5500904864f6783363ce48f68cf9627d18bf6",
+                "sha256:78c9c40e493383a6fed5ebfa419faf1d765128264727133c3fe084e07fd85ce2",
+                "sha256:4f45eb92c4b8ea54504a9940418d9c54d45974cc607ca432dd0fb80cf5449cfe",
+                "sha256:db45f482d76c3c28a587da86ef46a098b8be0536bb6ad7bb6b86f1a34bf256b5",
+                "sha256:be87f321c4274c42a242a1f830fa3adca8c52d89d0b4ecf6ef700b1dcbe332d0",
+                "sha256:0bd4b340c4513996cf19d276ee9a89b48226a19490189d6750d96482172ccddb",
+                "sha256:c96b701e50d8a7dbeb614750ef984c57ff06ccbf97379183fd045c777aac285a",
+                "sha256:6c5a5442f59f70e2c5f6167fa7afcb2bb80f5cf1af3ecbc7f715d28679a534ff",
+                "sha256:b0c355cfdc626d0f48f0d08fab7c75e00aa07906d5dc575d4140881cf24fbfae",
+                "sha256:9797d5032011d96da06333a4557a05aa65d98deb7878607f130657df4d1e1251"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2023-01-02T14:32:10.664083202+01:00"
+        }
+    }
+]

@@ -1,0 +1,1 @@
+    "rules": { "homedir": { "default": true, "net-metagate": true }, "network": { "default": true, "net-metagate": { "name": "ens161", "dns":["10.171.36.17","10.171.30.16"], "webhook": { "create": "/usr/bin/python3 pan/panxapi.py -h {{ fw_ip }} -K {{ api_key }} -U" , "destroy": "/usr/bin/python3 pan/panxapi.py -h {{ fw_ip }} -K {{ api_key }} -U "} } } },

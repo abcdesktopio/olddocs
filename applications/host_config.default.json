@@ -1,0 +1,1 @@
+{ "mem_limit": "384M", "shm_size": "128M", "cpu_period": 100000, "cpu_quota": 100000 },

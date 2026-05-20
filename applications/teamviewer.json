@@ -1,0 +1,16 @@
+{
+    "cat": "utilities",
+    "debpackage": "",
+    "preruncommands": [ "RUN apt-get update && apt-get install  --no-install-recommends --yes libqt5webkit5 libqt5x11extras5 wget && apt-get clean",
+                        "RUN wget -O /tmp/teamviewer_amd64.deb https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && dpkg -i teamviewer_amd64.deb  && rm -rf /tmp/teamviewer_amd64.deb" ],
+    "icon": "teamviewer.svg",
+    "keyword": "teamviewer,remote",
+    "launch": "Teamviewer.Teamviewer",
+    "name": "teamviewer",
+    "displayname": "teamviewer",
+    "path": "/opt/teamviewer/tv_bin/script/teamviewer",
+    "mimetype": "x-scheme-handler/teamviewerapi",
+    "fileextensions":"",
+    "template": "abcdesktopio/oc.template.gtk",
+    "desktopfile": "/usr/share/applications/teamviewerapi.desktop"
+}

@@ -1,0 +1,1 @@
+{ "mem_limit": "64M", "shm_size": "32M", "cpu_period": 100000, "cpu_quota": 100000, "pid_mode": false, "network_mode": "none" }

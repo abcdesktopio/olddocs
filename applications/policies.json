@@ -1,0 +1,17 @@
+{
+  "policies": {
+    "DisableFirefoxAccounts": true,
+    "DisableSetDesktopBackground": true,
+    "DisableAppUpdate": true,
+    "DisableTelemetry": true,
+    "DontCheckDefaultBrowser": true,
+    "DisableSystemAddonUpdate": true,
+    "DefaultDownloadDirectory": "${home}/Downloads",
+    "NoDefaultBookmarks": true,
+    "OverrideFirstRunPage": "",
+    "Preferences": {
+      "browser.cache.disk.parent_directory": "${home}/Downloads",
+      "toolkit.legacyUserProfileCustomizations.stylesheets": { "Value": true, "Status": "user" }
+    }
+  }
+}

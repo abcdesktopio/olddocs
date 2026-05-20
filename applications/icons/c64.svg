@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140" height="140">
+  <path d="M83,97.1109 L83,128.5833 A61,61 0 1,1 83,11.4167 L83,42.8891 A32,32 0 1,0 83,97.1109" stroke="none" fill="#002255" />
+  <polygon points="83,43 83,67 111,67 135,43" stroke="none" fill="#002255" />
+  <polygon points="83,97 83,73 111,73 135,97" stroke="none" fill="#ff0000" />
+</svg>

@@ -1,0 +1,26 @@
+body   { background-color : #F4F4FF;
+         color : black;
+         font-family : Verdana, Arial, sans-serif;
+       }
+
+h1     { color : #000090;
+         font-size : 150%;
+       }
+
+h2     { color : #000090;
+         font-size : 150%;
+       }
+
+h3     { color : #000090;
+         font-size : 125%;
+       }
+
+.tt    { font-family : Lucida Console;
+         font-weight : bold;
+       }
+
+.blue  { color :#000080;
+         font-weight : bold;
+       }
+
+

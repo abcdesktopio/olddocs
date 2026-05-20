@@ -1,0 +1,13 @@
+{
+    "tag": "3.0",
+    "acl": { "permit": [ "all" ] },
+    "cat": "development",
+    "icon": "small.svg",
+    "apkpackage": "xterm",
+    "keyword": "xterm,shell,cmd",
+    "launch": "xterm.XTerm",
+    "name": "Xterm",
+    "path": "/usr/bin/xterm",
+    "rules": { "homedir": { "default": true } },
+    "template": "abcdesktopio/oc.template.alpine.minimal"
+}

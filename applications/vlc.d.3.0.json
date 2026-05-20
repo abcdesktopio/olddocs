@@ -1,0 +1,150 @@
+[
+    {
+        "Id": "sha256:24108656b46cd7993bb1d8266ff9038240d7aaad65036fe9b487978ccd6a967c",
+        "RepoTags": [
+            "abcdesktopio/vlc.d:3.0"
+        ],
+        "RepoDigests": [],
+        "Parent": "sha256:3008222d9fa470794f29f9288dbe653f1d92983bf7bc7edaccc787da52130519",
+        "Comment": "",
+        "Created": "2023-01-11T10:26:44.894329365Z",
+        "Container": "ea3ffa9b7bc963817d65619bfde94a0696f7a11e8ddce749e59e52327a9337fe",
+        "ContainerConfig": {
+            "Hostname": "ea3ffa9b7bc9",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "BGROUP=balloon",
+                "BUID=4096",
+                "BGID=4096",
+                "APPNAME=vlc",
+                "APPBIN=/usr/bin/vlc",
+                "APP=/usr/bin/vlc"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "CMD [\"/composer/appli-docker-entrypoint.sh\"]"
+            ],
+            "Image": "sha256:3008222d9fa470794f29f9288dbe653f1d92983bf7bc7edaccc787da52130519",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities,office,graphics",
+                "oc.desktopfile": "vlc.desktop",
+                "oc.displayname": "videolan",
+                "oc.fileextensions": "asx;dts;gxf;m2v;m3u;m4v;mpeg1;mpeg2;mts;mxf;ogm;pls;bup;a52;aac;b4s;cue;divx;dv;flv;m1v;m2ts;mkv;mov;mpeg4;oma;spx;ts,vlc,vob,xspf;dat;bin;ifo;part;3g2;avi;mpeg;mpg;flac;m4a;mp1;ogg;wav;xm;3gp;srt;wmv;ac3;asf;mod;mp2;mp3;mp4;wma;mka;m4p",
+                "oc.icon": "circle_vlc.svg",
+                "oc.icondata": "PHN2ZyBpZD0iQ2FsY3VsYXRvciIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDI0IDEwMjQiIGltYWdlLXJlbmRlcmluZz0ib3B0aW1pemVTcGVlZCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNjQgNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogPGRlZnM+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ZlYzU4OSIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmMzRmMTciIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJkIiB4MT0iNTIwIiB4Mj0iNTIwIiB5MT0iNCIgeTI9IjEwMjQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4bGluazpocmVmPSIjZSIvPgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYyIgeDE9IjUyMC4zMiIgeDI9IjUyMC4zMiIgeTE9Ii0xMzguNDYiIHkyPSIxNDg0LjgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ZmZGE2NCIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmYjdjMzgiIG9mZnNldD0iLjM1MTUyIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmYjdjMzgiIG9mZnNldD0iLjQ0OTc2Ii8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmMzRmMTciIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJiIiB4MT0iNDkuNTgyIiB4Mj0iNDkuNTgyIiB5MT0iLTQwLjc2NCIgeTI9IjEyMC45MiIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMuMjQ1KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZmZmIiBvZmZzZXQ9IjAiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ViZWJlYiIgb2Zmc2V0PSIuNiIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZDdkN2Q3IiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxmaWx0ZXIgaWQ9ImYiIHg9Ii0uMDM0ODc1IiB5PSItLjAzNzIiIHdpZHRoPSIxLjA2OTgiIGhlaWdodD0iMS4wNzQ0IiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxLjM5NDk5ODkiLz4KICA8L2ZpbHRlcj4KICA8cmFkaWFsR3JhZGllbnQgaWQ9ImEiIGN4PSI1MTEuOCIgY3k9IjUxMS4zNSIgcj0iNDcxLjQ1IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMDgwOCAuMDI0NDQyIC0uMDI0NDM5IDEuMDgwNiAtMjguODM5IC01My43NDUpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmZmRhNjQiIHN0b3Atb3BhY2l0eT0iLjA4NTU2MiIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmYjdjMzgiIG9mZnNldD0iLjkxMDczIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmMzRmMTciIG9mZnNldD0iMSIvPgogIDwvcmFkaWFsR3JhZGllbnQ+CiAgPGZpbHRlciBpZD0iZyIgeD0iLS4wMzYiIHk9Ii0uMDM2IiB3aWR0aD0iMS4wNzIiIGhlaWdodD0iMS4wNzIiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjE0LjE0MzUiLz4KICA8L2ZpbHRlcj4KIDwvZGVmcz4KIDxnIHRyYW5zZm9ybT0ibWF0cml4KC4wNjM3NjIgMCAwIC4wNjM3NjIgLS42MTQyNCAtLjY3OCkiIHN0cm9rZS13aWR0aD0iMTUuNjgzIj4KICA8ZyBpZD0ic2hhZG93IiB0cmFuc2Zvcm09Im1hdHJpeCguOTk2MDkgMCAwIC45OTYwOSAyIDIpIj48L2c+CiAgPGcgaWQ9ImNpcmNsZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjk5Nzk4IDAgMCAuOTk3OTggLjczMTMxIDIuMTgwNCkiIGZpbGw9InVybCgjZCkiPgogICA8ZyBzdHJva2Utd2lkdGg9IjE1LjY4MyI+CiAgICA8cGF0aCBkPSJtOTgzLjI1IDUxMS4zNWMwLTcuOTUtMC4yLTE1Ljg1LTAuNS0yMy41NXEtOC0xODAuMTUtMTM3LjU1LTMwOS44NWMtOTIuMDUtOTItMjAzLjItMTM4LjA1LTMzMy40LTEzOC4wNS0xMzAuMTUgMC0yNDEuMzUgNDYuMDUtMzMzLjM1IDEzOC4wNS05Mi4wNSA5Mi0xMzguMSAyMDMuMi0xMzguMSAzMzMuNCAwIDEzMC4xNSA0Ni4wNSAyNDEuMzUgMTM4LjEgMzMzLjM1IDg2LjE1IDg2LjMgMTg5LjM1IDEzMi4xNSAzMDkuMTUgMTM3LjYgOCAwLjMgMTYgMC41IDI0LjIgMC41IDEzMC4yIDAgMjQxLjM1LTQ2LjEgMzMzLjQtMTM4LjEgOTItOTIgMTM4LjA1LTIwMy4yIDEzOC4wNS0zMzMuMzV6IiBmaWxsPSIjMDAwIiBmaWx0ZXI9InVybCgjZykiIG9wYWNpdHk9Ii4yNSIvPgogICAgPHBhdGggZD0ibTk4My4yNSA1MTEuMzVjMC03Ljk1LTAuMi0xNS44NS0wLjUtMjMuNTVxLTgtMTgwLjE1LTEzNy41NS0zMDkuODVjLTkyLjA1LTkyLTIwMy4yLTEzOC4wNS0zMzMuNC0xMzguMDUtMTMwLjE1IDAtMjQxLjM1IDQ2LjA1LTMzMy4zNSAxMzguMDUtOTIuMDUgOTItMTM4LjEgMjAzLjItMTM4LjEgMzMzLjQgMCAxMzAuMTUgNDYuMDUgMjQxLjM1IDEzOC4xIDMzMy4zNSA4Ni4xNSA4Ni4zIDE4OS4zNSAxMzIuMTUgMzA5LjE1IDEzNy42IDggMC4zIDE2IDAuNSAyNC4yIDAuNSAxMzAuMiAwIDI0MS4zNS00Ni4xIDMzMy40LTEzOC4xIDkyLTkyIDEzOC4wNS0yMDMuMiAxMzguMDUtMzMzLjM1eiIgZmlsbD0idXJsKCNjKSIvPgogICAgPHBhdGggZD0ibTk4My4yNSA1MTEuMzVjMC03Ljk1LTAuMi0xNS44NS0wLjUtMjMuNTVxLTgtMTgwLjE1LTEzNy41NS0zMDkuODVjLTkyLjA1LTkyLTIwMy4yLTEzOC4wNS0zMzMuNC0xMzguMDUtMTMwLjE1IDAtMjQxLjM1IDQ2LjA1LTMzMy4zNSAxMzguMDUtOTIuMDUgOTItMTM4LjEgMjAzLjItMTM4LjEgMzMzLjQgMCAxMzAuMTUgNDYuMDUgMjQxLjM1IDEzOC4xIDMzMy4zNSA4Ni4xNSA4Ni4zIDE4OS4zNSAxMzIuMTUgMzA5LjE1IDEzNy42IDggMC4zIDE2IDAuNSAyNC4yIDAuNSAxMzAuMiAwIDI0MS4zNS00Ni4xIDMzMy40LTEzOC4xIDkyLTkyIDEzOC4wNS0yMDMuMiAxMzguMDUtMzMzLjM1eiIgZmlsbD0idXJsKCNhKSIgb3BhY2l0eT0iLjIiLz4KICAgPC9nPgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCg2LjA1NjIgMCAwIDYuMDU2MiAyMTkuOSAxOTkuODMpIj4KICAgPGcgc3Ryb2tlLXdpZHRoPSIxNS42ODMiPgogICAgPHBhdGggZD0ibTQ3Ljk5OCA2My40MzRjMTEuOTUxIDAgMjEuOTU1LTQuMDYxIDIyLjU2MS05LjM2Mi0xLjc3Ny00Ljk4NS0zLjcxNS0xMC40MjEtNS42MTktMTUuNzY0LTEuMzIyIDMuODExLTguNjIzIDYuNDk4LTE2Ljk0MSA2LjQ5OC04LjMxNiAwLTE1LjYxNy0yLjY4OC0xNi45NDEtNi40OTctMS45MDQgNS4zNDItMy44NCAxMC43NzctNS42MTcgMTUuNzYzIDAuNjA0IDUuMzAxIDEwLjYwNiA5LjM2MiAyMi41NTcgOS4zNjJ6bTAtMzMuNTI2YzUuNjE3IDAgMTAuODM2LTEuNzM5IDEyLjM2My00LjQzOS0yLjEwNS01LjkxMy0zLjkxNC0xMC45ODYtNS4wNTctMTQuMTg3LTAuNzU5LTIuMTMzLTQuMjAxLTMuMjQxLTcuMzA2LTMuMjQxcy02LjU0NyAxLjEwOC03LjMwNyAzLjI0MWMtMS4xNDEgMy4yMDEtMi45NDkgOC4yNzQtNS4wNTcgMTQuMTg3IDEuNTI4IDIuNyA2Ljc0OSA0LjQzOSAxMi4zNjQgNC40Mzl6bTQzLjkwNCAzOC40NjUtMTguNzc3LTcuNTYzIDIuMTYyIDYuMDMzYy0wLjEwOSA2LjM5NC0xMi41MjEgMTEuNDg5LTI3LjI4OSAxMS40ODktMTQuNzY2IDAtMjcuMTgtNS4wOTUtMjcuMjg3LTExLjQ4OWwyLjE2LTYuMDMzLTE4Ljc3NSA3LjU2M2MtNS4yNjQgMi4xMjEtNS40ODQgNi4wNDktMC40OSA4LjcyNmwzNS4zMTIgMTguOTM1YzQuOTk0IDIuNjc3IDEzLjE2OCAyLjY3NyAxOC4xNjIgMGwzNS4zMTItMTguOTM1YzQuOTk1LTIuNjc3IDQuNzc0LTYuNjA1LTAuNDktOC43MjZ6IiBmaWx0ZXI9InVybCgjZikiIG9wYWNpdHk9Ii4yIi8+CiAgICA8cGF0aCBkPSJtNDcuOTk4IDYxLjYzN2MxMS45NTEgMCAyMS45NTUtNC4wNjEgMjIuNTYxLTkuMzYyLTEuNzc3LTQuOTg1LTMuNzE1LTEwLjQyMS01LjYxOS0xNS43NjQtMS4zMjIgMy44MTEtOC42MjMgNi40OTgtMTYuOTQxIDYuNDk4LTguMzE2IDAtMTUuNjE3LTIuNjg4LTE2Ljk0MS02LjQ5Ny0xLjkwNCA1LjM0Mi0zLjg0IDEwLjc3Ny01LjYxNyAxNS43NjMgMC42MDQgNS4zMDEgMTAuNjA2IDkuMzYyIDIyLjU1NyA5LjM2MnptMC0zMy41MjZjNS42MTcgMCAxMC44MzYtMS43MzkgMTIuMzYzLTQuNDM5LTIuMTA1LTUuOTEzLTMuOTE0LTEwLjk4Ni01LjA1Ny0xNC4xODctMC43NTktMi4xMzMtNC4yMDEtMy4yNDEtNy4zMDYtMy4yNDFzLTYuNTQ3IDEuMTA4LTcuMzA3IDMuMjQxYy0xLjE0MSAzLjIwMS0yLjk0OSA4LjI3NC01LjA1NyAxNC4xODcgMS41MjggMi43IDYuNzQ5IDQuNDM5IDEyLjM2NCA0LjQzOXptNDMuOTA0IDM4LjQ2NS0xOC43NzctNy41NjMgMi4xNjIgNi4wMzNjLTAuMTA5IDYuMzk0LTEyLjUyMSAxMS40ODktMjcuMjg5IDExLjQ4OS0xNC43NjYgMC0yNy4xOC01LjA5NS0yNy4yODctMTEuNDg5bDIuMTYtNi4wMzMtMTguNzc1IDcuNTYzYy01LjI2NCAyLjEyMS01LjQ4NCA2LjA0OS0wLjQ5IDguNzI2bDM1LjMxMiAxOC45MzVjNC45OTQgMi42NzcgMTMuMTY4IDIuNjc3IDE4LjE2MiAwbDM1LjMxMi0xOC45MzVjNC45OTUtMi42NzcgNC43NzQtNi42MDUtMC40OS04LjcyNnoiIGZpbGw9InVybCgjYikiLz4KICAgPC9nPgogIDwvZz4KIDwvZz4KPC9zdmc+Cg==",
+                "oc.keyword": "vlc,vlc, videolan, video, lan, dvd",
+                "oc.launch": "vlc.vlc",
+                "oc.mimetype": "video/3gpp;video/dv;video/fli;video/flv;video/mp2t;video/mp4;video/mp4v-es;video/mpeg;video/msvideo;video/ogg;video/quicktime;video/vivo;video/vnd.divx;video/vnd.rn-realvideo;video/vnd.vivo;video/webm;video/x-anim;video/x-avi;video/x-flc;video/x-fli;video/x-flic;video/x-flv;video/x-m4v;video/x-matroska;video/x-mpeg;video/x-ms-asf;video/x-ms-asx;video/x-msvideo;video/x-ms-wm;video/x-ms-wmv;video/x-ms-wmx;video/x-ms-wvx;video/x-nsv;video/x-ogm+ogg;video/x-theora+ogg;",
+                "oc.name": "vlc",
+                "oc.path": "/usr/bin/vlc",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            }
+        },
+        "DockerVersion": "20.10.16",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "BGROUP=balloon",
+                "BUID=4096",
+                "BGID=4096",
+                "APPNAME=vlc",
+                "APPBIN=/usr/bin/vlc",
+                "APP=/usr/bin/vlc"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "Image": "sha256:3008222d9fa470794f29f9288dbe653f1d92983bf7bc7edaccc787da52130519",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "utilities,office,graphics",
+                "oc.desktopfile": "vlc.desktop",
+                "oc.displayname": "videolan",
+                "oc.fileextensions": "asx;dts;gxf;m2v;m3u;m4v;mpeg1;mpeg2;mts;mxf;ogm;pls;bup;a52;aac;b4s;cue;divx;dv;flv;m1v;m2ts;mkv;mov;mpeg4;oma;spx;ts,vlc,vob,xspf;dat;bin;ifo;part;3g2;avi;mpeg;mpg;flac;m4a;mp1;ogg;wav;xm;3gp;srt;wmv;ac3;asf;mod;mp2;mp3;mp4;wma;mka;m4p",
+                "oc.icon": "circle_vlc.svg",
+                "oc.icondata": "PHN2ZyBpZD0iQ2FsY3VsYXRvciIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDI0IDEwMjQiIGltYWdlLXJlbmRlcmluZz0ib3B0aW1pemVTcGVlZCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNjQgNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogPGRlZnM+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ZlYzU4OSIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmMzRmMTciIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJkIiB4MT0iNTIwIiB4Mj0iNTIwIiB5MT0iNCIgeTI9IjEwMjQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4bGluazpocmVmPSIjZSIvPgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYyIgeDE9IjUyMC4zMiIgeDI9IjUyMC4zMiIgeTE9Ii0xMzguNDYiIHkyPSIxNDg0LjgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ZmZGE2NCIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmYjdjMzgiIG9mZnNldD0iLjM1MTUyIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmYjdjMzgiIG9mZnNldD0iLjQ0OTc2Ii8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmMzRmMTciIG9mZnNldD0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJiIiB4MT0iNDkuNTgyIiB4Mj0iNDkuNTgyIiB5MT0iLTQwLjc2NCIgeTI9IjEyMC45MiIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMuMjQ1KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZmZmIiBvZmZzZXQ9IjAiLz4KICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ViZWJlYiIgb2Zmc2V0PSIuNiIvPgogICA8c3RvcCBzdG9wLWNvbG9yPSIjZDdkN2Q3IiBvZmZzZXQ9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxmaWx0ZXIgaWQ9ImYiIHg9Ii0uMDM0ODc1IiB5PSItLjAzNzIiIHdpZHRoPSIxLjA2OTgiIGhlaWdodD0iMS4wNzQ0IiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPgogICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxLjM5NDk5ODkiLz4KICA8L2ZpbHRlcj4KICA8cmFkaWFsR3JhZGllbnQgaWQ9ImEiIGN4PSI1MTEuOCIgY3k9IjUxMS4zNSIgcj0iNDcxLjQ1IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMDgwOCAuMDI0NDQyIC0uMDI0NDM5IDEuMDgwNiAtMjguODM5IC01My43NDUpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmZmRhNjQiIHN0b3Atb3BhY2l0eT0iLjA4NTU2MiIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmYjdjMzgiIG9mZnNldD0iLjkxMDczIi8+CiAgIDxzdG9wIHN0b3AtY29sb3I9IiNmMzRmMTciIG9mZnNldD0iMSIvPgogIDwvcmFkaWFsR3JhZGllbnQ+CiAgPGZpbHRlciBpZD0iZyIgeD0iLS4wMzYiIHk9Ii0uMDM2IiB3aWR0aD0iMS4wNzIiIGhlaWdodD0iMS4wNzIiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CiAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjE0LjE0MzUiLz4KICA8L2ZpbHRlcj4KIDwvZGVmcz4KIDxnIHRyYW5zZm9ybT0ibWF0cml4KC4wNjM3NjIgMCAwIC4wNjM3NjIgLS42MTQyNCAtLjY3OCkiIHN0cm9rZS13aWR0aD0iMTUuNjgzIj4KICA8ZyBpZD0ic2hhZG93IiB0cmFuc2Zvcm09Im1hdHJpeCguOTk2MDkgMCAwIC45OTYwOSAyIDIpIj48L2c+CiAgPGcgaWQ9ImNpcmNsZSIgdHJhbnNmb3JtPSJtYXRyaXgoLjk5Nzk4IDAgMCAuOTk3OTggLjczMTMxIDIuMTgwNCkiIGZpbGw9InVybCgjZCkiPgogICA8ZyBzdHJva2Utd2lkdGg9IjE1LjY4MyI+CiAgICA8cGF0aCBkPSJtOTgzLjI1IDUxMS4zNWMwLTcuOTUtMC4yLTE1Ljg1LTAuNS0yMy41NXEtOC0xODAuMTUtMTM3LjU1LTMwOS44NWMtOTIuMDUtOTItMjAzLjItMTM4LjA1LTMzMy40LTEzOC4wNS0xMzAuMTUgMC0yNDEuMzUgNDYuMDUtMzMzLjM1IDEzOC4wNS05Mi4wNSA5Mi0xMzguMSAyMDMuMi0xMzguMSAzMzMuNCAwIDEzMC4xNSA0Ni4wNSAyNDEuMzUgMTM4LjEgMzMzLjM1IDg2LjE1IDg2LjMgMTg5LjM1IDEzMi4xNSAzMDkuMTUgMTM3LjYgOCAwLjMgMTYgMC41IDI0LjIgMC41IDEzMC4yIDAgMjQxLjM1LTQ2LjEgMzMzLjQtMTM4LjEgOTItOTIgMTM4LjA1LTIwMy4yIDEzOC4wNS0zMzMuMzV6IiBmaWxsPSIjMDAwIiBmaWx0ZXI9InVybCgjZykiIG9wYWNpdHk9Ii4yNSIvPgogICAgPHBhdGggZD0ibTk4My4yNSA1MTEuMzVjMC03Ljk1LTAuMi0xNS44NS0wLjUtMjMuNTVxLTgtMTgwLjE1LTEzNy41NS0zMDkuODVjLTkyLjA1LTkyLTIwMy4yLTEzOC4wNS0zMzMuNC0xMzguMDUtMTMwLjE1IDAtMjQxLjM1IDQ2LjA1LTMzMy4zNSAxMzguMDUtOTIuMDUgOTItMTM4LjEgMjAzLjItMTM4LjEgMzMzLjQgMCAxMzAuMTUgNDYuMDUgMjQxLjM1IDEzOC4xIDMzMy4zNSA4Ni4xNSA4Ni4zIDE4OS4zNSAxMzIuMTUgMzA5LjE1IDEzNy42IDggMC4zIDE2IDAuNSAyNC4yIDAuNSAxMzAuMiAwIDI0MS4zNS00Ni4xIDMzMy40LTEzOC4xIDkyLTkyIDEzOC4wNS0yMDMuMiAxMzguMDUtMzMzLjM1eiIgZmlsbD0idXJsKCNjKSIvPgogICAgPHBhdGggZD0ibTk4My4yNSA1MTEuMzVjMC03Ljk1LTAuMi0xNS44NS0wLjUtMjMuNTVxLTgtMTgwLjE1LTEzNy41NS0zMDkuODVjLTkyLjA1LTkyLTIwMy4yLTEzOC4wNS0zMzMuNC0xMzguMDUtMTMwLjE1IDAtMjQxLjM1IDQ2LjA1LTMzMy4zNSAxMzguMDUtOTIuMDUgOTItMTM4LjEgMjAzLjItMTM4LjEgMzMzLjQgMCAxMzAuMTUgNDYuMDUgMjQxLjM1IDEzOC4xIDMzMy4zNSA4Ni4xNSA4Ni4zIDE4OS4zNSAxMzIuMTUgMzA5LjE1IDEzNy42IDggMC4zIDE2IDAuNSAyNC4yIDAuNSAxMzAuMiAwIDI0MS4zNS00Ni4xIDMzMy40LTEzOC4xIDkyLTkyIDEzOC4wNS0yMDMuMiAxMzguMDUtMzMzLjM1eiIgZmlsbD0idXJsKCNhKSIgb3BhY2l0eT0iLjIiLz4KICAgPC9nPgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCg2LjA1NjIgMCAwIDYuMDU2MiAyMTkuOSAxOTkuODMpIj4KICAgPGcgc3Ryb2tlLXdpZHRoPSIxNS42ODMiPgogICAgPHBhdGggZD0ibTQ3Ljk5OCA2My40MzRjMTEuOTUxIDAgMjEuOTU1LTQuMDYxIDIyLjU2MS05LjM2Mi0xLjc3Ny00Ljk4NS0zLjcxNS0xMC40MjEtNS42MTktMTUuNzY0LTEuMzIyIDMuODExLTguNjIzIDYuNDk4LTE2Ljk0MSA2LjQ5OC04LjMxNiAwLTE1LjYxNy0yLjY4OC0xNi45NDEtNi40OTctMS45MDQgNS4zNDItMy44NCAxMC43NzctNS42MTcgMTUuNzYzIDAuNjA0IDUuMzAxIDEwLjYwNiA5LjM2MiAyMi41NTcgOS4zNjJ6bTAtMzMuNTI2YzUuNjE3IDAgMTAuODM2LTEuNzM5IDEyLjM2My00LjQzOS0yLjEwNS01LjkxMy0zLjkxNC0xMC45ODYtNS4wNTctMTQuMTg3LTAuNzU5LTIuMTMzLTQuMjAxLTMuMjQxLTcuMzA2LTMuMjQxcy02LjU0NyAxLjEwOC03LjMwNyAzLjI0MWMtMS4xNDEgMy4yMDEtMi45NDkgOC4yNzQtNS4wNTcgMTQuMTg3IDEuNTI4IDIuNyA2Ljc0OSA0LjQzOSAxMi4zNjQgNC40Mzl6bTQzLjkwNCAzOC40NjUtMTguNzc3LTcuNTYzIDIuMTYyIDYuMDMzYy0wLjEwOSA2LjM5NC0xMi41MjEgMTEuNDg5LTI3LjI4OSAxMS40ODktMTQuNzY2IDAtMjcuMTgtNS4wOTUtMjcuMjg3LTExLjQ4OWwyLjE2LTYuMDMzLTE4Ljc3NSA3LjU2M2MtNS4yNjQgMi4xMjEtNS40ODQgNi4wNDktMC40OSA4LjcyNmwzNS4zMTIgMTguOTM1YzQuOTk0IDIuNjc3IDEzLjE2OCAyLjY3NyAxOC4xNjIgMGwzNS4zMTItMTguOTM1YzQuOTk1LTIuNjc3IDQuNzc0LTYuNjA1LTAuNDktOC43MjZ6IiBmaWx0ZXI9InVybCgjZikiIG9wYWNpdHk9Ii4yIi8+CiAgICA8cGF0aCBkPSJtNDcuOTk4IDYxLjYzN2MxMS45NTEgMCAyMS45NTUtNC4wNjEgMjIuNTYxLTkuMzYyLTEuNzc3LTQuOTg1LTMuNzE1LTEwLjQyMS01LjYxOS0xNS43NjQtMS4zMjIgMy44MTEtOC42MjMgNi40OTgtMTYuOTQxIDYuNDk4LTguMzE2IDAtMTUuNjE3LTIuNjg4LTE2Ljk0MS02LjQ5Ny0xLjkwNCA1LjM0Mi0zLjg0IDEwLjc3Ny01LjYxNyAxNS43NjMgMC42MDQgNS4zMDEgMTAuNjA2IDkuMzYyIDIyLjU1NyA5LjM2MnptMC0zMy41MjZjNS42MTcgMCAxMC44MzYtMS43MzkgMTIuMzYzLTQuNDM5LTIuMTA1LTUuOTEzLTMuOTE0LTEwLjk4Ni01LjA1Ny0xNC4xODctMC43NTktMi4xMzMtNC4yMDEtMy4yNDEtNy4zMDYtMy4yNDFzLTYuNTQ3IDEuMTA4LTcuMzA3IDMuMjQxYy0xLjE0MSAzLjIwMS0yLjk0OSA4LjI3NC01LjA1NyAxNC4xODcgMS41MjggMi43IDYuNzQ5IDQuNDM5IDEyLjM2NCA0LjQzOXptNDMuOTA0IDM4LjQ2NS0xOC43NzctNy41NjMgMi4xNjIgNi4wMzNjLTAuMTA5IDYuMzk0LTEyLjUyMSAxMS40ODktMjcuMjg5IDExLjQ4OS0xNC43NjYgMC0yNy4xOC01LjA5NS0yNy4yODctMTEuNDg5bDIuMTYtNi4wMzMtMTguNzc1IDcuNTYzYy01LjI2NCAyLjEyMS01LjQ4NCA2LjA0OS0wLjQ5IDguNzI2bDM1LjMxMiAxOC45MzVjNC45OTQgMi42NzcgMTMuMTY4IDIuNjc3IDE4LjE2MiAwbDM1LjMxMi0xOC45MzVjNC45OTUtMi42NzcgNC43NzQtNi42MDUtMC40OS04LjcyNnoiIGZpbGw9InVybCgjYikiLz4KICAgPC9nPgogIDwvZz4KIDwvZz4KPC9zdmc+Cg==",
+                "oc.keyword": "vlc,vlc, videolan, video, lan, dvd",
+                "oc.launch": "vlc.vlc",
+                "oc.mimetype": "video/3gpp;video/dv;video/fli;video/flv;video/mp2t;video/mp4;video/mp4v-es;video/mpeg;video/msvideo;video/ogg;video/quicktime;video/vivo;video/vnd.divx;video/vnd.rn-realvideo;video/vnd.vivo;video/webm;video/x-anim;video/x-avi;video/x-flc;video/x-fli;video/x-flic;video/x-flv;video/x-m4v;video/x-matroska;video/x-mpeg;video/x-ms-asf;video/x-ms-asx;video/x-msvideo;video/x-ms-wm;video/x-ms-wmv;video/x-ms-wmx;video/x-ms-wvx;video/x-nsv;video/x-ogm+ogg;video/x-theora+ogg;",
+                "oc.name": "vlc",
+                "oc.path": "/usr/bin/vlc",
+                "oc.rules": "{\"homedir\":{\"default\":true}}",
+                "oc.template": "abcdesktopio/oc.template.alpine",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 681907446,
+        "VirtualSize": 681907446,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/mnt/nvme0n1/var/lib/docker/overlay2/cf8db14fd112ff3744352274ac3c111475899204ef0b71a9e2f0fdfdee36a443/diff:/mnt/nvme0n1/var/lib/docker/overlay2/3aa02149d2113bf4ac5873176d25570a04b6508ca2e78816c3c51a93e6a721b5/diff:/mnt/nvme0n1/var/lib/docker/overlay2/f160c18822daa5ee8d228786ea2716d8e0f17a168d54c2f3ba3e020a7e656ab9/diff:/mnt/nvme0n1/var/lib/docker/overlay2/a437bd7cf61680964feeb4b4b19d7b5cc634d9b5c9245d7f6b52d5408fafe67f/diff:/mnt/nvme0n1/var/lib/docker/overlay2/24fa2ccb71980085b76d54ccfc7add2bdbdcb767ca399d0d59e03cb9b7dee89e/diff:/mnt/nvme0n1/var/lib/docker/overlay2/687858e7a2bb6033bb89f416e095fbcd6a34f20fa47a8e5cd968538b6e4759bb/diff:/mnt/nvme0n1/var/lib/docker/overlay2/095d0cb9bb4bc92f9c37c9982e82d6b113a335843ca8c854d9430645103d7c01/diff:/mnt/nvme0n1/var/lib/docker/overlay2/9a26340aa0569f1cd4e31875f900e83cfd589430feaf62817cd3c265dad0cb64/diff:/mnt/nvme0n1/var/lib/docker/overlay2/a083914b3caca5c99572a2444351c4b60611f8da28a957ae73e3d15de85fc2e7/diff:/mnt/nvme0n1/var/lib/docker/overlay2/552f3ad7d7f20e2a4186fc0f35ee719e416e07f99742c85588d43cfd1aeb6cec/diff:/mnt/nvme0n1/var/lib/docker/overlay2/fc6745cceed3a373a545c2f8d8e152f2163d16b1363353aac445774da50ce988/diff:/mnt/nvme0n1/var/lib/docker/overlay2/c82d08eb86135353be24fb2ac7943517ef97746af63c0265bb9e39b7062419a4/diff:/mnt/nvme0n1/var/lib/docker/overlay2/056081b71499ec761ae4db50cc556bfb94ba22b7d2db65b16e560f123c11cb51/diff:/mnt/nvme0n1/var/lib/docker/overlay2/bdb73bbbe83856c2b838b8040f828e908151f789f404e835d76622a796282e7e/diff",
+                "MergedDir": "/mnt/nvme0n1/var/lib/docker/overlay2/954c079402657d5c0b6119fbb1af99d4b6fae179f0f1ea8bc3b2abf71647ab0f/merged",
+                "UpperDir": "/mnt/nvme0n1/var/lib/docker/overlay2/954c079402657d5c0b6119fbb1af99d4b6fae179f0f1ea8bc3b2abf71647ab0f/diff",
+                "WorkDir": "/mnt/nvme0n1/var/lib/docker/overlay2/954c079402657d5c0b6119fbb1af99d4b6fae179f0f1ea8bc3b2abf71647ab0f/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:8e012198eea15b2554b07014081c85fec4967a1b9cc4b65bd9a4bce3ae1c0c88",
+                "sha256:0b6159f6103af1c84bd188c68ce71dfe448fd77c4b29fea52335cc8958b9ae9e",
+                "sha256:a7998903bbc6292dca5ed623b57b9b9a49cd6d7fb6a12f3b0a9713859b77853a",
+                "sha256:ff001546556604f4ad199ecd32118816594a901a1cb23340947219c77fee0d13",
+                "sha256:c6b5611976a85f63e3e5d045d7993618174b1a8be11fe6d48ac22d9f895523ea",
+                "sha256:fd5a3d81ed25ddf661614f674b8c7fa6b3f53998f5d23d5f8e4a9d2f8631a0d3",
+                "sha256:01390b008d9ea9086ea4dcf66999cdbc0d4224c57f899dcaaa72fb59e5ef9cb6",
+                "sha256:0424b4bde710f08b3d7cc8f72b907b15a931104b1dd420fd1eab1b05e4a15130",
+                "sha256:19d011e563d2c6f1463d9ec2fa2e8cbf75b5275b07d39a36975a60bad70ca60e",
+                "sha256:498635314983da0a92606e5e49fa1fa654487aa71015f85e9e3b504e0d4bb4a7",
+                "sha256:efbc7b49d01aebf8b9be26d08ad80076ca72a9075ddfac01826023d9318d2f29",
+                "sha256:9c7767a3c3939ce8551df47d080a5db72882fe341651ea264608535bb6519f25",
+                "sha256:b8ea8bcbcac869ed94ebc2fc930dfde51e1ac6228cc844cb0163a4c096812536",
+                "sha256:80526a3023e6258e076076734042c22f97b4563c99d7c7a91579259dbd050ca0",
+                "sha256:5748907815210458c18c187406d2fe188a55f4108c860c14f6a724dfbbeb9a06"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2023-01-11T12:42:12.477489496+01:00"
+        }
+    }
+]

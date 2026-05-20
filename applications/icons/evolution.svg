@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48">
+  <defs>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#9aa29a"/>
+      <stop offset="1" stop-color="#b5beb5"/>
+    </linearGradient>
+    <radialGradient id="b" cx="6.703" cy="73.616" r="7.228" gradientTransform="scale(1.9022 .5257)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="i" x1="8.78" x2="9.762" y1="37.785" y2="32.203" gradientTransform="matrix(2.3949 0 0 .78106 2.88 .343)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-opacity=".129"/>
+      <stop offset="1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="h" x1="11.233" x2="21.112" y1="13.686" y2="24.133" gradientTransform="matrix(1.3709 0 0 1.4438 2.431 -.14)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ededed"/>
+    </linearGradient>
+    <linearGradient id="g" x1="8.916" x2="9.886" y1="37.197" y2="52.091" gradientTransform="matrix(2.4548 0 0 .762 2.88 .343)" gradientUnits="userSpaceOnUse" xlink:href="#a"/>
+    <linearGradient id="f" x1="10.184" x2="15.311" y1="15.148" y2="29.569" gradientTransform="matrix(1.8193 0 0 1.0282 2.88 .343)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <linearGradient id="e" x1="5.827" x2="13.467" y1="7.231" y2="17.877" gradientTransform="matrix(1.5706 0 0 1.191 2.88 .343)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ededed"/>
+      <stop offset="1" stop-color="#c8c8c8"/>
+    </linearGradient>
+    <linearGradient id="c" x1="11.573" x2="18.475" y1="4.746" y2="26.023" gradientTransform="matrix(1.3435 0 0 1.4179 2.88 .315)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e2e2e2"/>
+    </linearGradient>
+    <linearGradient id="d" x1="2.062" x2="30.6" y1="15.257" y2="15.257" gradientTransform="matrix(1.3435 0 0 1.4179 2.88 .315)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#989690"/>
+      <stop offset="1" stop-color="#656460"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#b)" d="M26.5 38.7a13.75 3.8 0 1 1-27.5 0 13.75 3.8 0 1 1 27.5 0z" color="#000" opacity=".456" transform="matrix(1.8006 0 0 1.9748 1.084 -38.013)"/>
+  <path fill="url(#c)" fill-rule="evenodd" stroke="url(#d)" stroke-linejoin="round" stroke-width=".857" d="M6.333 16.972v24.51h36.973l-.062-24.392c-.003-1.378-11.848-14.678-14.033-14.678H20.66c-2.297 0-14.326 13.262-14.326 14.56z"/>
+  <path fill="url(#e)" fill-rule="evenodd" d="M6.923 16.787c-.398-.43 11.887-13.694 13.744-13.694h8.376c1.747 0 14.037 13.128 13.427 13.886L31.61 30.474l-12.315-.318-12.372-13.37z"/>
+  <path fill-opacity=".146" fill-rule="evenodd" d="M19.078 30.018l-7.333-8.746 24.818-6.936 3.029 6.216-7.416 9.44"/>
+  <path fill-opacity=".146" fill-rule="evenodd" d="M18.292 29.836l-7.483-8.81 24.648-6.893 3.174 6.271-7.241 9.407"/>
+  <path fill-opacity=".146" fill-rule="evenodd" d="M18.775 29.957l-7.675-8.66 24.968-7.065 3.286 6.593-7.48 9.107"/>
+  <path fill="url(#f)" fill-rule="evenodd" d="M18.594 30.441l-7.333-8.746 24.712-6.894 3.11 6.388-7.12 8.986"/>
+  <path fill="url(#g)" fill-rule="evenodd" d="M20.488 29.064L7.092 40.036l13.909-9.604h9.018l12.42 9.482-11.864-10.85H20.488z"/>
+  <path fill="url(#g)" fill-rule="evenodd" d="M6.963 16.885L18.48 31.201l1.068-.854L6.964 16.885z" color="#000"/>
+  <path fill="none" stroke="url(#h)" stroke-width=".857" d="M7.308 17.131l.03 23.211h34.946l-.063-23.084c-.002-.75-11.216-13.799-13.384-13.799h-7.895c-2.253 0-13.635 12.892-13.634 13.672z"/>
+  <path fill="#fff" fill-rule="evenodd" d="M20.957 30.453L9.016 38.724l2.219.006 9.998-6.869 8.822-1.423-9.098.015zm-9.529-8.783l1.324 1.411 22.791-6.884 2.915 5.682.614-.712-3.069-6.378-24.575 6.881z"/>
+  <path fill="url(#i)" fill-rule="evenodd" d="M13.308 23.636l6.026 6.454 1.197-1.026 10.087.043.812.727 3.975-4.744c-1.154-1.411-22.097-1.454-22.097-1.454z"/>
+  <path fill="#b1b1b1" fill-rule="evenodd" d="M41.813 17.848l-9.952 12.631-1.068-.855 11.02-11.776z" color="#000"/>
+</svg>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" inkscape:version="0.47 r22583" sodipodi:version="0.32" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:docname="skype.svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="256px" height="256px"
+	 viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+<defs>
+	
+	
+		<inkscape:perspective  sodipodi:type="inkscape:persp3d" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="256 : 128 : 1" inkscape:persp3d-origin="128 : 85.333333 : 1" inkscape:vp_x="0 : 128 : 1" id="perspective2915">
+		</inkscape:perspective>
+</defs>
+<sodipodi:namedview  pagecolor="#ffffff" inkscape:current-layer="layer1" inkscape:window-height="538" inkscape:document-units="px" showgrid="false" inkscape:zoom="0.49497474" inkscape:pageshadow="2" inkscape:pageopacity="0.0" bordercolor="#666666" inkscape:window-width="1047" inkscape:window-y="0" id="base" inkscape:cx="-180.97949" inkscape:cy="123.84505" inkscape:window-maximized="0" inkscape:window-x="0" borderopacity="1.0">
+	</sodipodi:namedview>
+<g id="layer1" transform="translate(-373.642,-318.344)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+	
+		<path id="rect1942" inkscape:export-filename="C:\Documents and Settings\Molumen\Desktop\path3511111.png" inkscape:export-xdpi="7.7063322" inkscape:export-ydpi="7.7063322" fill="#A8EBFF" d="
+		M583.659,328.849H419.625c-19.599,0-35.487,15.888-35.487,35.487v164.015c0,19.599,15.888,35.486,35.487,35.486h164.033
+		c19.599,0,35.487-15.888,35.487-35.486V364.337C619.146,344.738,603.257,328.849,583.659,328.849z"/>
+	
+		<linearGradient id="path1950_1_" gradientUnits="userSpaceOnUse" x1="-899.778" y1="287.9734" x2="-951.4744" y2="137.2845" gradientTransform="matrix(-0.5915 0 0 -0.5915 -88.3092 464.6428)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	
+		<path id="path1950" inkscape:export-filename="C:\Documents and Settings\Molumen\Desktop\path3511111.png" inkscape:export-xdpi="7.7063322" inkscape:export-ydpi="7.7063322" sodipodi:nodetypes="ccccsssc" fill="url(#path1950_1_)" d="
+		M557.056,338.895H446.227c-29.336,0-52.955,23.81-52.955,53.385v108.127c0.95,23.086,4.603,8.491,11.555-17.075
+		c8.081-29.713,34.396-55.682,66.445-75.145c24.461-14.855,51.84-24.341,101.679-25.244
+		C601.216,382.432,598.721,346.26,557.056,338.895z"/>
+	
+		<path id="path24965" sodipodi:type="arc" sodipodi:cx="87.88327" sodipodi:rx="46.467018" sodipodi:ry="45.961941" sodipodi:cy="87.809601" fill="#00C3FF" d="
+		M506.982,404.133c0,25.384-20.804,45.963-46.467,45.963s-46.467-20.579-46.467-45.963c0-25.384,20.804-45.962,46.467-45.962
+		S506.982,378.749,506.982,404.133z"/>
+	
+		<path id="path24965-8" sodipodi:type="arc" sodipodi:cx="87.88327" sodipodi:rx="46.467018" sodipodi:ry="45.961941" sodipodi:cy="87.809601" fill="#00C3FF" d="
+		M581.734,482.42c0,25.384-20.805,45.962-46.467,45.962c-25.664,0-46.468-20.578-46.468-45.962
+		c0-25.385,20.804-45.962,46.468-45.962C560.929,436.458,581.734,457.035,581.734,482.42z"/>
+	
+		<path id="path24989" sodipodi:type="arc" sodipodi:cx="113.64217" sodipodi:rx="76.266518" sodipodi:ry="85.357887" sodipodi:cy="132.25632" fill="#00C3FF" d="
+		M578.703,442.014c0,45.189-35.729,81.822-79.802,81.822s-79.802-36.633-79.802-81.822c0-45.189,35.729-81.822,79.802-81.822
+		S578.703,396.825,578.703,442.014z"/>
+	<path id="path24997" sodipodi:nodetypes="ccccccc" fill="none" stroke="#FFFFFF" stroke-width="23" stroke-linecap="round" d="
+		M531.731,410.699c-9.05-9.342-19.685-14.506-32.325-16.163c-11.584-0.575-27.216,4.729-28.285,19.193
+		c-0.916,15.696,8.749,21.047,29.295,26.264c17.763,4.64,34.399,7.71,33.335,25.253c-0.377,15.747-15.618,22.79-32.325,22.224
+		c-16.549-0.758-27.077-9.137-33.335-17.173"/>
+</g>
+</svg>

@@ -1,0 +1,143 @@
+[
+    {
+        "Id": "sha256:d606b3d28815764463b8842586e770080547c6e1c681c36dc8021d864dfacf27",
+        "RepoTags": [
+            "abcdesktopio/ksquares.d:3.0",
+            "abcdesktopio/ksquares.d:dev"
+        ],
+        "RepoDigests": [],
+        "Parent": "sha256:1b6bd8909ed935364ba8359399b197ae1756d2f0a0e2a45c814f6ebc206fd75a",
+        "Comment": "",
+        "Created": "2023-01-05T13:39:29.213388096Z",
+        "Container": "70a191f8c523ae68957cb91a9f65ba1b87ab46b8a960aeb851a4eda1f9b884f6",
+        "ContainerConfig": {
+            "Hostname": "70a191f8c523",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "APPNAME=kSquares",
+                "APPBIN=/usr/games/ksquares",
+                "APP=/usr/games/ksquares"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "CMD [\"/composer/appli-docker-entrypoint.sh\"]"
+            ],
+            "Image": "sha256:1b6bd8909ed935364ba8359399b197ae1756d2f0a0e2a45c814f6ebc206fd75a",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "games",
+                "oc.displayname": "kSquares",
+                "oc.icon": "ksquares.svg",
+                "oc.icondata": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmVyc2lvbj0iMSI+CiA8cmVjdCBzdHlsZT0ib3BhY2l0eTowLjIiIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgeD0iLTMxIiB5PSItMzAiIHJ4PSIxLjQiIHJ5PSIxLjQiIHRyYW5zZm9ybT0ibWF0cml4KDAsLTEsLTEsMCwwLDApIi8+CiA8cmVjdCB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHg9Ii0zMCIgeT0iLTMwIiByeD0iMS40IiByeT0iMS40IiB0cmFuc2Zvcm09Im1hdHJpeCgwLC0xLC0xLDAsMCwwKSIgc3R5bGU9ImZpbGw6IzhlOGU4ZSIvPgogPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzNmM2YzZjtzdHJva2Utd2lkdGg6MiIgZD0iTSA2LDIwIEggMTYgViAxMiBIIDI2Ii8+CiA8cGF0aCBkPSJtIDE2LDExIGEgMiwyIDAgMCAwIC0yLDIgMiwyIDAgMCAwIDIsMiAyLDIgMCAwIDAgMiwtMiAyLDIgMCAwIDAgLTIsLTIgeiBtIDEwLDAgYSAyLDIgMCAwIDAgLTIsMiAyLDIgMCAwIDAgMiwyIDIsMiAwIDAgMCAyLC0yIDIsMiAwIDAgMCAtMiwtMiB6IE0gNiwxOSBhIDIsMiAwIDAgMCAtMiwyIDIsMiAwIDAgMCAyLDIgMiwyIDAgMCAwIDIsLTIgMiwyIDAgMCAwIC0yLC0yIHogbSAxMCwwIGEgMiwyIDAgMCAwIC0yLDIgMiwyIDAgMCAwIDIsMiAyLDIgMCAwIDAgMiwtMiAyLDIgMCAwIDAgLTIsLTIgeiIgc3R5bGU9Im9wYWNpdHk6MC4yIi8+CiA8cGF0aCBzdHlsZT0iZmlsbDojZmZmZmZmIiBkPSJNIDE2IDEwIEEgMiAyIDAgMCAwIDE0IDEyIEEgMiAyIDAgMCAwIDE2IDE0IEEgMiAyIDAgMCAwIDE4IDEyIEEgMiAyIDAgMCAwIDE2IDEwIHogTSAyNiAxMCBBIDIgMiAwIDAgMCAyNCAxMiBBIDIgMiAwIDAgMCAyNiAxNCBBIDIgMiAwIDAgMCAyOCAxMiBBIDIgMiAwIDAgMCAyNiAxMCB6IE0gNiAxOCBBIDIgMiAwIDAgMCA0IDIwIEEgMiAyIDAgMCAwIDYgMjIgQSAyIDIgMCAwIDAgOCAyMCBBIDIgMiAwIDAgMCA2IDE4IHogTSAxNiAxOCBBIDIgMiAwIDAgMCAxNCAyMCBBIDIgMiAwIDAgMCAxNiAyMiBBIDIgMiAwIDAgMCAxOCAyMCBBIDIgMiAwIDAgMCAxNiAxOCB6Ii8+CiA8cGF0aCBzdHlsZT0iZmlsbDojZmZmZmZmO29wYWNpdHk6MC4xIiBkPSJNIDMuNDAwMzkwNiAyIEMgMi42MjQ3OTA2IDIgMiAyLjYyNDc5MDYgMiAzLjQwMDM5MDYgTCAyIDQuNDAwMzkwNiBDIDIgMy42MjQ3OTA2IDIuNjI0NzkwNiAzIDMuNDAwMzkwNiAzIEwgMjguNTk5NjA5IDMgQyAyOS4zNzUyMDkgMyAzMCAzLjYyNDc5MDYgMzAgNC40MDAzOTA2IEwgMzAgMy40MDAzOTA2IEMgMzAgMi42MjQ3OTA2IDI5LjM3NTIwOSAyIDI4LjU5OTYwOSAyIEwgMy40MDAzOTA2IDIgeiIvPgo8L3N2Zz4K",
+                "oc.keyword": "ksquares,ksquares",
+                "oc.launch": "ksquares.ksquares",
+                "oc.name": "kSquares",
+                "oc.path": "/usr/games/ksquares",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app"
+            }
+        },
+        "DockerVersion": "20.10.16",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "balloon",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBCONF_FRONTEND=noninteractive",
+                "TERM=linux",
+                "LANG=en_US.utf8",
+                "BUSER=balloon",
+                "APPNAME=kSquares",
+                "APPBIN=/usr/games/ksquares",
+                "APP=/usr/games/ksquares"
+            ],
+            "Cmd": [
+                "/composer/appli-docker-entrypoint.sh"
+            ],
+            "Image": "sha256:1b6bd8909ed935364ba8359399b197ae1756d2f0a0e2a45c814f6ebc206fd75a",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "oc.acl": "{\"permit\":[\"all\"]}",
+                "oc.cat": "games",
+                "oc.displayname": "kSquares",
+                "oc.icon": "ksquares.svg",
+                "oc.icondata": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmVyc2lvbj0iMSI+CiA8cmVjdCBzdHlsZT0ib3BhY2l0eTowLjIiIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgeD0iLTMxIiB5PSItMzAiIHJ4PSIxLjQiIHJ5PSIxLjQiIHRyYW5zZm9ybT0ibWF0cml4KDAsLTEsLTEsMCwwLDApIi8+CiA8cmVjdCB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHg9Ii0zMCIgeT0iLTMwIiByeD0iMS40IiByeT0iMS40IiB0cmFuc2Zvcm09Im1hdHJpeCgwLC0xLC0xLDAsMCwwKSIgc3R5bGU9ImZpbGw6IzhlOGU4ZSIvPgogPHBhdGggc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzNmM2YzZjtzdHJva2Utd2lkdGg6MiIgZD0iTSA2LDIwIEggMTYgViAxMiBIIDI2Ii8+CiA8cGF0aCBkPSJtIDE2LDExIGEgMiwyIDAgMCAwIC0yLDIgMiwyIDAgMCAwIDIsMiAyLDIgMCAwIDAgMiwtMiAyLDIgMCAwIDAgLTIsLTIgeiBtIDEwLDAgYSAyLDIgMCAwIDAgLTIsMiAyLDIgMCAwIDAgMiwyIDIsMiAwIDAgMCAyLC0yIDIsMiAwIDAgMCAtMiwtMiB6IE0gNiwxOSBhIDIsMiAwIDAgMCAtMiwyIDIsMiAwIDAgMCAyLDIgMiwyIDAgMCAwIDIsLTIgMiwyIDAgMCAwIC0yLC0yIHogbSAxMCwwIGEgMiwyIDAgMCAwIC0yLDIgMiwyIDAgMCAwIDIsMiAyLDIgMCAwIDAgMiwtMiAyLDIgMCAwIDAgLTIsLTIgeiIgc3R5bGU9Im9wYWNpdHk6MC4yIi8+CiA8cGF0aCBzdHlsZT0iZmlsbDojZmZmZmZmIiBkPSJNIDE2IDEwIEEgMiAyIDAgMCAwIDE0IDEyIEEgMiAyIDAgMCAwIDE2IDE0IEEgMiAyIDAgMCAwIDE4IDEyIEEgMiAyIDAgMCAwIDE2IDEwIHogTSAyNiAxMCBBIDIgMiAwIDAgMCAyNCAxMiBBIDIgMiAwIDAgMCAyNiAxNCBBIDIgMiAwIDAgMCAyOCAxMiBBIDIgMiAwIDAgMCAyNiAxMCB6IE0gNiAxOCBBIDIgMiAwIDAgMCA0IDIwIEEgMiAyIDAgMCAwIDYgMjIgQSAyIDIgMCAwIDAgOCAyMCBBIDIgMiAwIDAgMCA2IDE4IHogTSAxNiAxOCBBIDIgMiAwIDAgMCAxNCAyMCBBIDIgMiAwIDAgMCAxNiAyMiBBIDIgMiAwIDAgMCAxOCAyMCBBIDIgMiAwIDAgMCAxNiAxOCB6Ii8+CiA8cGF0aCBzdHlsZT0iZmlsbDojZmZmZmZmO29wYWNpdHk6MC4xIiBkPSJNIDMuNDAwMzkwNiAyIEMgMi42MjQ3OTA2IDIgMiAyLjYyNDc5MDYgMiAzLjQwMDM5MDYgTCAyIDQuNDAwMzkwNiBDIDIgMy42MjQ3OTA2IDIuNjI0NzkwNiAzIDMuNDAwMzkwNiAzIEwgMjguNTk5NjA5IDMgQyAyOS4zNzUyMDkgMyAzMCAzLjYyNDc5MDYgMzAgNC40MDAzOTA2IEwgMzAgMy40MDAzOTA2IEMgMzAgMi42MjQ3OTA2IDI5LjM3NTIwOSAyIDI4LjU5OTYwOSAyIEwgMy40MDAzOTA2IDIgeiIvPgo8L3N2Zz4K",
+                "oc.keyword": "ksquares,ksquares",
+                "oc.launch": "ksquares.ksquares",
+                "oc.name": "kSquares",
+                "oc.path": "/usr/games/ksquares",
+                "oc.template": "abcdesktopio/oc.template.ubuntu.minimal.22.04",
+                "oc.type": "app"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 673175941,
+        "VirtualSize": 673175941,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/mnt/nvme0n1/var/lib/docker/overlay2/7c5a77e10e2f72f5755b3d536ed120a8568eb4830830f2f35f356b12f1067620/diff:/mnt/nvme0n1/var/lib/docker/overlay2/2461a04ae81094b1bd13b490c102c50aa9ad07077ddd00a910ad6ffcecd58013/diff:/mnt/nvme0n1/var/lib/docker/overlay2/b436433ac75e6237fc3d06dad283e7c60538ea94f9f16a486ffdc1f2cdc439ce/diff:/mnt/nvme0n1/var/lib/docker/overlay2/bfc65a23ace0e523aec964d2ffb9f1a975f0857381f11e6baa722c287f6c44fd/diff:/mnt/nvme0n1/var/lib/docker/overlay2/e81b01560d18ed6e3eb36df3f471985265c8a32a27421aa783d677136232cf89/diff:/mnt/nvme0n1/var/lib/docker/overlay2/598647d25b7199e9d3b99cb014d6bafbb224b927a54161d895596bea32b37493/diff:/mnt/nvme0n1/var/lib/docker/overlay2/b52adf0be86ebe353d0e68933c9d94085686dafb65b3f9405346587593a00a37/diff:/mnt/nvme0n1/var/lib/docker/overlay2/3266450f4d88559b42c6c4d1c563e1bf03d82490d0966e58e865dfe86322c9b6/diff:/mnt/nvme0n1/var/lib/docker/overlay2/7b201cb9672e208be73f080a9cc68b412425a7d86a5c48b82c9d0fc5de90d321/diff:/mnt/nvme0n1/var/lib/docker/overlay2/6ba5b46cbd07ec12da8c6251f742b947351b8f30c5a6b7baf1530f8dc749632a/diff:/mnt/nvme0n1/var/lib/docker/overlay2/1910c83b22ea1015d452fe3a21652d3fd6d1670ae66a0ba354b25fc25c7f15a6/diff:/mnt/nvme0n1/var/lib/docker/overlay2/afa8a3e75c90ce4359b44367c0c34dc768db698470b4e7deaaa133739b4752c6/diff:/mnt/nvme0n1/var/lib/docker/overlay2/3e2e97daa3c1670a9b5057e45417c173aaaad61fc45f296f69671b95064f78b8/diff:/mnt/nvme0n1/var/lib/docker/overlay2/afe5b4bca6e1c0b01767a34ca6b562eeff907b955b126ac3be35165ddb02dced/diff:/mnt/nvme0n1/var/lib/docker/overlay2/4b6c02a73606eda23282ff3ca2e8d0a5c24be6ab0bd7df6fd3ca5eca07afcd84/diff:/mnt/nvme0n1/var/lib/docker/overlay2/97a11268b79a7b5c731ca25792427eacc90f52732c07c92c0f147dbb7aab18de/diff:/mnt/nvme0n1/var/lib/docker/overlay2/76bcabed4bd12a4c16ad2f03e039268d01f100c4999c325308f08530811002ff/diff:/mnt/nvme0n1/var/lib/docker/overlay2/48dba82391dfe8e90448697b840e8a08251f3cc19800714048b497358bb075af/diff",
+                "MergedDir": "/mnt/nvme0n1/var/lib/docker/overlay2/c656eddad5f531b12afd470bcd615b7e8230f7486efbf0cac0cff1abb1f912cc/merged",
+                "UpperDir": "/mnt/nvme0n1/var/lib/docker/overlay2/c656eddad5f531b12afd470bcd615b7e8230f7486efbf0cac0cff1abb1f912cc/diff",
+                "WorkDir": "/mnt/nvme0n1/var/lib/docker/overlay2/c656eddad5f531b12afd470bcd615b7e8230f7486efbf0cac0cff1abb1f912cc/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:6515074984c6f8bb1b8a9962c8fb5f310fc85e70b04c88442a3939c026dbfad3",
+                "sha256:134b0b5e346d3c8dc30b6b5c1bff901dc4d5df9c28324476b8ac71ee94da8d38",
+                "sha256:e1dca08fd71aaef5eff0d0c499d1b56f4e8e01665bc2a65e43a64eb75cbd3351",
+                "sha256:a80d6d4918814d173971860b8c7b85ba1fa73a36cc8e7b682497a98af3bcc7ad",
+                "sha256:fe1cf25ce29ad3bc1dca010c8aa8fd8d174edd880412a88db7668ce05e998fb1",
+                "sha256:a906b8bf1afb31797de354d286f6663bcfc44df717741a832085621575702a47",
+                "sha256:f8b79fcc8be25c183b5b4dd40ce3a79078acec969173d2b1498ef7a76b15f65d",
+                "sha256:43bf3fa58d5316d3d398409024ddd84aef01e7eaf457b159bfdd8323dd02a19e",
+                "sha256:ad6ec51466b9778fd6e6a50f9205b3d6c2ac8bf8b4fff128c20ed07ac6fcd970",
+                "sha256:e4335c114ae4a05f2d741da38586b5bc86747259cba9f445d49685497ef9dc9c",
+                "sha256:9805f88ad9c0bb437adc7515fad272173083e4b1cf79bbd9f2ba4b1857dbd81f",
+                "sha256:0e1ef836e5abbd738998c8ca4161cb7c4828476900eabe6cc83afe0f2bbed956",
+                "sha256:ae71d8a10f4df7f6e2d8335689cb4370e12e097ee8d95ae9a407d33849c2df9e",
+                "sha256:e5e42382190223a6c59e769e0c330552b6b3923bd768c66aa54e5dd4923f4d06",
+                "sha256:66f78ccdb3983a70abd8fdf1d4844453a026f08d64b338cb803de4cda2490425",
+                "sha256:ee4b7e5646b683037c288e10faeb53a17b3ebec6c94c6e519603b16878f535ca",
+                "sha256:3d80a0d49de0eeb694909868b6feaedf45b3f494b8a167cfd4e2062a0cf01dce",
+                "sha256:59cd22074e4036204775c361bb92a6658bcbd46810192a03ba6c30e719f75ceb",
+                "sha256:8fc97a15c4ce567776971cd4d2431c36672d1f2eaa6be101711643256ba29c9c"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2023-01-05T18:56:59.908039887+01:00"
+        }
+    }
+]
