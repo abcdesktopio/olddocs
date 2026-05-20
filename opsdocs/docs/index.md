@@ -5,7 +5,7 @@ description: cloud native desktop complete workspace environment accessible from
 keywords: graphical application container desktopless kubernetes secure desktop container cloud native telecommuting remove virtual on demand vdi vnc digital workspace reduce attack surface byod bring your own device reduce attack surface novnc rdp citrix sovereign
 ---
 
-** [ I M P O R T A N T ] **  
+> **THIS IS THE OLD WEBSITE**  
 > You are reading the previous abcdesktop documentation website from release 1.0 to 4.3
 > To read the latest documentation website, please visit our web site [www.abcdesktop.io](https://www.abcdesktop.io/)
 
