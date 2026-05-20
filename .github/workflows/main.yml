@@ -31,7 +31,7 @@ jobs:
       - name: Clone sources
         run: |
           rm -rf ..?* .[!.]* *
-          git clone "https://github.com/abcdesktopio/docs.git" .
+          git clone "https://github.com/abcdesktopio/olddocs.git" .
 
       - name: dump vars 
         run: | 
@@ -69,9 +69,9 @@ jobs:
       #     git commit -m 'pushed from abcdesktopio/docs' -a
       #     git -c http.extraheader="Authorization: basic ${{ secrets.TOKEN }}" push
       #     
-      - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v1
-        with:
-          token: ${{ secrets.TOKEN_DISPATCH }}
-          repository: abcdesktopio/abcdesktopio.github.io
-          event-type: dispatch-from-docs
+      # - name: Repository Dispatch
+      #  uses: peter-evans/repository-dispatch@v1
+      #  with:
+      #    token: ${{ secrets.TOKEN_DISPATCH }}
+      #    repository: abcdesktopio/abcdesktopio.github.io
+      #    event-type: dispatch-from-docs
