@@ -1,0 +1,4483 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.abcdesktop.io/contribute/4.4/services/webmodules/">
+      
+      
+      
+      
+      <link rel="icon" href="/img/abcdesktop128x128.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>WebModules - abcdesktop Frontend Web Content - www.abcdesktop.io</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../css/custom-admonition.css">
+    
+      <link rel="stylesheet" href="../../../../css/drawio-darkmode.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-TN9YC7J01Z"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-TN9YC7J01Z",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-TN9YC7J01Z",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#webmodules-abcdesktop-frontend-web-content" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="www.abcdesktop.io" class="md-header__button md-logo" aria-label="www.abcdesktop.io" data-md-component="logo">
+      
+  <img src="/img/abcdesktop.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            www.abcdesktop.io
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              WebModules - abcdesktop Frontend Web Content
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/abcdesktopio/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    abcdesktopio/docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../requirements/" class="md-tabs__link">
+          
+  
+  
+  Quick Start
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../architecture/overview/" class="md-tabs__link">
+          
+  
+  
+  Advanced
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../overview/" class="md-tabs__link">
+          
+  
+  
+  Contribute
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../usecases/4.3/filter-traffic-per-group.md" class="md-tabs__link">
+          
+  
+  
+  Use cases
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../faq/faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://old.abcdesktop.com/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Previous docs
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="www.abcdesktop.io" class="md-nav__button md-logo" aria-label="www.abcdesktop.io" data-md-component="logo">
+      
+  <img src="/img/abcdesktop.svg" alt="logo">
+
+    </a>
+    www.abcdesktop.io
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/abcdesktopio/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    abcdesktopio/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Quick Start
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requirements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Install Core
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Install Core
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/script.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/helm.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Helm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Install Applications
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Install Applications
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/applicationoverview.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/install-applications.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/applicationwithconsole.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Console
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Uninstall
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Uninstall
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../uninstall/4.3/script.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../uninstall/4.3/helm.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Helm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Advanced
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../architecture/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Install On-Premises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Install On-Premises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/install/onpremises/kind.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kind
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/script.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kubernetes using script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/helm.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kubernetes using helm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/install/onpremises/minikube.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MiniKube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Install On Cloud
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Install On Cloud
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AWS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            AWS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/aws/aws.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install on Amazon AWS with Elastic Kubernetes Service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/aws/aws-loadbalancer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/aws/aws-nginx-ingress-controller.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AZURE
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            AZURE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/azure/azure.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install on Microsoft AZURE Kubernetes service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/azure/azure-loadbalancer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/azure/azure-nginx-ingress-controller.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Digital Ocean
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Digital Ocean
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/digitalocean/digitalocean.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install on Digital Ocean Kubernetes cluster
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/digitalocean/digitalocean-loadbalancer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/digitalocean/digitalocean-nginx-ingress-controller.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_4" id="__nav_3_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    GCP
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            GCP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/gcp/gcp.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install on Google GCP Kubernetes cluster
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/gcp/gcp-loadbalancer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/gcp/gcp-gke-ingress-controller.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a GKE ingress controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_5" id="__nav_3_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    OVH
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            OVH
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/ovh/ovh.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install on OVHcloud Kubernetes cluster
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/ovh/ovh-loadbalancer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/ovh/ovh-nginx-ingress-controller.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Applications
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Applications
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/applications/simplestapplicationxeyes.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build a sample xeyes from scratch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/applications/simplestapplicationxedit.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build a sample xedit with icon from scratch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/applications/simplestapplicationchromium.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build a sample chromium from scratch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/applications/templateapplication.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build an application from template
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/applications/templateanotherapplication.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build another application from template
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/configure/overview.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/configure/updateconfiguration.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Make changes in the abcdesktop configmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Authentication
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Authentication
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/authentication/overview.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/authentication/authexternal.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    External (OpenID)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_3_3" id="__nav_3_5_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Explicit (Directory service)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Explicit (Directory service)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/authentication/authexplicit-ldap.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LDAP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/authentication/authexplicit-activedirectory.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Active Directory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/authentication/authmetaexplicit.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Meta Directory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_3_4" id="__nav_3_5_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Implicit
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Implicit
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/authentication/authimplicit.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Anonymous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/authentication/logmein.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logmein SSL mutual authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/authentication/authentification-rules.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Labels and rules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_5" id="__nav_3_5_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Desktop
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Desktop
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/desktop/overview.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/desktop/executeclasses.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/desktop/pod.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pod
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/desktop/policies.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Policies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_6" id="__nav_3_5_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Storage
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            Storage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/storage/overview.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/storage/nfs.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/storage/hostpath.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HostPath
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/storage/cache.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cached Home subdirectories
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/storage/sharedvolumes.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Shared Volume
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/configure/garbagecollector.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Run the garbarge collector
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/configure/share_pod_GPU_access_to_ephemeral_container_with_abcdesktop.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Share GPU with ephemeral container
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/configure/welcome.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/configure/customfrontend.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Customize frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/configure/logging.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logging
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Security
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_1" id="__nav_3_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Controllers
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Controllers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/controllers/controllers.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_2" id="__nav_3_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Network Policy
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Network Policy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/networkpolicy/netpol.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Netpol
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/networkpolicy/install.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../advanced/4.3/networkpolicy/uninstall.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Uninstall
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Contribute
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Contribute
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Services
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/services/keygenerator.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Keygenerator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/services/mongo.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mongo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/services/console.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Console
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/services/pyos.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pyos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/services/router.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Router
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/services/webmodules.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WebModules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    User Pod
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            User Pod
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/userpod/graphical.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Graphical
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/userpod/sound.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sound
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/userpod/cups.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cups
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/userpod/filer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Filer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Use cases
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Use cases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../usecases/4.3/filter-traffic-per-group.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Filter pods traffic based on groups
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../usecases/4.3/configure-keycloak.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Keycloak configuration based on LDAP with group support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../usecases/4.3/multus-user-pod.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Add multiple networks interfaces to user pods using VLANs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../faq/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://old.abcdesktop.com/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Previous docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-specification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Specification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Specification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repository Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build Pipeline
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Build Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build Steps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make Targets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customization-transpileconfiguijson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customization: transpile/config/ui.json
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Customization: transpile/config/ui.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Tokens
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javascript-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript Modules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JavaScript Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entry-point-jsscriptsjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entry Point: js/scripts.js
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-client-jsodapiclientjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Client: js/odapiclient.js
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-jsauthjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication: js/auth.js
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-feature-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Feature Modules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internationalisation-i18n" class="md-nav__link">
+    <span class="md-ellipsis">
+      Internationalisation (i18n)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Assets
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Static Assets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#icons-and-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Icons and Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mime-type-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      MIME Type Icons
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Images
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#two-image-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two-Image Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build Arguments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Platforms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD Pipeline
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/abcdesktopio/docs/edit/main/opsdocs/docs/contribute/4.4/services/webmodules.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="webmodules-abcdesktop-frontend-web-content">WebModules - abcdesktop Frontend Web Content</h1>
+<h2 id="project-specification">Project Specification</h2>
+<h3 id="purpose">Purpose</h3>
+<p><code>webModules</code> is the frontend web content repository for the abcdesktop platform. It contains all the HTML, JavaScript, CSS (written in LESS), images, and supporting assets that make up the user-facing desktop interface. It is served by an nginx container (<code>oc.nginx</code>) and constitutes the client side that users interact with directly in their browser.</p>
+<hr />
+<h2 id="architecture-overview">Architecture Overview</h2>
+<div class="highlight"><pre><span></span><code>┌─────────────────┐
+│   User          │
+│   (Browser)     │
+└────────┬────────┘
+         │ HTTP /
+         ▼
+┌─────────────────────────────────────────────────────────┐
+│                    route (OpenResty)                    │
+│               proxy_pass → website upstream             │
+└────────┬────────────────────────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────────────────────────┐
+│              oc.nginx (nginx:alpine-slim)                │
+│   Serves static HTML/CSS/JS from /usr/share/nginx/html  │
+│   Built from webModules source via transpile pipeline   │
+└────────┬────────────────────────────────────────────────┘
+         │ fetch /API/*  (odApiClient)
+         ▼
+┌─────────────────────────────────────────────────────────┐
+│                   pyos (Python/CherryPy)                │
+│   Auth, desktop launch, application management, etc.    │
+└─────────────────────────────────────────────────────────┘
+</code></pre></div>
+<hr />
+<h2 id="repository-structure">Repository Structure</h2>
+<div class="highlight"><pre><span></span><code>webModules/
+├── Dockerfile              # Main image: builder → nginx:alpine-slim
+├── Dockerfile.builder      # Builder image: Ubuntu + Node.js + less
+├── Makefile                # Build orchestration (css, svg, ui, prod, dev, clean…)
+├── mkversion.sh            # Generates version.json at build time
+├── package.json            # npm dependencies (jQuery, Bootstrap, xterm, noVNC…)
+├── index.mustache.html     # Login/welcome page template (Mustache)
+├── description.mustache.html # App description page template
+│
+├── js/                     # JavaScript modules (ES modules + legacy)
+│   ├── scripts.js          # Main entry point — imports and wires all modules
+│   ├── odapiclient.js      # Low-level API client (all /API/* calls)
+│   ├── auth.js             # Authentication manager (managers &amp; providers)
+│   ├── launcher.js         # Desktop launch logic, JWT, refresh
+│   ├── welcomesystem.js    # Login screen UI controller
+│   ├── connectloader.js    # Desktop connection lifecycle
+│   ├── broadway-vnc.js     # VNC/Broadway display integration (noVNC)
+│   ├── appstore.js         # Application store UI
+│   ├── appSelector.js      # Application selector in taskbar
+│   ├── menu.js             # Top menu and taskbar
+│   ├── settings.js         # Settings panel (tabbed)
+│   ├── settings_tabs/      # Settings sub-modules (audio, printer, screen…)
+│   ├── clipboard.js        # Clipboard sync between browser and desktop
+│   ├── upload.js           # File upload to user&#39;s container
+│   ├── download.js         # File download from user&#39;s container
+│   ├── printer.js          # Printer management
+│   ├── printSystem.js      # Print job lifecycle
+│   ├── webshell.js         # Integrated xterm.js terminal
+│   ├── speaker/main.js     # Audio output (WebAudio/WebSocket)
+│   ├── microphone/main.js  # Microphone input (Web Audio Worklet)
+│   ├── screenRecord.js     # Screen recording
+│   ├── snapshot.js         # Desktop snapshot/screenshot
+│   ├── shareSystem.js      # Desktop sharing
+│   ├── gamepad.js          # Gamepad input forwarding
+│   ├── geolocation.js      # Browser geolocation forwarding
+│   ├── liveaudio.js        # Live audio streaming
+│   ├── broadcastsystem.js  # Desktop broadcast notifications
+│   ├── notificationsystem.js # In-page notification toasts
+│   ├── tipsinfo.js         # Contextual tips overlay
+│   ├── welcomeinfo.js      # Welcome/news information panel
+│   ├── system.js           # System-level events and state
+│   ├── taskstate.js        # Task/application state tracking
+│   ├── quickSupport.js     # Quick support / remote assistance
+│   ├── supportSystem.js    # Support system integration
+│   ├── logmein.js          # LogMeIn SSL mutual auth support
+│   ├── jwtstorage.js       # JWT token storage helpers
+│   ├── ocuaparser.js       # User-Agent parsing
+│   ├── speedtest_worker.js # Web Worker for speedtest endpoint
+│   ├── windowMessage.js    # Cross-window postMessage handling
+│   ├── desktopfeatures.js  # Feature detection and capability flags
+│   ├── languages.js        # i18n language loading
+│   ├── runtime.js          # Runtime configuration loader
+│   └── noVNC/              # Embedded noVNC library (VNC client)
+│
+├── css/                    # LESS stylesheets (compiled to CSS at build time)
+│   ├── base.less           # Base layout
+│   ├── globale.less        # Global imports
+│   ├── loginScreen.less    # Login/welcome screen
+│   ├── menu.less           # Top menu and taskbar
+│   ├── appstore.less       # Application store
+│   ├── settings.less       # Settings panel
+│   ├── settings_parts/     # Per-tab settings styles
+│   ├── upload.less         # File upload overlay
+│   ├── notification.less   # Notification toasts
+│   └── animations/         # CSS animation keyframes
+│
+├── i18n/                   # Internationalization
+│   ├── list.json           # Language code → file mapping
+│   ├── en-EN.mustache.json # English strings
+│   ├── fr-FR.mustache.json # French strings
+│   ├── ro-RO.mustache.json # Romanian strings
+│   └── zh-CN.mustache.json # Chinese (Simplified) strings (not ready yet)
+│
+├── img/                    # Static icons and images
+│   ├── top/                # Toolbar icons (SVG)
+│   ├── settings/           # Settings panel icons (SVG)
+│   ├── welcome/            # Auth provider logos (SVG)
+│   ├── appstore/           # App category icons (SVG)
+│   ├── error/              # Error state illustrations (SVG)
+│   └── abcdesktop*.ico     # Favicon variants
+│
+├── mimetypes/              # ~500 MIME type icons (SVG) for the file manager
+│
+├── tips/                   # Contextual tips templates (Mustache/SVG)
+│
+├── identification/         # Session error / &quot;cannot open session&quot; static site
+│
+└── transpile/              # Build toolchain
+    ├── index.js            # CLI transpiler (svg, css, ui, prod flags)
+    ├── config/
+    │   ├── ui.json         # Branding: name, colors, URLs
+    │   └── modules.json    # JS/CSS bundle definitions
+    ├── production-transformer.js # Prod bundle builder
+    └── native/             # Optional C++ N-API SVG replacer
+</code></pre></div>
+<hr />
+<h2 id="build-pipeline">Build Pipeline</h2>
+<p>The <code>transpile/index.js</code> tool drives the entire build. It is invoked by <code>make</code> with different targets.</p>
+<h3 id="build-steps">Build Steps</h3>
+<div class="highlight"><pre><span></span><code>make prod
+└── transpile/index.js --svg --css --user-interface --prod
+    │
+    ├── --svg      Replace @tertiary color token in all SVG files
+    │              (reads color from ui.json)
+    │
+    ├── --css      Compile all LESS files → CSS
+    │              Output: css/css-dist/
+    │
+    ├── --user-interface
+    │              Render Mustache templates into final HTML files
+    │              (index.html, app.html, description.html…)
+    │              Injects: project name, colors, i18n URLs, JS/CSS bundles
+    │
+    └── --prod     Bundle all JS modules into a minified app.js
+                   Inject into index.html instead of individual &lt;script&gt; tags
+</code></pre></div>
+<h3 id="make-targets">Make Targets</h3>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>make install</code></td>
+<td>Install npm dependencies (root, transpile, noVNC)</td>
+</tr>
+<tr>
+<td><code>make dev</code></td>
+<td>Build SVG + CSS + UI (no minification)</td>
+</tr>
+<tr>
+<td><code>make prod</code></td>
+<td>Full production build (minified JS, SVG, CSS, UI)</td>
+</tr>
+<tr>
+<td><code>make css</code></td>
+<td>Compile LESS → CSS only</td>
+</tr>
+<tr>
+<td><code>make svg</code></td>
+<td>Recolor SVG files with <code>@tertiary</code> from <code>ui.json</code></td>
+</tr>
+<tr>
+<td><code>make ui</code></td>
+<td>Render Mustache templates only</td>
+</tr>
+<tr>
+<td><code>make clean</code></td>
+<td>Remove all build artifacts (<code>css-dist/</code>, <code>index.html</code>, <code>app.js</code>…)</td>
+</tr>
+<tr>
+<td><code>make oc.nginx.builder</code></td>
+<td>Build the <code>oc.nginx.builder</code> Docker image</td>
+</tr>
+<tr>
+<td><code>make oc.nginx</code></td>
+<td>Build the final <code>oc.nginx</code> Docker image</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="customization-transpileconfiguijson">Customization: <code>transpile/config/ui.json</code></h2>
+<p><code>ui.json</code> is the <strong>branding configuration file</strong>. Editing it and rebuilding the image is the primary way to customise the frontend appearance.</p>
+<h3 id="structure">Structure</h3>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;abcdesktop.io&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;projectNameSplitedHTML&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;span id=&#39;projectNameSplitedStagea&#39;&gt;a&lt;/span&gt;...&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;colors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;urlcannotopensession&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/identification/site/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;urlusermanual&quot;</span><span class="p">:</span><span class="w">  </span><span class="s2">&quot;https://www.abcdesktop.io/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;urlusersupport&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.abcdesktop.io/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;urlopensourceproject&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.abcdesktop.io/&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="key-fields">Key Fields</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>Project name displayed on the login screen</td>
+</tr>
+<tr>
+<td><code>projectNameSplitedHTML</code></td>
+<td>HTML markup for the animated login logo (one <code>&lt;span&gt;</code> per letter/word)</td>
+</tr>
+<tr>
+<td><code>urlcannotopensession</code></td>
+<td>Redirect URL when a session cannot be opened</td>
+</tr>
+<tr>
+<td><code>urlusermanual</code></td>
+<td>Link to the user manual</td>
+</tr>
+<tr>
+<td><code>urlusersupport</code></td>
+<td>Link to user support</td>
+</tr>
+<tr>
+<td><code>urlopensourceproject</code></td>
+<td>Link to the open-source project page</td>
+</tr>
+</tbody>
+</table>
+<h3 id="color-tokens">Color Tokens</h3>
+<p>All LESS stylesheets and SVG icons use these color tokens. Changing them in <code>ui.json</code> and rebuilding recolors the entire UI:</p>
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@primary</code></td>
+<td><code>#474B55</code></td>
+<td>Main background / surface color</td>
+</tr>
+<tr>
+<td><code>@secondary</code></td>
+<td><code>#2D2D2D</code></td>
+<td>Secondary background</td>
+</tr>
+<tr>
+<td><code>@tertiary</code></td>
+<td><code>#65AECD</code></td>
+<td>Accent / highlight color (also applied to SVG icons)</td>
+</tr>
+<tr>
+<td><code>@quaternary</code></td>
+<td><code>#1E1E1E</code></td>
+<td>Deepest background</td>
+</tr>
+<tr>
+<td><code>@svgColor</code></td>
+<td><code>#FFFFFF</code></td>
+<td>Default SVG fill color</td>
+</tr>
+<tr>
+<td><code>@danger</code></td>
+<td><code>#CD3C14</code></td>
+<td>Error / destructive action color</td>
+</tr>
+<tr>
+<td><code>@success</code></td>
+<td><code>#32C832</code></td>
+<td>Success state color</td>
+</tr>
+<tr>
+<td><code>@info</code></td>
+<td><code>#527EDB</code></td>
+<td>Informational color</td>
+</tr>
+<tr>
+<td><code>@warning</code></td>
+<td><code>#FFCC00</code></td>
+<td>Warning state color</td>
+</tr>
+<tr>
+<td><code>@blue</code></td>
+<td><code>#4BB4E6</code></td>
+<td>Blue accent</td>
+</tr>
+<tr>
+<td><code>@green</code></td>
+<td><code>#50BE87</code></td>
+<td>Green accent</td>
+</tr>
+<tr>
+<td><code>@purple</code></td>
+<td><code>#A885D8</code></td>
+<td>Purple accent</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>More information about UI customization and how to apply your own look &amp; feel on <a href="https://abcdesktop.pepins.net/advanced/4.4/configure/customfrontend/">this page</a></p>
+</div>
+<hr />
+<h2 id="javascript-modules">JavaScript Modules</h2>
+<h3 id="entry-point-jsscriptsjs">Entry Point: <code>js/scripts.js</code></h3>
+<p><code>scripts.js</code> is the main ES module. It imports all other modules, builds the global <code>window.od</code> object, and wires up the application lifecycle on <code>DOMContentLoaded</code>.</p>
+<p>Key globals exposed on <code>window.od</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Global</th>
+<th>Source</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>window.od.broadway</code></td>
+<td><code>broadway-vnc.js</code></td>
+<td>VNC/Broadway display instance</td>
+</tr>
+<tr>
+<td><code>window.od.ocrun</code></td>
+<td><code>launcher.js</code></td>
+<td>Launch an application</td>
+</tr>
+<tr>
+<td><code>window.od.docker_logoff</code></td>
+<td><code>launcher.js</code></td>
+<td>Log off the current session</td>
+</tr>
+<tr>
+<td><code>window.od.connectLoader</code></td>
+<td><code>connectloader.js</code></td>
+<td>Desktop connection manager</td>
+</tr>
+<tr>
+<td><code>window.od.isTactile</code></td>
+<td>browser</td>
+<td><code>true</code> if touch device</td>
+</tr>
+<tr>
+<td><code>window.od.currentUser</code></td>
+<td><code>launcher.js</code></td>
+<td>Currently authenticated user object</td>
+</tr>
+</tbody>
+</table>
+<h3 id="api-client-jsodapiclientjs">API Client: <code>js/odapiclient.js</code></h3>
+<p><code>odApiClient</code> is a singleton that wraps all <code>/API/*</code> calls to <code>pyos</code>. It is organized into sub-clients:</p>
+<table>
+<thead>
+<tr>
+<th>Sub-client</th>
+<th>Namespace</th>
+<th>Example methods</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Authentication</td>
+<td><code>odApiClient.auth</code></td>
+<td><code>getauthconfig()</code>, <code>login()</code>, <code>logout()</code>, <code>refreshtoken()</code></td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td><code>odApiClient.desktop</code></td>
+<td><code>createdesktop()</code>, <code>getdesktop()</code>, <code>destroy()</code></td>
+</tr>
+<tr>
+<td>Applications</td>
+<td><code>odApiClient.app</code></td>
+<td><code>getlist()</code>, <code>launch()</code></td>
+</tr>
+<tr>
+<td>File system</td>
+<td><code>odApiClient.files</code></td>
+<td><code>list()</code>, <code>read()</code>, <code>write()</code></td>
+</tr>
+<tr>
+<td>Settings</td>
+<td><code>odApiClient.settings</code></td>
+<td><code>get()</code>, <code>set()</code></td>
+</tr>
+<tr>
+<td>System</td>
+<td><code>odApiClient.system</code></td>
+<td><code>info()</code>, <code>version()</code></td>
+</tr>
+</tbody>
+</table>
+<p>The JWT user token is automatically stored in and read from <code>localStorage</code> under the key <code>abcdesktop_jwt_user_token</code>. It is refreshed automatically when 85% of its TTL has elapsed.</p>
+<h3 id="authentication-jsauthjs">Authentication: <code>js/auth.js</code></h3>
+<p><code>AuthManager</code> handles the login screen. It supports multiple authentication <strong>managers</strong> (e.g., <code>explicit</code>, <code>implicit</code>, <code>external</code>), each with one or more <strong>providers</strong> (e.g., LDAP, Active Directory, Google, GitHub, anonymous). Managers and providers are dynamically instantiated from the pyos auth configuration returned by <code>/API/auth/getauthconfig</code>.</p>
+<h3 id="key-feature-modules">Key Feature Modules</h3>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>broadway-vnc.js</code></td>
+<td>Integrates noVNC (RFB) for X11 display streaming over WebSocket (<code>/websockify</code>)</td>
+</tr>
+<tr>
+<td><code>webshell.js</code></td>
+<td>Embeds an xterm.js terminal, connected to <code>/terminals</code> WebSocket</td>
+</tr>
+<tr>
+<td><code>speaker/main.js</code></td>
+<td>Receives audio from the desktop container via WebSocket (<code>/sound</code>) using Web Audio API</td>
+</tr>
+<tr>
+<td><code>microphone/main.js</code></td>
+<td>Captures browser microphone via AudioWorklet, streams to <code>/microphone</code> WebSocket</td>
+</tr>
+<tr>
+<td><code>gamepad.js</code></td>
+<td>Captures Gamepad API events and forwards them to <code>/gamepad</code> WebSocket</td>
+</tr>
+<tr>
+<td><code>clipboard.js</code></td>
+<td>Synchronises clipboard between browser and X11 session</td>
+</tr>
+<tr>
+<td><code>upload.js</code></td>
+<td>Drag-and-drop or dialog file upload to the user's home directory via <code>/filer</code></td>
+</tr>
+<tr>
+<td><code>download.js</code></td>
+<td>File download from the user's home directory via <code>/filer</code></td>
+</tr>
+<tr>
+<td><code>printer.js</code></td>
+<td>Lists and manages printers; integrates with CUPS via <code>/printerfiler</code></td>
+</tr>
+<tr>
+<td><code>screenRecord.js</code></td>
+<td>Records the desktop session using <code>jsmpeg-player</code> (MPEG-TS over WebSocket)</td>
+</tr>
+<tr>
+<td><code>snapshot.js</code></td>
+<td>Captures a screenshot of the desktop via <code>/snapshot</code></td>
+</tr>
+<tr>
+<td><code>shareSystem.js</code></td>
+<td>Generates a shareable desktop session link</td>
+</tr>
+<tr>
+<td><code>speedtest_worker.js</code></td>
+<td>Web Worker running a bandwidth test against the <code>/speedtest</code> endpoint</td>
+</tr>
+<tr>
+<td><code>geolocation.js</code></td>
+<td>Reads browser geolocation and forwards to the user session</td>
+</tr>
+<tr>
+<td><code>languages.js</code></td>
+<td>Detects browser locale, loads the matching i18n JSON from <code>/i18n/</code></td>
+</tr>
+<tr>
+<td><code>tipsinfo.js</code></td>
+<td>Renders contextual SVG/HTML tips overlays</td>
+</tr>
+<tr>
+<td><code>broadcastsystem.js</code></td>
+<td>Listens for admin broadcast messages via WebSocket (<code>/broadcast</code>)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="internationalisation-i18n">Internationalisation (i18n)</h2>
+<p>The i18n system uses Mustache templates. Language files are located in <code>i18n/</code> and selected at runtime based on the browser locale.</p>
+<p><strong>Supported locales:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Locale code</th>
+<th>File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>en</code>, <code>en-us</code>, <code>en-gb</code>, <code>en-en</code></td>
+<td><code>en-EN.json</code></td>
+</tr>
+<tr>
+<td><code>fr</code>, <code>fr-fr</code></td>
+<td><code>fr-FR.json</code></td>
+</tr>
+<tr>
+<td><code>ro</code>, <code>ro-ro</code></td>
+<td><code>ro-RO.json</code></td>
+</tr>
+</tbody>
+</table>
+<p>The default locale is <code>en</code>. Adding a new language requires creating a new <code>.mustache.json</code> file and registering it in <code>i18n/list.json</code>.</p>
+<hr />
+<h2 id="static-assets">Static Assets</h2>
+<h3 id="icons-and-images">Icons and Images</h3>
+<table>
+<thead>
+<tr>
+<th>Directory</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>img/top/</code></td>
+<td>~60 toolbar SVG icons (fullscreen, logout, clipboard, printer, mic, etc.)</td>
+</tr>
+<tr>
+<td><code>img/settings/</code></td>
+<td>~20 settings panel SVG icons</td>
+</tr>
+<tr>
+<td><code>img/welcome/</code></td>
+<td>Auth provider logos (Google, GitHub, LDAP, AD, Orange, anonymous…)</td>
+</tr>
+<tr>
+<td><code>img/appstore/</code></td>
+<td>App category icons (dev, doc, design, education, games, utils)</td>
+</tr>
+<tr>
+<td><code>img/error/</code></td>
+<td>Error state illustrations</td>
+</tr>
+<tr>
+<td><code>img/abcdesktop*.ico</code></td>
+<td>Favicons in multiple sizes (32, 48, 64, 128, 256 px)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mime-type-icons">MIME Type Icons</h3>
+<p>The <code>mimetypes/</code> directory contains over <strong>500 SVG icons</strong> mapping MIME types to visual representations. These are used by the file manager (<code>/filer</code>) to display file type icons.</p>
+<hr />
+<h2 id="docker-images">Docker Images</h2>
+<h3 id="two-image-strategy">Two-Image Strategy</h3>
+<p>webModules uses a <strong>two-image build strategy</strong> to keep the final image small:</p>
+<p><strong>1. Builder image</strong> (<code>Dockerfile.builder</code> → <code>oc.nginx.builder</code>):<br />
+Installs Ubuntu + Node.js + <code>less</code> + build tools. This image is reused across builds to avoid reinstalling dependencies on every push.</p>
+<p><strong>2. Runtime image</strong> (<code>Dockerfile</code> → <code>oc.nginx</code>):<br />
+Takes the builder image as base, copies the sources, runs <code>make prod</code>, then copies the resulting static files into a clean <code>nginx:alpine-slim</code> image.</p>
+<h3 id="build-arguments">Build Arguments</h3>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Used in</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BASE_IMAGE</code></td>
+<td>Both</td>
+<td>Base OS image (default: <code>ubuntu</code>)</td>
+</tr>
+<tr>
+<td><code>BASE_IMAGE_RELEASE</code></td>
+<td>Both</td>
+<td>Tag of the base image (e.g., <code>latest</code>, <code>3.3</code>)</td>
+</tr>
+<tr>
+<td><code>NODE_MAJOR</code></td>
+<td>Both</td>
+<td>Node.js major version (e.g., <code>20</code>, <code>24</code>)</td>
+</tr>
+<tr>
+<td><code>BRANCH</code></td>
+<td>Both</td>
+<td>Git branch name (embedded in <code>version.json</code>)</td>
+</tr>
+<tr>
+<td><code>TARGET</code></td>
+<td><code>Dockerfile</code></td>
+<td>Build mode: <code>dev</code> or <code>prod</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="supported-platforms">Supported Platforms</h3>
+<p>Both images are built for <code>linux/amd64</code> and <code>linux/arm64</code>.</p>
+<hr />
+<h2 id="cicd-pipeline">CI/CD Pipeline</h2>
+<p>The GitHub Actions workflow (<code>.github/workflows/main.yml</code>) runs on every push, pull request, and twice daily (cron):</p>
+<ol>
+<li>Build and push <code>oc.nginx.builder:&lt;branch&gt;</code> (multi-arch) to <code>ghcr.io</code></li>
+<li>Build and push <code>oc.nginx:&lt;branch&gt;</code> (multi-arch, <code>TARGET=prod</code>) to <code>ghcr.io</code></li>
+<li>Run <strong>Trivy</strong> vulnerability scanner on the produced image (CRITICAL and HIGH severities)</li>
+</ol>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.top", "navigation.tabs", "navigation.instant", "content.action.edit", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../../../js/tabbed-toc.js"></script>
+      
+        <script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+      
+        <script src="../../../../js/drawio-reload.js"></script>
+      
+    
+  </body>
+</html>

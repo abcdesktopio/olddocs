@@ -1,0 +1,1754 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://www.abcdesktop.io/contribute/4.4/services/mongo/" rel="canonical"/>
+<link href="/img/abcdesktop128x128.ico" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.15" name="generator"/>
+<title>MongoDB - www.abcdesktop.io</title>
+<link href="../../../../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../../css/custom-admonition.css" rel="stylesheet"/>
+<link href="../../../../css/drawio-darkmode.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-TN9YC7J01Z"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-TN9YC7J01Z",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-TN9YC7J01Z",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+</head>
+<body dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#mongodb">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="www.abcdesktop.io" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="www.abcdesktop.io">
+<img alt="logo" src="/img/abcdesktop.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            www.abcdesktop.io
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              MongoDB
+            
+          </span>
+</div>
+</div>
+</div>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/abcdesktopio/docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    abcdesktopio/docs
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../..">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../../requirements/">
+          
+  
+  
+  Quick Start
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../../architecture/overview/">
+          
+  
+  
+  Advanced
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../overview/">
+          
+  
+  
+  Contribute
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../../usecases/4.3/filter-traffic-per-group.md">
+          
+  
+  
+  Use cases
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../../faq/faq/">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="https://old.abcdesktop.com/">
+        
+  
+  
+    
+  
+  Previous docs
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="www.abcdesktop.io" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="www.abcdesktop.io">
+<img alt="logo" src="/img/abcdesktop.svg"/>
+</a>
+    www.abcdesktop.io
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/abcdesktopio/docs" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    abcdesktopio/docs
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../..">
+<span class="md-ellipsis">
+    Home
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Quick Start
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../requirements/">
+<span class="md-ellipsis">
+    Requirements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Install Core
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Install Core
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../install/4.3/script.md">
+<span class="md-ellipsis">
+    Script
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../install/4.3/helm.md">
+<span class="md-ellipsis">
+    Helm
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Install Applications
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Install Applications
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../install/4.3/applicationoverview.md">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../install/4.3/install-applications.md">
+<span class="md-ellipsis">
+    Script
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../install/4.3/applicationwithconsole.md">
+<span class="md-ellipsis">
+    Console
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Uninstall
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+            Uninstall
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../uninstall/4.3/script.md">
+<span class="md-ellipsis">
+    Script
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../uninstall/4.3/helm.md">
+<span class="md-ellipsis">
+    Helm
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Advanced
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Advanced
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Architecture
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../architecture/overview/">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Install On-Premises
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+            Install On-Premises
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/install/onpremises/kind.md">
+<span class="md-ellipsis">
+    Kind
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../install/4.3/script.md">
+<span class="md-ellipsis">
+    Kubernetes using script
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../install/4.3/helm.md">
+<span class="md-ellipsis">
+    Kubernetes using helm
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/install/onpremises/minikube.md">
+<span class="md-ellipsis">
+    MiniKube
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Install On Cloud
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+            Install On Cloud
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+<span class="md-ellipsis">
+    AWS
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_1">
+<span class="md-nav__icon md-icon"></span>
+            AWS
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/aws/aws.md">
+<span class="md-ellipsis">
+    Install on Amazon AWS with Elastic Kubernetes Service
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/aws/aws-loadbalancer.md">
+<span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/aws/aws-nginx-ingress-controller.md">
+<span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+<span class="md-ellipsis">
+    AZURE
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_2">
+<span class="md-nav__icon md-icon"></span>
+            AZURE
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/azure/azure.md">
+<span class="md-ellipsis">
+    Install on Microsoft AZURE Kubernetes service
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/azure/azure-loadbalancer.md">
+<span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/azure/azure-nginx-ingress-controller.md">
+<span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Digital Ocean
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_3">
+<span class="md-nav__icon md-icon"></span>
+            Digital Ocean
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/digitalocean/digitalocean.md">
+<span class="md-ellipsis">
+    Install on Digital Ocean Kubernetes cluster
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/digitalocean/digitalocean-loadbalancer.md">
+<span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/digitalocean/digitalocean-nginx-ingress-controller.md">
+<span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_4" id="__nav_3_3_4_label" tabindex="0">
+<span class="md-ellipsis">
+    GCP
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_4">
+<span class="md-nav__icon md-icon"></span>
+            GCP
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/gcp/gcp.md">
+<span class="md-ellipsis">
+    Install on Google GCP Kubernetes cluster
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/gcp/gcp-loadbalancer.md">
+<span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/gcp/gcp-gke-ingress-controller.md">
+<span class="md-ellipsis">
+    Expose using a GKE ingress controller
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3_5" id="__nav_3_3_5_label" tabindex="0">
+<span class="md-ellipsis">
+    OVH
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_5_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_5">
+<span class="md-nav__icon md-icon"></span>
+            OVH
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/ovh/ovh.md">
+<span class="md-ellipsis">
+    Install on OVHcloud Kubernetes cluster
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/ovh/ovh-loadbalancer.md">
+<span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../cloudproviders/4.3/ovh/ovh-nginx-ingress-controller.md">
+<span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Applications
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+            Applications
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/applications/simplestapplicationxeyes.md">
+<span class="md-ellipsis">
+    Build a sample xeyes from scratch
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/applications/simplestapplicationxedit.md">
+<span class="md-ellipsis">
+    Build a sample xedit with icon from scratch
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/applications/simplestapplicationchromium.md">
+<span class="md-ellipsis">
+    Build a sample chromium from scratch
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/applications/templateapplication.md">
+<span class="md-ellipsis">
+    Build an application from template
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/applications/templateanotherapplication.md">
+<span class="md-ellipsis">
+    Build another application from template
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Configuration
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+            Configuration
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/configure/overview.md">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/configure/updateconfiguration.md">
+<span class="md-ellipsis">
+    Make changes in the abcdesktop configmap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Authentication
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_3">
+<span class="md-nav__icon md-icon"></span>
+            Authentication
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/authentication/overview.md">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/authentication/authexternal.md">
+<span class="md-ellipsis">
+    External (OpenID)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_3_3" id="__nav_3_5_3_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Explicit (Directory service)
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_3_3_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_5_3_3">
+<span class="md-nav__icon md-icon"></span>
+            Explicit (Directory service)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/authentication/authexplicit-ldap.md">
+<span class="md-ellipsis">
+    LDAP
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/authentication/authexplicit-activedirectory.md">
+<span class="md-ellipsis">
+    Active Directory
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/authentication/authmetaexplicit.md">
+<span class="md-ellipsis">
+    Meta Directory
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_3_4" id="__nav_3_5_3_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Implicit
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_3_4_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_5_3_4">
+<span class="md-nav__icon md-icon"></span>
+            Implicit
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/authentication/authimplicit.md">
+<span class="md-ellipsis">
+    Anonymous
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/authentication/logmein.md">
+<span class="md-ellipsis">
+    Logmein SSL mutual authentication
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/authentication/authentification-rules.md">
+<span class="md-ellipsis">
+    Labels and rules
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_5" id="__nav_3_5_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Desktop
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_5_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_5">
+<span class="md-nav__icon md-icon"></span>
+            Desktop
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/desktop/overview.md">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/desktop/executeclasses.md">
+<span class="md-ellipsis">
+    Resources
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/desktop/pod.md">
+<span class="md-ellipsis">
+    Pod
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/desktop/policies.md">
+<span class="md-ellipsis">
+    Policies
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5_6" id="__nav_3_5_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Storage
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_6_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_5_6">
+<span class="md-nav__icon md-icon"></span>
+            Storage
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/storage/overview.md">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/storage/nfs.md">
+<span class="md-ellipsis">
+    NFS
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/storage/hostpath.md">
+<span class="md-ellipsis">
+    HostPath
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/storage/cache.md">
+<span class="md-ellipsis">
+    Cached Home subdirectories
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/storage/sharedvolumes.md">
+<span class="md-ellipsis">
+    Shared Volume
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/configure/garbagecollector.md">
+<span class="md-ellipsis">
+    Run the garbarge collector
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/configure/share_pod_GPU_access_to_ephemeral_container_with_abcdesktop.md">
+<span class="md-ellipsis">
+    Share GPU with ephemeral container
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/configure/welcome.md">
+<span class="md-ellipsis">
+    Welcome information
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/configure/customfrontend.md">
+<span class="md-ellipsis">
+    Customize frontend
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/configure/logging.md">
+<span class="md-ellipsis">
+    Logging
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Security
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_6">
+<span class="md-nav__icon md-icon"></span>
+            Security
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_6_1" id="__nav_3_6_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Controllers
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_6_1">
+<span class="md-nav__icon md-icon"></span>
+            Controllers
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/controllers/controllers.md">
+<span class="md-ellipsis">
+    Configuration
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_6_2" id="__nav_3_6_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Network Policy
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_6_2">
+<span class="md-nav__icon md-icon"></span>
+            Network Policy
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/networkpolicy/netpol.md">
+<span class="md-ellipsis">
+    Netpol
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/networkpolicy/install.md">
+<span class="md-ellipsis">
+    Install
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../advanced/4.3/networkpolicy/uninstall.md">
+<span class="md-ellipsis">
+    Uninstall
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Contribute
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Contribute
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../overview/">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Services
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Services
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../4.3/services/keygenerator.md">
+<span class="md-ellipsis">
+    Keygenerator
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../4.3/services/mongo.md">
+<span class="md-ellipsis">
+    Mongo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../4.3/services/console.md">
+<span class="md-ellipsis">
+    Console
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../4.3/services/pyos.md">
+<span class="md-ellipsis">
+    Pyos
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../4.3/services/router.md">
+<span class="md-ellipsis">
+    Router
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../4.3/services/webmodules.md">
+<span class="md-ellipsis">
+    WebModules
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+<span class="md-ellipsis">
+    User Pod
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+            User Pod
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../4.3/userpod/graphical.md">
+<span class="md-ellipsis">
+    Graphical
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../4.3/userpod/sound.md">
+<span class="md-ellipsis">
+    Sound
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../4.3/userpod/cups.md">
+<span class="md-ellipsis">
+    Cups
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../4.3/userpod/filer.md">
+<span class="md-ellipsis">
+    Filer
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Use cases
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Use cases
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../usecases/4.3/filter-traffic-per-group.md">
+<span class="md-ellipsis">
+    Filter pods traffic based on groups
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../usecases/4.3/configure-keycloak.md">
+<span class="md-ellipsis">
+    Keycloak configuration based on LDAP with group support
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../usecases/4.3/multus-user-pod.md">
+<span class="md-ellipsis">
+    Add multiple networks interfaces to user pods using VLANs
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../faq/faq/">
+<span class="md-ellipsis">
+    FAQ
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://old.abcdesktop.com/">
+<span class="md-ellipsis">
+    Previous docs
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview">
+<span class="md-ellipsis">
+      Overview
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#kubernetes-resource-architecture">
+<span class="md-ellipsis">
+      Kubernetes Resource Architecture
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mongodb-related-kubernetes-resources">
+<span class="md-ellipsis">
+      MongoDB-related Kubernetes Resources
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mongodb-startup-sequence">
+<span class="md-ellipsis">
+      MongoDB Startup Sequence
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#security-and-authentication">
+<span class="md-ellipsis">
+      Security and Authentication
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#databases-and-users">
+<span class="md-ellipsis">
+      Databases and Users
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#connection-flow-from-pyos">
+<span class="md-ellipsis">
+      Connection Flow from pyos
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#volumes-and-data-persistence">
+<span class="md-ellipsis">
+      Volumes and Data Persistence
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#allocated-resources">
+<span class="md-ellipsis">
+      Allocated Resources
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#observations-and-recommendations">
+<span class="md-ellipsis">
+      Observations and Recommendations
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<nav class="md-tags">
+<span class="md-tag">mongodb</span>
+</nav>
+<a class="md-content__button md-icon" href="https://github.com/abcdesktopio/docs/edit/main/opsdocs/docs/contribute/4.4/services/mongo.md" rel="edit" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+</a>
+<h1 id="mongodb">MongoDB</h1>
+<h2 id="overview">Overview</h2>
+<p>In abcdesktop, MongoDB serves as the <strong>primary database</strong> for the control plane (<code>pyos</code>). It stores all persistent application data: user profiles, login history, application inventory, desktop session states, and fail2ban data.</p>
+<p>MongoDB is deployed as a <strong>ReplicaSet</strong> (name: <code>rs0</code>), with <strong>authentication enabled</strong> and inter-member communication secured by a <strong>keyfile</strong>.</p>
+<p><div class="mxgraph" data-mxgraph='{"toolbar-position": "bottom", "toolbar-nohide": "0", "tooltips": "1", "border": 5, "resize": "1", "edit": "_blank", "lightbox": "1", "toolbar": "pages tags zoom layers lightbox", "xml": "&lt;mxfile host=\"65bd71144e\"&gt;\n    &lt;diagram id=\"abcdesktop-arch\" name=\"abcdesktop Architecture\"&gt;\n        &lt;mxGraphModel dx=\"1020\" dy=\"608\" grid=\"0\" gridSize=\"10\" guides=\"1\" tooltips=\"1\" connect=\"1\" arrows=\"1\" fold=\"1\" page=\"0\" pageScale=\"1\" pageWidth=\"900\" pageHeight=\"600\" math=\"0\" shadow=\"0\"&gt;\n            &lt;root&gt;\n                &lt;mxCell id=\"0\"/&gt;\n                &lt;mxCell id=\"1\" parent=\"0\"/&gt;\n                &lt;mxCell id=\"browser\" value=\"User browser\" style=\"ellipse;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=13;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"350\" y=\"30\" width=\"180\" height=\"50\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"router\" value=\"router-od&amp;#10;nginx / OpenResty\" style=\"rounded=1;arcSize=8;fillColor=#FAEEDA;strokeColor=#BA7517;fontColor=#633806;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"320\" y=\"140\" width=\"240\" height=\"56\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"pyos\" value=\"pyos-od&amp;#10;Python control plane\" style=\"rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"320\" y=\"260\" width=\"240\" height=\"56\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"mongo\" value=\"mongodb-od&amp;#10;StatefulSet \u00b7 rs0\" style=\"rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"100\" y=\"380\" width=\"220\" height=\"56\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"memcached\" value=\"memcached-od&amp;#10;Session cache\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"560\" y=\"380\" width=\"220\" height=\"56\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"db-container\" value=\"Databases\" style=\"swimlane;startSize=28;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=12;fontStyle=1;rounded=1;arcSize=4;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"61.75\" y=\"495\" width=\"296.5\" height=\"114\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"db1\" value=\"image\" style=\"rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;\" parent=\"db-container\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"12\" y=\"36\" width=\"80\" height=\"32\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"db2\" value=\"fail2ban\" style=\"rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;\" parent=\"db-container\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"104\" y=\"36\" width=\"80\" height=\"32\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"db3\" value=\"loginHistory\" style=\"rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;\" parent=\"db-container\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"196\" y=\"36\" width=\"88\" height=\"32\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"db4\" value=\"applications\" style=\"rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;\" parent=\"db-container\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"12\" y=\"75\" width=\"88\" height=\"32\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"db5\" value=\"profiles\" style=\"rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;\" parent=\"db-container\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"112\" y=\"75\" width=\"72\" height=\"32\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"db6\" value=\"desktop\" style=\"rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;\" parent=\"db-container\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"196\" y=\"75\" width=\"72\" height=\"32\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e1\" value=\"HTTPS\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#5F5E5A;\" parent=\"1\" source=\"browser\" target=\"router\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e2\" value=\"REST API\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#5F5E5A;\" parent=\"1\" source=\"router\" target=\"pyos\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e3\" value=\"queries\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#5F5E5A;\" parent=\"1\" source=\"pyos\" target=\"mongo\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e4\" value=\"sessions\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#5F5E5A;\" parent=\"1\" source=\"pyos\" target=\"memcached\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e5\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;\" parent=\"1\" source=\"mongo\" target=\"db-container\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n            &lt;/root&gt;\n        &lt;/mxGraphModel&gt;\n    &lt;/diagram&gt;\n&lt;/mxfile&gt;"}' style="max-width:100%;border:1px solid transparent;"></div></p>
+<hr/>
+<h2 id="kubernetes-resource-architecture">Kubernetes Resource Architecture</h2>
+<p>The following diagram shows all Kubernetes resources involved in the MongoDB deployment:</p>
+<p><div class="mxgraph" data-mxgraph='{"toolbar-position": "bottom", "toolbar-nohide": "0", "tooltips": "1", "border": 5, "resize": "1", "edit": "_blank", "lightbox": "1", "toolbar": "pages tags zoom layers lightbox", "xml": "&lt;mxfile host=\"65bd71144e\"&gt;\n    &lt;diagram id=\"mongodb-statefulset\" name=\"MongoDB StatefulSet Overview\"&gt;\n        &lt;mxGraphModel dx=\"1100\" dy=\"598\" grid=\"0\" gridSize=\"10\" guides=\"1\" tooltips=\"1\" connect=\"1\" arrows=\"1\" fold=\"1\" page=\"0\" pageScale=\"1\" pageWidth=\"1100\" pageHeight=\"700\" math=\"0\" shadow=\"0\"&gt;\n            &lt;root&gt;\n                &lt;mxCell id=\"0\"/&gt;\n                &lt;mxCell id=\"1\" parent=\"0\"/&gt;\n                &lt;mxCell id=\"label-sources\" value=\"Config sources\" style=\"text;html=1;fontSize=11;fontColor=#888780;align=left;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"50\" y=\"30\" width=\"120\" height=\"20\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"secret-mongo\" value=\"secret-mongodb&amp;#10;credentials\" style=\"rounded=1;arcSize=8;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=12;fontStyle=1;whiteSpace=wrap;spacingTop=4;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"294\" y=\"55\" width=\"190\" height=\"60\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"secret-keyfile\" value=\"abcdesktop-mongod-keyfile&amp;#10;ReplicaSet inter-member key\" style=\"rounded=1;arcSize=8;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=12;fontStyle=1;whiteSpace=wrap;spacingTop=4;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"47\" y=\"52\" width=\"230\" height=\"60\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"configmap\" value=\"configmap-mongodb&amp;#10;init-container.sh \u00b7 init.js \u00b7 init-replica.sh \u00b7 mongod.conf\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;whiteSpace=wrap;spacingTop=4;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"510\" y=\"55\" width=\"280\" height=\"60\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"statefulset-band\" value=\"StatefulSet: mongodb-od\" style=\"swimlane;startSize=28;fillColor=none;strokeColor=#B4B2A9;fontColor=#888780;fontSize=11;fontStyle=0;rounded=1;arcSize=3;dashed=1;dashPattern=6 4;swimlaneLine=0;align=left;spacingLeft=8;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"50\" y=\"183\" width=\"740\" height=\"229\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"init-container\" value=\"InitContainer&amp;#10;prepare-config\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"statefulset-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"30\" y=\"40\" width=\"180\" height=\"60\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"mongodb-container\" value=\"mongodb&amp;#10;mongo:safe8.0\" style=\"rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"statefulset-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"280\" y=\"40\" width=\"180\" height=\"60\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"replica-manager\" value=\"replica-manager&amp;#10;sidecar \u00b7 mongo:safe8.0\" style=\"rounded=1;arcSize=8;fillColor=#FAEEDA;strokeColor=#BA7517;fontColor=#633806;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"statefulset-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"530\" y=\"40\" width=\"180\" height=\"60\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e-sidecar-mongo\" value=\"init-replica.sh\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#BA7517;strokeColor=#BA7517;fontStyle=1;\" parent=\"statefulset-band\" source=\"replica-manager\" target=\"mongodb-container\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"label-volumes\" value=\"Volumes (emptyDir)\" style=\"text;html=1;fontSize=11;fontColor=#888780;align=left;\" parent=\"statefulset-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"30\" y=\"135\" width=\"160\" height=\"20\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"vol-prepared\" value=\"prepared-config&amp;#10;emptyDir\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"statefulset-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"30\" y=\"158\" width=\"180\" height=\"56\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"vol-data\" value=\"data&amp;#10;emptyDir \u00b7 /data/db\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"statefulset-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"280\" y=\"158\" width=\"180\" height=\"56\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"vol-logs\" value=\"logs&amp;#10;emptyDir \u00b7 /var/log/mongodb\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"statefulset-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"530\" y=\"158\" width=\"180\" height=\"56\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e-ic-prep\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#5F5E5A;\" parent=\"statefulset-band\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;mxPoint x=\"138\" y=\"100\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"138\" y=\"158\" as=\"targetPoint\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e-mongo-prep\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#5F5E5A;dashed=1;dashPattern=4 3;\" parent=\"statefulset-band\" source=\"mongodb-container\" target=\"vol-prepared\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"332\" y=\"126\"/&gt;\n                            &lt;mxPoint x=\"163\" y=\"126\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e-mongo-data\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#5F5E5A;\" parent=\"statefulset-band\" source=\"mongodb-container\" target=\"vol-data\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e-mongo-logs\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#5F5E5A;\" parent=\"statefulset-band\" source=\"mongodb-container\" target=\"vol-logs\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"410\" y=\"129\"/&gt;\n                            &lt;mxPoint x=\"620\" y=\"129\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e-s1-ic\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#534AB7;strokeWidth=1.5;exitX=0.25;exitY=1;exitDx=0;exitDy=0;\" parent=\"1\" source=\"secret-mongo\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;mxPoint x=\"118.24030303030301\" y=\"118\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"210\" y=\"223\" as=\"targetPoint\"/&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"342\" y=\"170\"/&gt;\n                            &lt;mxPoint x=\"210\" y=\"170\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e-s1-mc\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#534AB7;strokeWidth=1.5;exitX=0.656;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;\" parent=\"1\" source=\"secret-mongo\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;mxPoint x=\"420.49\" y=\"115\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"419.50694915254223\" y=\"222\" as=\"targetPoint\"/&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"420\" y=\"115\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e-s2-ic\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#534AB7;strokeWidth=1.5;dashed=1;dashPattern=4 3;entryX=0.593;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;\" parent=\"1\" target=\"init-container\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;mxPoint x=\"187\" y=\"114\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"187\" y=\"222\" as=\"targetPoint\"/&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"187\" y=\"111\"/&gt;\n                            &lt;mxPoint x=\"187\" y=\"111\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e-cm-mc\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#0F6E56;strokeWidth=1.5;\" parent=\"1\" source=\"configmap\" target=\"mongodb-container\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"620\" y=\"207\"/&gt;\n                            &lt;mxPoint x=\"460\" y=\"207\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e-cm-rm\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#0F6E56;strokeWidth=1.5;\" parent=\"1\" source=\"configmap\" target=\"replica-manager\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"670\" y=\"130\"/&gt;\n                            &lt;mxPoint x=\"670\" y=\"130\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"legend\" value=\"\" style=\"swimlane;startSize=0;fillColor=none;strokeColor=#B4B2A9;rounded=1;arcSize=4;fontSize=11;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"50\" y=\"422\" width=\"740\" height=\"60\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"leg1\" value=\"\" style=\"endArrow=block;endFill=1;strokeColor=#534AB7;strokeWidth=1.5;\" parent=\"legend\" edge=\"1\"&gt;\n                    &lt;mxGeometry x=\"20\" y=\"30\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"/&gt;\n                        &lt;mxPoint x=\"20\" y=\"30\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"70\" y=\"30\" as=\"targetPoint\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"leg1-label\" value=\"Secret injection\" style=\"text;fontSize=11;fontColor=#534AB7;\" parent=\"legend\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"76\" y=\"20\" width=\"120\" height=\"20\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"leg2\" value=\"\" style=\"endArrow=block;endFill=1;strokeColor=#0F6E56;strokeWidth=1.5;\" parent=\"legend\" edge=\"1\"&gt;\n                    &lt;mxGeometry x=\"220\" y=\"30\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"/&gt;\n                        &lt;mxPoint x=\"220\" y=\"30\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"270\" y=\"30\" as=\"targetPoint\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"leg2-label\" value=\"ConfigMap injection\" style=\"text;fontSize=11;fontColor=#0F6E56;\" parent=\"legend\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"276\" y=\"20\" width=\"140\" height=\"20\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"leg3\" value=\"\" style=\"endArrow=block;endFill=1;strokeColor=#5F5E5A;strokeWidth=1;dashed=1;dashPattern=4 3;\" parent=\"legend\" edge=\"1\"&gt;\n                    &lt;mxGeometry x=\"440\" y=\"30\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"/&gt;\n                        &lt;mxPoint x=\"440\" y=\"30\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"490\" y=\"30\" as=\"targetPoint\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"leg3-label\" value=\"Volume mount (shared)\" style=\"text;fontSize=11;fontColor=#5F5E5A;\" parent=\"legend\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"496\" y=\"20\" width=\"160\" height=\"20\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"leg4\" value=\"\" style=\"endArrow=block;endFill=1;strokeColor=#5F5E5A;strokeWidth=1;\" parent=\"legend\" edge=\"1\"&gt;\n                    &lt;mxGeometry x=\"440\" y=\"45\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"/&gt;\n                        &lt;mxPoint x=\"440\" y=\"45\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"490\" y=\"45\" as=\"targetPoint\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"leg4-label\" value=\"Volume mount (exclusive)\" style=\"text;fontSize=11;fontColor=#5F5E5A;\" parent=\"legend\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"496\" y=\"36\" width=\"180\" height=\"20\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e-cm-ic\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#0F6E56;strokeWidth=1.5;exitX=0.287;exitY=1.015;exitDx=0;exitDy=0;exitPerimeter=0;\" parent=\"1\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;mxPoint x=\"555.3600000000001\" y=\"115.00000000000009\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"236\" y=\"222\" as=\"targetPoint\"/&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"555\" y=\"122\"/&gt;\n                            &lt;mxPoint x=\"555\" y=\"196\"/&gt;\n                            &lt;mxPoint x=\"199\" y=\"196\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n            &lt;/root&gt;\n        &lt;/mxGraphModel&gt;\n    &lt;/diagram&gt;\n&lt;/mxfile&gt;"}' style="max-width:100%;border:1px solid transparent;"></div></p>
+<hr/>
+<h2 id="mongodb-related-kubernetes-resources">MongoDB-related Kubernetes Resources</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Secret <code>secret-mongodb</code></label><label for="__tabbed_1_2">ConfigMap <code>configmap-mongodb-scripts</code></label><label for="__tabbed_1_3">StatefulSet <code>mongodb-od</code></label><label for="__tabbed_1_4">Service <code>mongodb</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>This <code>Opaque</code> secret holds <strong>all credentials</strong> required for MongoDB initialization and access.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value (from manifest)</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MONGO_ROOT_USERNAME</code></td>
+<td><code>root</code></td>
+<td>MongoDB superuser</td>
+</tr>
+<tr>
+<td><code>MONGO_ROOT_PASSWORD</code></td>
+<td><code>Oge5iQw9dGBvRDd</code></td>
+<td>Root password</td>
+</tr>
+<tr>
+<td><code>MONGO_USERNAME</code></td>
+<td><code>pyos</code></td>
+<td>Application user</td>
+</tr>
+<tr>
+<td><code>MONGO_PASSWORD</code></td>
+<td><code>Az4MeYWUjZDg4Zjhk</code></td>
+<td>Application user password</td>
+</tr>
+<tr>
+<td><code>MONGO_USERS_LIST</code></td>
+<td><code>pyos:readWrite:Az4MeYWUjZDg4Zjhk</code></td>
+<td><code>user:role:password</code> list</td>
+</tr>
+<tr>
+<td><code>MONGO_DBS_LIST</code></td>
+<td><code>image,fail2ban,loginHistory,applications,profiles,desktop</code></td>
+<td>Databases to initialize</td>
+</tr>
+<tr>
+<td><code>MONGODB_URL</code></td>
+<td><code>mongodb://pyos:...@mongodb</code></td>
+<td>Connection URL for pyos</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Security note</strong>: passwords are stored in plaintext in the manifest (<code>stringData</code>). In production, a secrets manager (Vault, Sealed Secrets, External Secrets Operator, etc.) is strongly recommended.</p>
+</blockquote>
+<p>The secret is mounted inside the MongoDB pod with the following path mapping:</p>
+<p><div class="mxgraph" data-mxgraph='{"toolbar-position": "bottom", "toolbar-nohide": "0", "tooltips": "1", "border": 5, "resize": "1", "edit": "_blank", "lightbox": "1", "toolbar": "pages tags zoom layers lightbox", "xml": "&lt;mxfile host=\"65bd71144e\"&gt;\n    &lt;diagram id=\"secret-mongodb-mounts\" name=\"secret-mongodb Volume Mounts\"&gt;\n        &lt;mxGraphModel dx=\"1020\" dy=\"718\" grid=\"0\" gridSize=\"10\" guides=\"1\" tooltips=\"1\" connect=\"1\" arrows=\"1\" fold=\"1\" page=\"0\" pageScale=\"1\" pageWidth=\"900\" pageHeight=\"500\" math=\"0\" shadow=\"0\"&gt;\n            &lt;root&gt;\n                &lt;mxCell id=\"0\"/&gt;\n                &lt;mxCell id=\"1\" parent=\"0\"/&gt;\n                &lt;mxCell id=\"secret\" value=\"secret-mongodb\" style=\"shape=cylinder3;whiteSpace=wrap;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=13;fontStyle=1;size=12;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"43\" y=\"164\" width=\"180\" height=\"90\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m1\" value=\"/etc/abcdesktop/admin/MONGO_ROOT_USERNAME\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"360\" y=\"40\" width=\"320\" height=\"40\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m2\" value=\"/etc/abcdesktop/admin/MONGO_ROOT_PASSWORD\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"360\" y=\"100\" width=\"320\" height=\"40\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m3\" value=\"/etc/abcdesktop/MONGO_USERNAME\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"360\" y=\"160\" width=\"320\" height=\"40\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m4\" value=\"/etc/abcdesktop/MONGO_PASSWORD\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"360\" y=\"220\" width=\"320\" height=\"40\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"2\" value=\"\" style=\"edgeStyle=none;html=1;\" edge=\"1\" parent=\"1\" source=\"m5\" target=\"m6\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m5\" value=\"/etc/abcdesktop/MONGO_USERS_LIST\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"360\" y=\"280\" width=\"320\" height=\"40\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m6\" value=\"/etc/abcdesktop/MONGO_DBS_LIST\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"360\" y=\"340\" width=\"320\" height=\"40\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e1\" value=\"MONGO_ROOT_USERNAME\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#534AB7;strokeColor=#534AB7;exitX=0.488;exitY=0.002;exitDx=0;exitDy=0;exitPerimeter=0;\" parent=\"1\" source=\"secret\" target=\"m1\" edge=\"1\"&gt;\n                    &lt;mxGeometry x=\"0.3606\" y=\"11\" relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"131\" y=\"60\"/&gt;\n                        &lt;/Array&gt;\n                        &lt;mxPoint as=\"offset\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e2\" value=\"MONGO_ROOT_PASSWORD\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#534AB7;strokeColor=#534AB7;exitX=0.756;exitY=0.016;exitDx=0;exitDy=0;exitPerimeter=0;\" parent=\"1\" source=\"secret\" target=\"m2\" edge=\"1\"&gt;\n                    &lt;mxGeometry x=\"0.0475\" y=\"14\" relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"179\" y=\"120\"/&gt;\n                        &lt;/Array&gt;\n                        &lt;mxPoint as=\"offset\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e3\" value=\"MONGO_USERNAME\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#534AB7;strokeColor=#534AB7;exitX=0.998;exitY=0.224;exitDx=0;exitDy=0;exitPerimeter=0;\" parent=\"1\" source=\"secret\" target=\"m3\" edge=\"1\"&gt;\n                    &lt;mxGeometry x=\"-0.0193\" y=\"8\" relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"295\" y=\"184\"/&gt;\n                            &lt;mxPoint x=\"295\" y=\"184\"/&gt;\n                        &lt;/Array&gt;\n                        &lt;mxPoint as=\"offset\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e4\" value=\"MONGO_PASSWORD\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#534AB7;strokeColor=#534AB7;exitX=1.003;exitY=0.779;exitDx=0;exitDy=0;exitPerimeter=0;\" parent=\"1\" source=\"secret\" target=\"m4\" edge=\"1\"&gt;\n                    &lt;mxGeometry x=\"-0.0406\" y=\"-9\" relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"327\" y=\"234\"/&gt;\n                            &lt;mxPoint x=\"327\" y=\"234\"/&gt;\n                        &lt;/Array&gt;\n                        &lt;mxPoint as=\"offset\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e5\" value=\"MONGO_USERS_LIST\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#534AB7;strokeColor=#534AB7;exitX=0.771;exitY=0.98;exitDx=0;exitDy=0;exitPerimeter=0;\" parent=\"1\" source=\"secret\" target=\"m5\" edge=\"1\"&gt;\n                    &lt;mxGeometry x=\"0.0508\" y=\"-15\" relative=\"1\" as=\"geometry\"&gt;\n                        &lt;mxPoint x=\"182\" y=\"261\" as=\"sourcePoint\"/&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"182\" y=\"300\"/&gt;\n                        &lt;/Array&gt;\n                        &lt;mxPoint as=\"offset\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e6\" value=\"MONGO_DBS_LIST\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=10;fontColor=#534AB7;strokeColor=#534AB7;\" parent=\"1\" edge=\"1\"&gt;\n                    &lt;mxGeometry x=\"0.321\" y=\"-12\" relative=\"1\" as=\"geometry\"&gt;\n                        &lt;mxPoint x=\"132\" y=\"254\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"356\" y=\"360\" as=\"targetPoint\"/&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"132\" y=\"254\"/&gt;\n                            &lt;mxPoint x=\"132\" y=\"360\"/&gt;\n                        &lt;/Array&gt;\n                        &lt;mxPoint as=\"offset\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n            &lt;/root&gt;\n        &lt;/mxGraphModel&gt;\n    &lt;/diagram&gt;\n&lt;/mxfile&gt;"}' style="max-width:100%;border:1px solid transparent;"></div></p>
+</div>
+<div class="tabbed-block">
+<p>This ConfigMap contains <strong>4 key files</strong> injected into the pod:</p>
+<details class="note">
+<summary><code>mongod.conf</code> — MongoDB daemon configuration</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">net</span><span class="p">:</span>
+<span class="nt">bindIp</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0.0.0</span>
+<span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">27017</span>
+<span class="nt">replication</span><span class="p">:</span>
+<span class="nt">replSetName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rs0</span>
+<span class="nt">security</span><span class="p">:</span>
+<span class="nt">authorization</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">enabled</span>
+<span class="nt">keyFile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/mongodb/mongod.keyfile</span>
+<span class="nt">storage</span><span class="p">:</span>
+<span class="nt">dbPath</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/data/db</span>
+</code></pre></div>
+<p>Notable settings:</p>
+<ul>
+<li>Listens on all interfaces (<code>0.0.0.0:27017</code>)</li>
+<li>ReplicaSet named <code>rs0</code></li>
+<li>Authentication enabled, keyfile required</li>
+</ul>
+</details>
+<details class="note">
+<summary><code>init-container.sh</code> — Configuration file preparation</summary>
+<p>Script executed by the <strong>InitContainer</strong> before MongoDB starts:</p>
+<ul>
+<li>Copies <code>mongod.conf</code> and <code>mongod.keyfile</code> to <code>/work/config</code></li>
+<li>Applies required permissions (<code>chmod 400</code> on the keyfile)</li>
+<li>Creates and prepares <code>/data/db</code> and <code>/var/log/mongodb</code></li>
+<li>Ensures the <code>mongodb</code> OS user owns all relevant directories</li>
+</ul>
+</details>
+<details class="note">
+<summary><code>init.js</code> — Database and user initialization</summary>
+<p>JavaScript script executed automatically by MongoDB on <strong>first startup</strong> (via <code>/docker-entrypoint-initdb.d/</code>):</p>
+<ol>
+<li>Reads the database list (<code>MONGO_DBS_LIST</code>) and user list (<code>MONGO_USERS_LIST</code>) from mounted secret files</li>
+<li>Authenticates as root against the <code>admin</code> database</li>
+<li>For each listed database, creates the corresponding users with their defined roles</li>
+<li>Handles duplicates gracefully (idempotent: does not fail if the user already exists)</li>
+</ol>
+</details>
+<details class="note">
+<summary><code>init-replica.sh</code> — ReplicaSet initialization</summary>
+<p>Bash script executed by the <strong><code>replica-manager</code> sidecar</strong>, only on pod <code>mongodb-od-0</code>:</p>
+<ol>
+<li>Builds the member list dynamically based on the configured replica count</li>
+<li>Waits until all members respond to ping</li>
+<li>Checks whether the ReplicaSet is already initialized</li>
+<li>If not: calls <code>rs.initiate()</code> with the dynamically built configuration</li>
+<li>Waits for a PRIMARY to be elected</li>
+<li>Displays the final ReplicaSet state</li>
+</ol>
+</details>
+</div>
+<div class="tabbed-block">
+<p>The StatefulSet is the core of the deployment, configured with <strong>1 replica</strong> (scalable).</p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant K8s as Kubernetes Scheduler
+    participant IC as InitContainer&lt;br/&gt;prepare-config
+    participant MDB as Container&lt;br/&gt;mongodb
+    participant RM as Sidecar&lt;br/&gt;replica-manager
+
+    K8s-&gt;&gt;IC: Start InitContainer
+    IC-&gt;&gt;IC: Copy mongod.conf + keyfile
+    IC-&gt;&gt;IC: chmod 400 keyfile
+    IC-&gt;&gt;IC: Prepare /data/db
+    IC--&gt;&gt;K8s: Done (exit 0)
+
+    K8s-&gt;&gt;MDB: Start mongodb container
+    MDB-&gt;&gt;MDB: Launch mongod --config=/etc/mongodb/mongod.conf
+    MDB-&gt;&gt;MDB: Execute /docker-entrypoint-initdb.d/init.js
+    Note over MDB: Creates users &amp; databases
+
+    K8s-&gt;&gt;RM: Start replica-manager sidecar
+    RM-&gt;&gt;RM: Check hostname == mongodb-od-0
+    RM-&gt;&gt;MDB: Ping (wait for availability)
+    RM-&gt;&gt;MDB: rs.status() — check RS state
+    RM-&gt;&gt;MDB: rs.initiate({_id:'rs0', members:[...]})
+    RM-&gt;&gt;MDB: Wait for PRIMARY election
+    RM--&gt;&gt;RM: sleep infinity (stay alive)</code></pre>
+<div class="admonition note container image">
+<p class="admonition-title">Note</p>
+<div class="highlight"><pre><span></span><code>ghcr.io/abcdesktopio/mongo:safe8.0
+</code></pre></div>
+<p>Custom image based on MongoDB 8.0, hosted on GitHub Container Registry. The <code>safe</code> tag indicates a hardened image.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The manifest uses a <strong>headless Service</strong> (implicit for a StatefulSet with <code>serviceName: mongodb</code>), making each pod individually addressable via DNS:</p>
+<div class="highlight"><pre><span></span><code>mongodb-od-0.mongodb.abcdesktop.svc.cluster.local:27017
+</code></pre></div>
+<p><code>pyos</code> connects using the simplified URL defined in the secret:
+<div class="highlight"><pre><span></span><code>mongodb://pyos:Az4MeYWUjZDg4Zjhk@mongodb
+</code></pre></div></p>
+</div>
+</div>
+</input></input></input></input></div>
+<hr/>
+<h2 id="mongodb-startup-sequence">MongoDB Startup Sequence</h2>
+<p><div class="mxgraph" data-mxgraph='{"toolbar-position": "bottom", "toolbar-nohide": "0", "tooltips": "1", "border": 5, "resize": "1", "edit": "_blank", "lightbox": "1", "toolbar": "pages tags zoom layers lightbox", "xml": "&lt;mxfile host=\"65bd71144e\"&gt;\n    &lt;diagram id=\"mongodb-startup\" name=\"MongoDB K8s Startup Flow\"&gt;\n        &lt;mxGraphModel dx=\"1020\" dy=\"1008\" grid=\"0\" gridSize=\"10\" guides=\"1\" tooltips=\"1\" connect=\"1\" arrows=\"1\" fold=\"1\" page=\"0\" pageScale=\"1\" pageWidth=\"850\" pageHeight=\"1100\" math=\"0\" shadow=\"0\"&gt;\n            &lt;root&gt;\n                &lt;mxCell id=\"0\"/&gt;\n                &lt;mxCell id=\"1\" parent=\"0\"/&gt;\n                &lt;mxCell id=\"band-init\" value=\"InitContainer: prepare-config\" style=\"swimlane;startSize=24;fillColor=#f0f9f4;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;rounded=1;arcSize=4;dashed=1;dashPattern=6 4;swimlaneLine=0;align=left;spacingLeft=8;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"60\" y=\"33\" width=\"658\" height=\"262\" as=\"geometry\"&gt;\n                        &lt;mxRectangle x=\"60\" y=\"33\" width=\"180\" height=\"25\" as=\"alternateBounds\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"i1\" value=\"Copy mongod.conf \u2192 /work/config/\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;whiteSpace=wrap;\" parent=\"band-init\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"175\" y=\"37\" width=\"280\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"i2\" value=\"Copy keyfile \u2192 /work/config/ \u00b7 chmod 400\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;whiteSpace=wrap;\" parent=\"band-init\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"175\" y=\"101\" width=\"280\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e2\" style=\"edgeStyle=orthogonalEdgeStyle;\" parent=\"band-init\" source=\"i1\" target=\"i2\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"ic-ok\" value=\"InitContainer OK?\" style=\"rhombus;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"band-init\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"215\" y=\"180\" width=\"200\" height=\"60\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e3\" style=\"edgeStyle=orthogonalEdgeStyle;\" parent=\"band-init\" source=\"i2\" target=\"ic-ok\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"error\" value=\"Error \u2014 Pod restarted\" style=\"ellipse;fillColor=#FCEBEB;strokeColor=#A32D2D;fontColor=#791F1F;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"band-init\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"475\" y=\"188\" width=\"150\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e4\" value=\"No\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#A32D2D;fontColor=#A32D2D;fontStyle=1;fontSize=10;\" parent=\"band-init\" source=\"ic-ok\" target=\"error\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"band-mongo\" value=\"Container: mongodb\" style=\"swimlane;startSize=24;fillColor=#e8f2fb;strokeColor=#185FA5;fontColor=#0C447C;fontSize=11;fontStyle=1;rounded=1;arcSize=4;dashed=1;dashPattern=6 4;swimlaneLine=0;align=left;spacingLeft=8;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"60\" y=\"311\" width=\"656\" height=\"271\" as=\"geometry\"&gt;\n                        &lt;mxRectangle x=\"60\" y=\"311\" width=\"141\" height=\"25\" as=\"alternateBounds\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m4\" value=\"Normal startup\" style=\"rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=11;whiteSpace=wrap;\" parent=\"band-mongo\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"461\" y=\"187\" width=\"160\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m3\" value=\"Execute init.js&amp;#10;\u2192 create users &amp;amp; DBs\" style=\"rounded=1;arcSize=8;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;\" parent=\"band-mongo\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"235\" y=\"192\" width=\"160\" height=\"43\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m2\" value=\"First startup?&amp;#10;/data/db empty?\" style=\"rhombus;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"band-mongo\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"215\" y=\"101\" width=\"200\" height=\"60\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e7\" value=\"Yes\" style=\"edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;\" parent=\"band-mongo\" source=\"m2\" target=\"m3\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e8\" value=\"No\" style=\"edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;\" parent=\"band-mongo\" source=\"m2\" target=\"m4\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m1\" value=\"mongod --config=/etc/mongodb/mongod.conf\" style=\"rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=11;whiteSpace=wrap;\" parent=\"band-mongo\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"150\" y=\"35\" width=\"330\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e6\" style=\"edgeStyle=orthogonalEdgeStyle;\" parent=\"band-mongo\" source=\"m1\" target=\"m2\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"band-replica\" value=\"Container: replica-manager\" style=\"swimlane;startSize=24;fillColor=#fdf5e6;strokeColor=#BA7517;fontColor=#633806;fontSize=11;fontStyle=1;rounded=1;arcSize=4;dashed=1;dashPattern=6 4;swimlaneLine=0;align=left;spacingLeft=8;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"58\" y=\"594\" width=\"658\" height=\"430\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"4\" value=\"\" style=\"edgeStyle=none;html=1;\" parent=\"band-replica\" source=\"r7\" target=\"rend\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"r7\" value=\"Display existing config\" style=\"rounded=1;arcSize=8;fillColor=#FAEEDA;strokeColor:#BA7517;fontColor=#633806;fontSize=11;whiteSpace=wrap;\" parent=\"band-replica\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"235\" y=\"262\" width=\"160\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"r6\" value=\"Wait for PRIMARY election\" style=\"rounded=1;arcSize=8;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;\" parent=\"band-replica\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"473\" y=\"262\" width=\"160\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"rend\" value=\"sleep infinity\" style=\"ellipse;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"band-replica\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"226\" y=\"361\" width=\"180\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e17\" style=\"edgeStyle=orthogonalEdgeStyle;\" parent=\"band-replica\" target=\"rend\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"558\" y=\"335\"/&gt;\n                            &lt;mxPoint x=\"316\" y=\"335\"/&gt;\n                        &lt;/Array&gt;\n                        &lt;mxPoint x=\"558\" y=\"306\" as=\"sourcePoint\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"r2\" value=\"sleep infinity\" style=\"ellipse;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;whiteSpace=wrap;\" parent=\"band-replica\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"488\" y=\"40\" width=\"130\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"r5\" value=\"rs.initiate(rs0 config)\" style=\"rounded=1;arcSize=8;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;\" parent=\"band-replica\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"473\" y=\"186\" width=\"160\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e16\" style=\"edgeStyle=orthogonalEdgeStyle;\" parent=\"band-replica\" source=\"r5\" target=\"r6\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"start\" value=\"Pod created by K8s\" style=\"ellipse;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"285\" y=\"-20\" width=\"180\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"r1\" value=\"hostname ==&amp;#10;mongodb-od-0?\" style=\"rhombus;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"275\" y=\"626\" width=\"200\" height=\"60\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"r3\" value=\"Wait for ping on all members\" style=\"rounded=1;arcSize=8;fillColor=#FAEEDA;strokeColor=#BA7517;fontColor=#633806;fontSize=11;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"235\" y=\"710\" width=\"280\" height=\"44\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"r4\" value=\"ReplicaSet&amp;#10;already initialized?\" style=\"rhombus;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"275\" y=\"772\" width=\"200\" height=\"60\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e1\" style=\"edgeStyle=orthogonalEdgeStyle;\" parent=\"1\" source=\"start\" target=\"i1\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e5\" value=\"Yes\" style=\"edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;\" parent=\"1\" source=\"ic-ok\" target=\"m1\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e11\" value=\"No\" style=\"edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;\" parent=\"1\" source=\"r1\" target=\"r2\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e12\" value=\"Yes\" style=\"edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;\" parent=\"1\" source=\"r1\" target=\"r3\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e13\" style=\"edgeStyle=orthogonalEdgeStyle;\" parent=\"1\" source=\"r3\" target=\"r4\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e14\" value=\"No\" style=\"edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;\" parent=\"1\" source=\"r4\" target=\"r5\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e15\" value=\"Yes\" style=\"edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;\" parent=\"1\" source=\"r4\" target=\"r7\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"5\" style=\"edgeStyle=none;html=1;\" parent=\"1\" source=\"m3\" target=\"r1\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"6\" style=\"edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;\" parent=\"1\" source=\"m4\" target=\"r1\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"599\" y=\"553\"/&gt;\n                            &lt;mxPoint x=\"374\" y=\"556\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n            &lt;/root&gt;\n        &lt;/mxGraphModel&gt;\n    &lt;/diagram&gt;\n&lt;/mxfile&gt;"}' style="max-width:100%;border:1px solid transparent;"></div></p>
+<hr/>
+<h2 id="security-and-authentication">Security and Authentication</h2>
+<p><div class="mxgraph" data-mxgraph='{"toolbar-position": "bottom", "toolbar-nohide": "0", "tooltips": "1", "border": 5, "resize": "1", "edit": "_blank", "lightbox": "1", "toolbar": "pages tags zoom layers lightbox", "xml": "&lt;mxfile host=\"65bd71144e\"&gt;\n    &lt;diagram id=\"mongodb-auth\" name=\"MongoDB Authentication\"&gt;\n        &lt;mxGraphModel dx=\"1020\" dy=\"718\" grid=\"0\" gridSize=\"10\" guides=\"1\" tooltips=\"1\" connect=\"1\" arrows=\"1\" fold=\"1\" page=\"0\" pageScale=\"1\" pageWidth=\"900\" pageHeight=\"600\" math=\"0\" shadow=\"0\"&gt;\n            &lt;root&gt;\n                &lt;mxCell id=\"0\"/&gt;\n                &lt;mxCell id=\"1\" parent=\"0\"/&gt;\n                &lt;mxCell id=\"cfg-band\" value=\"mongod.conf\" style=\"swimlane;startSize=28;fillColor=#EDF4FD;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;rounded=1;arcSize=4;align=left;spacingLeft=10;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"80\" y=\"40\" width=\"680\" height=\"101\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"a1\" value=\"authorization: enabled\" style=\"rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"cfg-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"70\" y=\"42\" width=\"200\" height=\"40\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"a2\" value=\"keyFile: /etc/mongodb/mongod.keyfile\" style=\"rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"cfg-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"380\" y=\"42\" width=\"260\" height=\"40\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"sec-band\" value=\"Kubernetes Secrets\" style=\"swimlane;startSize=28;fillColor=#F5F4FE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=12;fontStyle=1;rounded=1;arcSize=4;align=left;spacingLeft=10;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"80\" y=\"183\" width=\"680\" height=\"137\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"c1\" value=\"&amp;#10;secret-mongodb&amp;#10;\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500&amp;#10;root \u2192 admin / superuser&amp;#10;pyos \u2192 readWrite\" style=\"shape=cylinder3;whiteSpace=wrap;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;fontStyle=1;size=10;\" parent=\"sec-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"60\" y=\"38\" width=\"220\" height=\"85\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"k1\" value=\"&amp;#10;abcdesktop-mongod-keyfile&amp;#10;\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500&amp;#10;mongod.keyfile&amp;#10;RS inter-member auth\" style=\"shape=cylinder3;whiteSpace=wrap;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;fontStyle=1;size=10;\" parent=\"sec-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"400\" y=\"38\" width=\"220\" height=\"84\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"pod-band\" value=\"Pod mounts\" style=\"swimlane;startSize=28;fillColor=#EDF9F4;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;rounded=1;arcSize=4;align=left;spacingLeft=10;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"80\" y=\"390\" width=\"680\" height=\"97\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m1\" value=\"/MONGO_ROOT_USERNAME\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"30\" y=\"40\" width=\"190\" height=\"40\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m2\" value=\"/MONGO_ROOT_PASSWORD\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"245\" y=\"40\" width=\"190\" height=\"40\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m3\" value=\"/etc/mongodb/mongod.keyfile\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"460\" y=\"40\" width=\"190\" height=\"40\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e5\" value=\"mounted as\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#534AB7;strokeColor=#534AB7;\" parent=\"pod-band\" target=\"m3\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;mxPoint x=\"512\" y=\"-85\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"519\" y=\"30\" as=\"targetPoint\"/&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"513\" y=\"-85\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e1\" value=\"enables\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#185FA5;strokeColor=#185FA5;\" parent=\"1\" source=\"a1\" target=\"c1\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e2\" value=\"path ref\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#185FA5;strokeColor=#185FA5;\" parent=\"1\" source=\"a2\" target=\"k1\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e3\" value=\"username\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#534AB7;strokeColor=#534AB7;\" parent=\"1\" source=\"c1\" target=\"m1\" edge=\"1\"&gt;\n                    &lt;mxGeometry x=\"0.0019\" relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"203\" y=\"364\"/&gt;\n                            &lt;mxPoint x=\"205\" y=\"364\"/&gt;\n                        &lt;/Array&gt;\n                        &lt;mxPoint as=\"offset\"/&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e4\" value=\"password\" style=\"edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#534AB7;strokeColor=#534AB7;\" parent=\"1\" source=\"c1\" target=\"m2\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"315\" y=\"364\"/&gt;\n                            &lt;mxPoint x=\"420\" y=\"364\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n            &lt;/root&gt;\n        &lt;/mxGraphModel&gt;\n    &lt;/diagram&gt;\n&lt;/mxfile&gt;"}' style="max-width:100%;border:1px solid transparent;"></div></p>
+<p><strong>Security model summary:</strong></p>
+<ul>
+<li><strong>Root</strong>: used only during initialization (<code>init.js</code>, <code>init-replica.sh</code>). Credentials are read from files (via <code>*_FILE</code> env vars), never passed as plaintext environment variables to the main container.</li>
+<li><strong>pyos</strong>: application user with <code>readWrite</code> role on all business databases.</li>
+<li><strong>Keyfile</strong>: separate Kubernetes secret (<code>abcdesktop-mongod-keyfile</code>), mounted read-only with <code>chmod 400</code>. Required for intra-ReplicaSet communication.</li>
+</ul>
+<hr/>
+<h2 id="databases-and-users">Databases and Users</h2>
+<p>At initialization, <code>init.js</code> creates the following structure:</p>
+<table>
+<thead>
+<tr>
+<th>Database</th>
+<th>Likely role in abcdesktop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>image</code></td>
+<td>Catalogue of available application images</td>
+</tr>
+<tr>
+<td><code>fail2ban</code></td>
+<td>IP blocking after failed authentication attempts</td>
+</tr>
+<tr>
+<td><code>loginHistory</code></td>
+<td>User login history</td>
+</tr>
+<tr>
+<td><code>applications</code></td>
+<td>Published application metadata</td>
+</tr>
+<tr>
+<td><code>profiles</code></td>
+<td>User profiles and preferences</td>
+</tr>
+<tr>
+<td><code>desktop</code></td>
+<td>Active desktop session states</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="connection-flow-from-pyos">Connection Flow from pyos</h2>
+<pre class="mermaid"><code>sequenceDiagram
+    participant PyOS as pyos-od
+    participant SVC as Service mongodb&lt;br/&gt;(ClusterIP)
+    participant MDB0 as mongodb-od-0&lt;br/&gt;(PRIMARY)
+
+    PyOS-&gt;&gt;SVC: Connect via MONGODB_URL\nmongodb://pyos:...@mongodb
+    SVC-&gt;&gt;MDB0: Forward port 27017
+    MDB0-&gt;&gt;MDB0: Authenticate pyos on each DB
+    MDB0--&gt;&gt;PyOS: Connection established (readWrite)
+
+    PyOS-&gt;&gt;MDB0: Read/write on image, profiles, desktop...</code></pre>
+<p>The connection URL is injected into <code>pyos</code> via the <code>secret-mongodb</code> secret, key <code>MONGODB_URL</code>.</p>
+<hr/>
+<h2 id="volumes-and-data-persistence">Volumes and Data Persistence</h2>
+<p><div class="mxgraph" data-mxgraph='{"toolbar-position": "bottom", "toolbar-nohide": "0", "tooltips": "1", "border": 5, "resize": "1", "edit": "_blank", "lightbox": "1", "toolbar": "pages tags zoom layers lightbox", "xml": "&lt;mxfile host=\"65bd71144e\"&gt;\n    &lt;diagram id=\"mongodb-volumes\" name=\"MongoDB Pod Volumes and Mount Points\"&gt;\n        &lt;mxGraphModel dx=\"248\" dy=\"199\" grid=\"0\" gridSize=\"10\" guides=\"1\" tooltips=\"1\" connect=\"1\" arrows=\"1\" fold=\"1\" page=\"0\" pageScale=\"1\" pageWidth=\"1100\" pageHeight=\"620\" math=\"0\" shadow=\"0\"&gt;\n            &lt;root&gt;\n                &lt;mxCell id=\"0\"/&gt;\n                &lt;mxCell id=\"1\" parent=\"0\"/&gt;\n                &lt;mxCell id=\"ed-band\" value=\"EmptyDir\" style=\"swimlane;startSize=28;fillColor=#EDF4FD;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;rounded=1;arcSize=4;align=left;spacingLeft=10;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"40\" y=\"40\" width=\"180\" height=\"169\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e1\" value=\"prepared-config\" style=\"rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"ed-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"36\" width=\"148\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e2\" value=\"data\" style=\"rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"ed-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"82\" width=\"148\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"e3\" value=\"logs\" style=\"rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"ed-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"128\" width=\"148\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"cm-band\" value=\"ConfigMaps\" style=\"swimlane;startSize=28;fillColor=#EDF9F4;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;rounded=1;arcSize=4;align=left;spacingLeft=10;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"40\" y=\"220\" width=\"180\" height=\"216\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"c1\" value=\"init-container-script\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"cm-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"36\" width=\"148\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"c2\" value=\"config\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"cm-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"82\" width=\"148\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"c3\" value=\"init-script\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"cm-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"128\" width=\"148\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"c4\" value=\"init-replica-script\" style=\"rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"cm-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"174\" width=\"148\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"sc-band\" value=\"Secrets\" style=\"swimlane;startSize=28;fillColor=#F5F4FE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=12;fontStyle=1;rounded=1;arcSize=4;align=left;spacingLeft=10;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"40\" y=\"450\" width=\"180\" height=\"120\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"s1\" value=\"abcdesktop\" style=\"rounded=1;arcSize=8;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"sc-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"36\" width=\"148\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"s2\" value=\"abcdesktop-mongod-keyfile\" style=\"rounded=1;arcSize=8;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"sc-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"80\" width=\"148\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"pod-band\" value=\"Pod mongodb-od \u2014 mount points\" style=\"swimlane;startSize=28;fillColor=#F8F7F4;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=12;fontStyle=1;rounded=1;arcSize=4;align=left;spacingLeft=10;\" parent=\"1\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"340\" y=\"40\" width=\"260\" height=\"530\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m1\" value=\"/etc/mongodb/\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"36\" width=\"228\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m2\" value=\"/data/db\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"82\" width=\"228\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m3\" value=\"/var/log/mongodb\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"128\" width=\"228\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m4\" value=\"init-container.sh\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"216\" width=\"228\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m5\" value=\"mongod.conf\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"262\" width=\"228\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m6\" value=\"/etc/abcdesktop/\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"446\" width=\"228\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m7\" value=\"/docker-entrypoint-initdb.d/init.js\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"308\" width=\"228\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m8\" value=\"/scripts/init-replica.sh\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"354\" width=\"228\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"m9\" value=\"/input/mongod.keyfile\" style=\"rounded=1;arcSize=8;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;\" parent=\"pod-band\" vertex=\"1\"&gt;\n                    &lt;mxGeometry x=\"16\" y=\"492\" width=\"228\" height=\"34\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"ee1\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#185FA5;strokeWidth=1.5;\" parent=\"1\" source=\"e1\" target=\"m1\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"ee2\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#185FA5;strokeWidth=1.5;\" parent=\"1\" source=\"e2\" target=\"m2\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"ee3\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#185FA5;strokeWidth=1.5;\" parent=\"1\" source=\"e3\" target=\"m3\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"ec1\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#0F6E56;strokeWidth=1.5;\" parent=\"1\" source=\"c1\" target=\"m4\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"ec2\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#0F6E56;strokeWidth=1.5;\" parent=\"1\" source=\"c2\" target=\"m5\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"ec3\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#0F6E56;strokeWidth=1.5;\" parent=\"1\" source=\"c3\" target=\"m7\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"ec4\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#0F6E56;strokeWidth=1.5;\" parent=\"1\" source=\"c4\" target=\"m8\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"es1\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#534AB7;strokeWidth=1.5;entryX=0;entryY=0.5;entryDx=0;entryDy=0;\" parent=\"1\" source=\"s1\" target=\"m6\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"/&gt;\n                &lt;/mxCell&gt;\n                &lt;mxCell id=\"es2\" value=\"\" style=\"edgeStyle=orthogonalEdgeStyle;strokeColor=#534AB7;strokeWidth=1.5;exitX=1;exitY=0.601;exitDx=0;exitDy=0;exitPerimeter=0;\" parent=\"1\" source=\"s2\" edge=\"1\"&gt;\n                    &lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;\n                        &lt;mxPoint x=\"268\" y=\"600\" as=\"sourcePoint\"/&gt;\n                        &lt;mxPoint x=\"356\" y=\"550\" as=\"targetPoint\"/&gt;\n                        &lt;Array as=\"points\"&gt;\n                            &lt;mxPoint x=\"280\" y=\"550\"/&gt;\n                            &lt;mxPoint x=\"356\" y=\"551\"/&gt;\n                        &lt;/Array&gt;\n                    &lt;/mxGeometry&gt;\n                &lt;/mxCell&gt;\n            &lt;/root&gt;\n        &lt;/mxGraphModel&gt;\n    &lt;/diagram&gt;\n&lt;/mxfile&gt;"}' style="max-width:100%;border:1px solid transparent;"></div></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>⚠️ <strong>Critical point</strong>: the <code>data</code> volume (mounting <code>/data/db</code>) is an <strong><code>emptyDir</code></strong>. This means <strong>MongoDB data is not persisted</strong> across pod restarts. In production, this volume must be replaced with a <code>PersistentVolumeClaim</code> (PVC) backed by an appropriate StorageClass.</p>
+</div>
+<hr/>
+<h2 id="allocated-resources">Allocated Resources</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Container <code>mongodb</code></label><label for="__tabbed_2_2">Sidecar <code>replica-manager</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Request</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>100m</td>
+<td>500m</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>128Mi</td>
+<td>512Mi</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Request</th>
+<th>Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>100m</td>
+<td>500m</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>128Mi</td>
+<td>512Mi</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</input></input></div>
+<hr/>
+<h2 id="observations-and-recommendations">Observations and Recommendations</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><input id="__tabbed_3_3" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">🔴 Critical</label><label for="__tabbed_3_2">🟡 Important</label><label for="__tabbed_3_3">🟢 Good practices observed</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><strong>Non-persistent data</strong>: <code>/data/db</code> is an <code>emptyDir</code>. Any pod loss causes a total loss of all MongoDB data. Replace with a PVC backed by a suitable StorageClass.</li>
+<li><strong>Plaintext passwords in the manifest</strong>: credentials are defined in <code>stringData</code>. Use Sealed Secrets, Vault, or the External Secrets Operator in production.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Single replica</strong>: <code>replicas: 1</code> with a single-member ReplicaSet provides no high availability. Scale to 3 members for production environments.</li>
+<li><strong><code>imagePullPolicy: Always</code></strong>: forces an image pull on every pod start, which can slow restarts and requires permanent network access to <code>ghcr.io</code>.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>Credentials are read from files (via <code>*_FILE</code> env vars), never passed as plaintext env vars to the main container.</li>
+<li><code>init-replica.sh</code> is idempotent: can be safely re-executed.</li>
+<li><code>init.js</code> is idempotent: handles duplicate user errors gracefully.</li>
+<li>Clear role separation: root for initialization, <code>pyos</code> for the application layer.</li>
+<li>Keyfile used to secure intra-ReplicaSet communication.</li>
+<li>ReadinessProbe configured on port 27017.</li>
+</ul>
+</div>
+</div>
+</input></input></input></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.top", "navigation.tabs", "navigation.instant", "content.action.edit", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+<script src="../../../../js/tabbed-toc.js"></script>
+<script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+<script src="../../../../js/drawio-reload.js"></script>
+<script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script></body>
+</html>

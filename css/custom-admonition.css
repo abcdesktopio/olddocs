@@ -1,0 +1,161 @@
+/* https://squidfunk.github.io/mkdocs-material/reference/admonitions/#custom-admonitions */
+
+/* admonition "community" */
+:root {
+  --md-admonition-icon--community: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M5.5 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.507 5.507 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4.001 4.001 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.49 3.49 0 0 1 2 5.5zM11 4a.75.75 0 1 0 0 1.5 1.5 1.5 0 0 1 .666 2.844.75.75 0 0 0-.416.672v.352a.75.75 0 0 0 .574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 1 0 1.434-.44 5.01 5.01 0 0 0-2.56-3.012A3 3 0 0 0 11 4z"/></svg>')
+}
+.md-typeset .admonition.community,
+.md-typeset details.community {
+  border-color: rgb(207, 113, 36);
+}
+.md-typeset .community > .admonition-title,
+.md-typeset .community > summary {
+  background-color: rgba(207, 113, 36, 0.1);
+  border-color: rgb(207, 113, 36);
+}
+.md-typeset .community > .admonition-title::before,
+.md-typeset .community > summary::before {
+  background-color: rgb(207, 113, 36);
+  -webkit-mask-image: var(--md-admonition-icon--community);
+          mask-image: var(--md-admonition-icon--community);
+}
+
+/* admonition "support" */
+:root {
+  --md-admonition-icon--support: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.048 2.241c.964-.709 2.079-1.238 3.325-1.241a4.613 4.613 0 0 1 3.282 1.355c.41.408.757.86.996 1.428.238.568.348 1.206.347 1.968 0 2.193-1.505 4.254-3.081 5.862-1.496 1.526-3.213 2.796-4.249 3.563l-.22.163a.75.75 0 0 1-.895 0l-.221-.163c-1.036-.767-2.753-2.037-4.249-3.563C1.51 10.008.007 7.952.002 5.762a4.614 4.614 0 0 1 1.353-3.407C3.123.585 6.223.537 8.048 2.24zm-1.153.983c-.81.78-1.546 1.669-2.166 2.417-.184.222-.358.432-.52.623a.75.75 0 0 0 .04 1.016c.35.35.697.697 1.043 1.047.866.875 2.292.914 3.185.032.264-.26.534-.528.802-.797.694-.694 1.8-.701 2.474-.03L12.92 8.7l.283.284c-.244.334-.515.666-.81.995l-1.384-1.28A.75.75 0 1 0 9.99 9.802l1.357 1.252c-.325.31-.656.606-.984.887l-1.48-1.366a.75.75 0 1 0-1.018 1.102L9.191 12.9c-.433.34-.838.643-1.191.905-1.04-.773-2.537-1.907-3.846-3.242C2.611 8.99 1.502 7.306 1.502 5.75a3.114 3.114 0 0 1 .913-2.335c1.159-1.158 3.23-1.224 4.48-.191zm7.112 4.442c.313-.65.491-1.293.491-1.916v-.001c0-.614-.088-1.045-.23-1.385-.143-.339-.357-.633-.673-.949a3.113 3.113 0 0 0-2.218-.915c-1.092.003-2.165.627-3.226 1.602-.823.755-1.554 1.637-2.228 2.45l-.127.154.562.566a.756.756 0 0 0 1.066.02l.794-.79c1.258-1.258 3.312-1.31 4.594-.032.396.394.792.791 1.173 1.173l.022.023z"/></svg>')
+}
+.md-typeset .admonition.support,
+.md-typeset details.support {
+  border-color: rgb(221, 61, 213);
+}
+.md-typeset .support > .admonition-title,
+.md-typeset .support > summary {
+  background-color: rgba(221, 61, 213, 0.1);
+  border-color: rgb(221, 61, 213);
+}
+.md-typeset .support > .admonition-title::before,
+.md-typeset .support > summary::before {
+  background-color: rgb(221, 61, 213);
+  -webkit-mask-image: var(--md-admonition-icon--support);
+          mask-image: var(--md-admonition-icon--support);
+}
+
+/* admonition "training" */
+:root {
+  --md-admonition-icon--training: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.693 1.066a.75.75 0 0 1 .614 0l7.25 3.25a.75.75 0 0 1 0 1.368L13 6.831v2.794c0 1.024-.81 1.749-1.66 2.173-.893.447-2.075.702-3.34.702-.278 0-.55-.012-.816-.036a.75.75 0 0 1 .133-1.494c.22.02.45.03.683.03 1.082 0 2.025-.221 2.67-.543.69-.345.83-.682.83-.832V7.503L8.307 8.934a.75.75 0 0 1-.614 0L4 7.28v1.663c.296.105.575.275.812.512.438.438.688 1.059.688 1.796v3a.75.75 0 0 1-.75.75h-3a.75.75 0 0 1-.75-.75v-3c0-.737.25-1.358.688-1.796.237-.237.516-.407.812-.512V6.606L.443 5.684a.75.75 0 0 1 0-1.368l7.25-3.25zM2.583 5 8 7.428 13.416 5 8 2.572 2.583 5zM2.5 11.25c0-.388.125-.611.25-.735a.704.704 0 0 1 .5-.203c.19 0 .37.071.5.203.125.124.25.347.25.735v2.25H2.5v-2.25z"/></svg>')
+}
+.md-typeset .admonition.training,
+.md-typeset details.training {
+  border-color: rgb(3, 134, 127);
+}
+.md-typeset .training > .admonition-title,
+.md-typeset .training > summary {
+  background-color: rgba(3, 134, 127, 0.1);
+  border-color: rgb(3, 134, 127);
+}
+.md-typeset .training > .admonition-title::before,
+.md-typeset .training > summary::before {
+  background-color: rgb(3, 134, 127);
+  -webkit-mask-image: var(--md-admonition-icon--training);
+          mask-image: var(--md-admonition-icon--training);
+}
+
+/* admonition "reco" */
+:root {
+  --md-admonition-icon--reco: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.75.75a.75.75 0 0 0-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 0 1 3.984 3H1.75a.75.75 0 0 0 0 1.5h.428L.066 9.192a.75.75 0 0 0 .154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 0 0 .686.45A4.492 4.492 0 0 0 3 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 0 0 .686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 0 0 .154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 0 1 .124-.033h.984V13h-2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-2.5V3.5h.984a.25.25 0 0 1 .124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 0 0 .154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 0 0 .686.45A4.492 4.492 0 0 0 13 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 0 0 .686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 0 0 .154-.838L13.823 4.5h.427a.75.75 0 0 0 0-1.5h-2.234a.25.25 0 0 1-.124-.033l-1.29-.736A1.75 1.75 0 0 0 9.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"/></svg>')
+}
+.md-typeset .admonition.reco,
+.md-typeset details.reco {
+  border-color: rgb(147, 16, 173);
+}
+.md-typeset .reco > .admonition-title,
+.md-typeset .reco > summary {
+  background-color: rgba(147, 16, 173, 0.1);
+  border-color: rgb(147, 16, 173);
+}
+.md-typeset .reco > .admonition-title::before,
+.md-typeset .reco > summary::before {
+  background-color: rgb(147, 16, 173);
+  -webkit-mask-image: var(--md-admonition-icon--reco);
+          mask-image: var(--md-admonition-icon--reco);
+}
+
+/* admonition "alternative" */
+:root {
+  --md-admonition-icon--alternative: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M464 16c-17.67 0-32 14.31-32 32v74.09C392.1 66.52 327.4 32 256 32 161.5 32 78.59 92.34 49.58 182.2c-5.438 16.81 3.797 34.88 20.61 40.28 16.89 5.5 34.88-3.812 40.3-20.59C130.9 138.5 189.4 96 256 96c50.5 0 96.26 24.55 124.4 64H336c-17.67 0-32 14.31-32 32s14.33 32 32 32h128c17.67 0 32-14.31 32-32V48c0-17.69-14.3-32-32-32zm-22.2 273.6c-16.92-5.438-34.88 3.812-40.3 20.59C381.1 373.5 322.6 416 256 416c-50.5 0-96.25-24.55-124.4-64H176c17.67 0 32-14.31 32-32s-14.33-32-32-32H48c-17.67 0-32 14.31-32 32v144c0 17.69 14.33 32 32 32s32-14.31 32-32v-74.09C119.9 445.5 184.6 480 255.1 480c94.45 0 177.4-60.34 206.4-150.2 6.4-16.8-2.9-35.7-19.7-40.2z"/></svg>')
+}
+.md-typeset .admonition.alternative,
+.md-typeset details.alternative {
+  border-color: rgb(0,200,83);
+}
+.md-typeset .alternative > .admonition-title,
+.md-typeset .alternative > summary {
+  background-color: rgb(0,200,83,0.1);
+  border-color:  rgb(0,200,83);
+}
+.md-typeset .alternative > .admonition-title::before,
+.md-typeset .alternative > summary::before {
+  background-color: rgb(0,200,83);
+  -webkit-mask-image: var(--md-admonition-icon--alternative);
+          mask-image: var(--md-admonition-icon--alternative);
+}
+
+/* fake admonition "graphical-convention"
+   only used in "graphical conventions" section, into the best practices page*/
+.md-typeset .graphical-convention > .admonition-title,
+.md-typeset .graphical-convention > summary {
+  background-color: white;
+  border-color:  white;
+}
+.md-typeset .graphical-convention > .admonition-title::before,
+.md-typeset .graphical-convention > summary::before {
+  background-color: rgb(0,200,83,0); /* render a transparent default "note" icon, to see the must/should/could/dont icon behind*/
+}
+.md-typeset .graphical-convention.must > summary,
+.md-typeset .graphical-convention.should > summary,
+.md-typeset .graphical-convention.could > summary,
+.md-typeset .graphical-convention.dont > summary {
+  background-position:  top 0.2em left 0.2em;
+  text-indent: 1em;
+}
+
+/* admonition "must sould could dont" */
+
+.md-typeset .success.must > summary,
+.md-typeset .success.should > summary,
+.md-typeset .success.could > summary
+{
+  text-indent: 3.5em;
+}
+
+.md-typeset .alternative.must > summary,
+.md-typeset .alternative.should > summary,
+.md-typeset .alternative.could > summary {
+  text-indent: 3.5em;
+}
+
+.md-typeset .must > summary,
+.md-typeset .should > summary,
+.md-typeset .could > summary,
+.md-typeset .dont > summary
+{
+  background-repeat: no-repeat;
+  background-position:  top 0.15em left 3.05em;
+}
+
+.md-typeset .must > summary {
+  background-image: url('../img/icons/best-practices-1-must.svg');
+}
+
+.md-typeset .should > summary {
+  background-image: url('../img/icons/best-practices-2-should.svg');
+}
+
+.md-typeset .could > summary {
+  background-image: url('../img/icons/best-practices-3-could.svg');
+}
+
+.md-typeset .dont > summary {
+  background-image: url('/img/icons/best-practices-4-dont.svg');
+}
+

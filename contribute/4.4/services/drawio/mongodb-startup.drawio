@@ -1,0 +1,139 @@
+<mxfile host="65bd71144e">
+    <diagram id="mongodb-startup" name="MongoDB K8s Startup Flow">
+        <mxGraphModel dx="1020" dy="1008" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="band-init" value="InitContainer: prepare-config" style="swimlane;startSize=24;fillColor=#f0f9f4;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;fontStyle=1;rounded=1;arcSize=4;dashed=1;dashPattern=6 4;swimlaneLine=0;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="33" width="658" height="262" as="geometry">
+                        <mxRectangle x="60" y="33" width="180" height="25" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="i1" value="Copy mongod.conf → /work/config/" style="rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;whiteSpace=wrap;" parent="band-init" vertex="1">
+                    <mxGeometry x="175" y="37" width="280" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="i2" value="Copy keyfile → /work/config/ · chmod 400" style="rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=11;whiteSpace=wrap;" parent="band-init" vertex="1">
+                    <mxGeometry x="175" y="101" width="280" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;" parent="band-init" source="i1" target="i2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ic-ok" value="InitContainer OK?" style="rhombus;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;" parent="band-init" vertex="1">
+                    <mxGeometry x="215" y="180" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;" parent="band-init" source="i2" target="ic-ok" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="error" value="Error — Pod restarted" style="ellipse;fillColor=#FCEBEB;strokeColor=#A32D2D;fontColor=#791F1F;fontSize=11;fontStyle=1;whiteSpace=wrap;" parent="band-init" vertex="1">
+                    <mxGeometry x="475" y="188" width="150" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" value="No" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#A32D2D;fontColor=#A32D2D;fontStyle=1;fontSize=10;" parent="band-init" source="ic-ok" target="error" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="band-mongo" value="Container: mongodb" style="swimlane;startSize=24;fillColor=#e8f2fb;strokeColor=#185FA5;fontColor=#0C447C;fontSize=11;fontStyle=1;rounded=1;arcSize=4;dashed=1;dashPattern=6 4;swimlaneLine=0;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="311" width="656" height="271" as="geometry">
+                        <mxRectangle x="60" y="311" width="141" height="25" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="m4" value="Normal startup" style="rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=11;whiteSpace=wrap;" parent="band-mongo" vertex="1">
+                    <mxGeometry x="461" y="187" width="160" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="m3" value="Execute init.js&#xa;→ create users &amp; DBs" style="rounded=1;arcSize=8;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;" parent="band-mongo" vertex="1">
+                    <mxGeometry x="235" y="192" width="160" height="43" as="geometry"/>
+                </mxCell>
+                <mxCell id="m2" value="First startup?&#xa;/data/db empty?" style="rhombus;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;" parent="band-mongo" vertex="1">
+                    <mxGeometry x="215" y="101" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" value="Yes" style="edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;" parent="band-mongo" source="m2" target="m3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" value="No" style="edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;" parent="band-mongo" source="m2" target="m4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m1" value="mongod --config=/etc/mongodb/mongod.conf" style="rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=11;whiteSpace=wrap;" parent="band-mongo" vertex="1">
+                    <mxGeometry x="150" y="35" width="330" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;" parent="band-mongo" source="m1" target="m2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="band-replica" value="Container: replica-manager" style="swimlane;startSize=24;fillColor=#fdf5e6;strokeColor=#BA7517;fontColor=#633806;fontSize=11;fontStyle=1;rounded=1;arcSize=4;dashed=1;dashPattern=6 4;swimlaneLine=0;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="58" y="594" width="658" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;" parent="band-replica" source="r7" target="rend" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r7" value="Display existing config" style="rounded=1;arcSize=8;fillColor=#FAEEDA;strokeColor:#BA7517;fontColor=#633806;fontSize=11;whiteSpace=wrap;" parent="band-replica" vertex="1">
+                    <mxGeometry x="235" y="262" width="160" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="r6" value="Wait for PRIMARY election" style="rounded=1;arcSize=8;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;" parent="band-replica" vertex="1">
+                    <mxGeometry x="473" y="262" width="160" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="rend" value="sleep infinity" style="ellipse;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;" parent="band-replica" vertex="1">
+                    <mxGeometry x="226" y="361" width="180" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="e17" style="edgeStyle=orthogonalEdgeStyle;" parent="band-replica" target="rend" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="558" y="335"/>
+                            <mxPoint x="316" y="335"/>
+                        </Array>
+                        <mxPoint x="558" y="306" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="r2" value="sleep infinity" style="ellipse;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;whiteSpace=wrap;" parent="band-replica" vertex="1">
+                    <mxGeometry x="488" y="40" width="130" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="r5" value="rs.initiate(rs0 config)" style="rounded=1;arcSize=8;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;" parent="band-replica" vertex="1">
+                    <mxGeometry x="473" y="186" width="160" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;" parent="band-replica" source="r5" target="r6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="start" value="Pod created by K8s" style="ellipse;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=12;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="285" y="-20" width="180" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="r1" value="hostname ==&#xa;mongodb-od-0?" style="rhombus;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="275" y="626" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="r3" value="Wait for ping on all members" style="rounded=1;arcSize=8;fillColor=#FAEEDA;strokeColor=#BA7517;fontColor=#633806;fontSize=11;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="235" y="710" width="280" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="r4" value="ReplicaSet&#xa;already initialized?" style="rhombus;fillColor=#f1efe8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=11;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="275" y="772" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;" parent="1" source="start" target="i1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="Yes" style="edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;" parent="1" source="ic-ok" target="m1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" value="No" style="edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;" parent="1" source="r1" target="r2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" value="Yes" style="edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;" parent="1" source="r1" target="r3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;" parent="1" source="r3" target="r4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e14" value="No" style="edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;" parent="1" source="r4" target="r5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e15" value="Yes" style="edgeStyle=orthogonalEdgeStyle;fontStyle=1;fontSize=10;" parent="1" source="r4" target="r7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;" parent="1" source="m3" target="r1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="m4" target="r1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="599" y="553"/>
+                            <mxPoint x="374" y="556"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

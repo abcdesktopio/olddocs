@@ -1,0 +1,72 @@
+<mxfile host="65bd71144e">
+    <diagram id="mongodb-auth" name="MongoDB Authentication">
+        <mxGraphModel dx="1020" dy="718" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="900" pageHeight="600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="cfg-band" value="mongod.conf" style="swimlane;startSize=28;fillColor=#EDF4FD;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;rounded=1;arcSize=4;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="40" width="680" height="101" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1" value="authorization: enabled" style="rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;whiteSpace=wrap;" parent="cfg-band" vertex="1">
+                    <mxGeometry x="70" y="42" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2" value="keyFile: /etc/mongodb/mongod.keyfile" style="rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;whiteSpace=wrap;" parent="cfg-band" vertex="1">
+                    <mxGeometry x="380" y="42" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec-band" value="Kubernetes Secrets" style="swimlane;startSize=28;fillColor=#F5F4FE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=12;fontStyle=1;rounded=1;arcSize=4;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="183" width="680" height="137" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1" value="&#xa;secret-mongodb&#xa;─────────────&#xa;root → admin / superuser&#xa;pyos → readWrite" style="shape=cylinder3;whiteSpace=wrap;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;fontStyle=1;size=10;" parent="sec-band" vertex="1">
+                    <mxGeometry x="60" y="38" width="220" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="k1" value="&#xa;abcdesktop-mongod-keyfile&#xa;─────────────&#xa;mongod.keyfile&#xa;RS inter-member auth" style="shape=cylinder3;whiteSpace=wrap;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;fontStyle=1;size=10;" parent="sec-band" vertex="1">
+                    <mxGeometry x="400" y="38" width="220" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="pod-band" value="Pod mounts" style="swimlane;startSize=28;fillColor=#EDF9F4;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;rounded=1;arcSize=4;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="390" width="680" height="97" as="geometry"/>
+                </mxCell>
+                <mxCell id="m1" value="/MONGO_ROOT_USERNAME" style="rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;whiteSpace=wrap;" parent="pod-band" vertex="1">
+                    <mxGeometry x="30" y="40" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="m2" value="/MONGO_ROOT_PASSWORD" style="rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;whiteSpace=wrap;" parent="pod-band" vertex="1">
+                    <mxGeometry x="245" y="40" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="m3" value="/etc/mongodb/mongod.keyfile" style="rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;whiteSpace=wrap;" parent="pod-band" vertex="1">
+                    <mxGeometry x="460" y="40" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="mounted as" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#534AB7;strokeColor=#534AB7;" parent="pod-band" target="m3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="512" y="-85" as="sourcePoint"/>
+                        <mxPoint x="519" y="30" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="513" y="-85"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e1" value="enables" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#185FA5;strokeColor=#185FA5;" parent="1" source="a1" target="c1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="path ref" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#185FA5;strokeColor=#185FA5;" parent="1" source="a2" target="k1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="username" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#534AB7;strokeColor=#534AB7;" parent="1" source="c1" target="m1" edge="1">
+                    <mxGeometry x="0.0019" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="203" y="364"/>
+                            <mxPoint x="205" y="364"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e4" value="password" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#534AB7;strokeColor=#534AB7;" parent="1" source="c1" target="m2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="315" y="364"/>
+                            <mxPoint x="420" y="364"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

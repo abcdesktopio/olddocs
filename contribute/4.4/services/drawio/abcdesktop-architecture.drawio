@@ -1,0 +1,61 @@
+<mxfile host="65bd71144e">
+    <diagram id="abcdesktop-arch" name="abcdesktop Architecture">
+        <mxGraphModel dx="1020" dy="608" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="900" pageHeight="600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="browser" value="User browser" style="ellipse;fillColor=#F1EFE8;strokeColor=#5F5E5A;fontColor=#2C2C2A;fontSize=13;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="30" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="router" value="router-od&#xa;nginx / OpenResty" style="rounded=1;arcSize=8;fillColor=#FAEEDA;strokeColor=#BA7517;fontColor=#633806;fontSize=12;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="140" width="240" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="pyos" value="pyos-od&#xa;Python control plane" style="rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="260" width="240" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="mongo" value="mongodb-od&#xa;StatefulSet · rs0" style="rounded=1;arcSize=8;fillColor=#E6F1FB;strokeColor=#185FA5;fontColor=#0C447C;fontSize=12;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="380" width="220" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="memcached" value="memcached-od&#xa;Session cache" style="rounded=1;arcSize=8;fillColor=#E1F5EE;strokeColor=#0F6E56;fontColor=#085041;fontSize=12;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="380" width="220" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="db-container" value="Databases" style="swimlane;startSize=28;fillColor=#EEEDFE;strokeColor=#534AB7;fontColor=#3C3489;fontSize=12;fontStyle=1;rounded=1;arcSize=4;" parent="1" vertex="1">
+                    <mxGeometry x="61.75" y="495" width="296.5" height="114" as="geometry"/>
+                </mxCell>
+                <mxCell id="db1" value="image" style="rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;" parent="db-container" vertex="1">
+                    <mxGeometry x="12" y="36" width="80" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="db2" value="fail2ban" style="rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;" parent="db-container" vertex="1">
+                    <mxGeometry x="104" y="36" width="80" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="db3" value="loginHistory" style="rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;" parent="db-container" vertex="1">
+                    <mxGeometry x="196" y="36" width="88" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="db4" value="applications" style="rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;" parent="db-container" vertex="1">
+                    <mxGeometry x="12" y="75" width="88" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="db5" value="profiles" style="rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;" parent="db-container" vertex="1">
+                    <mxGeometry x="112" y="75" width="72" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="db6" value="desktop" style="rounded=1;arcSize=8;fillColor=#CECBF6;strokeColor=#534AB7;fontColor=#3C3489;fontSize=11;whiteSpace=wrap;" parent="db-container" vertex="1">
+                    <mxGeometry x="196" y="75" width="72" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#5F5E5A;" parent="1" source="browser" target="router" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="REST API" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#5F5E5A;" parent="1" source="router" target="pyos" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="queries" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#5F5E5A;" parent="1" source="pyos" target="mongo" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" value="sessions" style="edgeStyle=orthogonalEdgeStyle;fontSize=11;fontColor=#5F5E5A;" parent="1" source="pyos" target="memcached" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;" parent="1" source="mongo" target="db-container" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

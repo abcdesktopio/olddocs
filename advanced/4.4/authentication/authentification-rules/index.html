@@ -1,0 +1,4053 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://www.abcdesktop.io/advanced/4.4/authentication/authentification-rules/">
+      
+      
+      
+      
+      <link rel="icon" href="/img/abcdesktop128x128.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Authentication rules configuration - www.abcdesktop.io</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../css/custom-admonition.css">
+    
+      <link rel="stylesheet" href="../../../../css/drawio-darkmode.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-TN9YC7J01Z"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-TN9YC7J01Z",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-TN9YC7J01Z",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#authentication-rules-configuration" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="www.abcdesktop.io" class="md-header__button md-logo" aria-label="www.abcdesktop.io" data-md-component="logo">
+      
+  <img src="/img/abcdesktop.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            www.abcdesktop.io
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Authentication rules configuration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/abcdesktopio/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    abcdesktopio/docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../requirements/" class="md-tabs__link">
+          
+  
+  
+  Quick Start
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../architecture/overview/" class="md-tabs__link">
+          
+  
+  
+  Advanced
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../contribute/overview/" class="md-tabs__link">
+          
+  
+  
+  Contribute
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../usecases/4.3/filter-traffic-per-group.md" class="md-tabs__link">
+          
+  
+  
+  Use cases
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../faq/faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://old.abcdesktop.com/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Previous docs
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="www.abcdesktop.io" class="md-nav__button md-logo" aria-label="www.abcdesktop.io" data-md-component="logo">
+      
+  <img src="/img/abcdesktop.svg" alt="logo">
+
+    </a>
+    www.abcdesktop.io
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/abcdesktopio/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    abcdesktopio/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Quick Start
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requirements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Install Core
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Install Core
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/script.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/helm.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Helm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Install Applications
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Install Applications
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/applicationoverview.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/install-applications.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/applicationwithconsole.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Console
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Uninstall
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Uninstall
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../uninstall/4.3/script.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../uninstall/4.3/helm.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Helm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Advanced
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../architecture/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Install On-Premises
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Install On-Premises
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/install/onpremises/kind.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kind
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/script.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kubernetes using script
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../install/4.3/helm.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kubernetes using helm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/install/onpremises/minikube.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MiniKube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Install On Cloud
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Install On Cloud
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AWS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            AWS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/aws/aws.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install on Amazon AWS with Elastic Kubernetes Service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/aws/aws-loadbalancer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/aws/aws-nginx-ingress-controller.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AZURE
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            AZURE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/azure/azure.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install on Microsoft AZURE Kubernetes service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/azure/azure-loadbalancer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/azure/azure-nginx-ingress-controller.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Digital Ocean
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Digital Ocean
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/digitalocean/digitalocean.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install on Digital Ocean Kubernetes cluster
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/digitalocean/digitalocean-loadbalancer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/digitalocean/digitalocean-nginx-ingress-controller.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_4" id="__nav_3_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    GCP
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            GCP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/gcp/gcp.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install on Google GCP Kubernetes cluster
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/gcp/gcp-loadbalancer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/gcp/gcp-gke-ingress-controller.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a GKE ingress controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_5" id="__nav_3_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    OVH
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            OVH
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/ovh/ovh.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install on OVHcloud Kubernetes cluster
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/ovh/ovh-loadbalancer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a load balancer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cloudproviders/4.3/ovh/ovh-nginx-ingress-controller.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expose using a nginx ingress controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Applications
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Applications
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/applications/simplestapplicationxeyes.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build a sample xeyes from scratch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/applications/simplestapplicationxedit.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build a sample xedit with icon from scratch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/applications/simplestapplicationchromium.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build a sample chromium from scratch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/applications/templateapplication.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build an application from template
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/applications/templateanotherapplication.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build another application from template
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/configure/overview.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/configure/updateconfiguration.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Make changes in the abcdesktop configmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Authentication
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Authentication
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/authentication/overview.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/authentication/authexternal.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    External (OpenID)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_3_3" id="__nav_3_5_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Explicit (Directory service)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Explicit (Directory service)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/authentication/authexplicit-ldap.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LDAP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/authentication/authexplicit-activedirectory.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Active Directory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/authentication/authmetaexplicit.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Meta Directory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_3_4" id="__nav_3_5_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Implicit
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Implicit
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/authentication/authimplicit.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Anonymous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/authentication/logmein.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logmein SSL mutual authentication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/authentication/authentification-rules.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Labels and rules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_5" id="__nav_3_5_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Desktop
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Desktop
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/desktop/overview.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/desktop/executeclasses.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/desktop/pod.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pod
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/desktop/policies.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Policies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_6" id="__nav_3_5_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Storage
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            Storage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/storage/overview.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/storage/nfs.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/storage/hostpath.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HostPath
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/storage/cache.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cached Home subdirectories
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/storage/sharedvolumes.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Shared Volume
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/configure/garbagecollector.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Run the garbarge collector
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/configure/share_pod_GPU_access_to_ephemeral_container_with_abcdesktop.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Share GPU with ephemeral container
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/configure/welcome.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/configure/customfrontend.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Customize frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/configure/logging.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logging
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Security
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_1" id="__nav_3_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Controllers
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Controllers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/controllers/controllers.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_2" id="__nav_3_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Network Policy
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Network Policy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/networkpolicy/netpol.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Netpol
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/networkpolicy/install.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../4.3/networkpolicy/uninstall.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Uninstall
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Contribute
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Contribute
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contribute/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Services
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contribute/4.3/services/keygenerator.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Keygenerator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contribute/4.3/services/mongo.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mongo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contribute/4.3/services/console.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Console
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contribute/4.3/services/pyos.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pyos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contribute/4.3/services/router.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Router
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contribute/4.3/services/webmodules.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WebModules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    User Pod
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            User Pod
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contribute/4.3/userpod/graphical.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Graphical
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contribute/4.3/userpod/sound.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sound
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contribute/4.3/userpod/cups.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cups
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../contribute/4.3/userpod/filer.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Filer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Use cases
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Use cases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../usecases/4.3/filter-traffic-per-group.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Filter pods traffic based on groups
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../usecases/4.3/configure-keycloak.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Keycloak configuration based on LDAP with group support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../usecases/4.3/multus-user-pod.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Add multiple networks interfaces to user pods using VLANs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../faq/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://old.abcdesktop.com/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Previous docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-rule-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      The rule object
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The rule object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-conditions-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      The conditions object
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The conditions object">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-true-and-true-expected-true" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example (True and True) expected True:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-true-and-true-expected-false" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example (True and True) expected False:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-true-and-false-expected-true" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example (True and False) expected True:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-false-and-true-expected-true" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example (False and True) expected True:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-condition-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      The condition value
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The condition value">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#condition-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      condition boolean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condition-httpheader" class="md-nav__link">
+    <span class="md-ellipsis">
+      condition httpheader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condition-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      condition network
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="condition network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ipv4-and-ipv6-subnets-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      IPv4 and IPv6 subnets support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condition-memberof" class="md-nav__link">
+    <span class="md-ellipsis">
+      condition memberof
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condition-primarygroupid" class="md-nav__link">
+    <span class="md-ellipsis">
+      condition primarygroupid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condition-asnumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      condition asnumber
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/abcdesktopio/docs/edit/main/opsdocs/docs/advanced/4.4/authentication/authentification-rules.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="authentication-rules-configuration">Authentication rules configuration</h1>
+<p>All authentication providers support rules configuration</p>
+<p>A rule takes parameters and set a label to the user's pod and to the user's jwt.</p>
+<ul>
+<li>All labels are stored inside the JWT user token.</li>
+<li>All labels are set to the user's pods</li>
+</ul>
+<p>The labels are use to define a container execution context, and next usage, like </p>
+<ul>
+<li>allow an application only for members of a group</li>
+<li>apply some network policies </li>
+</ul>
+<h2 id="the-rule-object">The rule object</h2>
+<p>A rule is a dictionary object with :</p>
+<ul>
+<li>a name (the entry of the rules)</li>
+<li>one or more conditions</li>
+<li>an expected boolean result <code>True</code> or <code>False</code></li>
+<li>a label to set if the conditions are equal to the expected boolean value</li>
+</ul>
+<p>Example :</p>
+<p>To test if the user source IP address is equal to <code>192.168.2.3/32</code></p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">home&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">    </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">192.168.2.3</span><span class="err">/</span><span class="mi">32</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">                         </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">                         </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;allowipsource&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>If the source IP address is equal to <code>192.168.2.3</code> then the pods gets then label <code>allowipsource</code></p>
+<h3 id="the-conditions-object">The conditions object</h3>
+<p>The <code>conditions</code> are a list of condition. All conditions are always tested, as a logical <code>AND</code> operator.
+The result must be equal to the <code>expected</code> value.</p>
+<h4 id="examples">Examples:</h4>
+<h4 id="example-true-and-true-expected-true">Example (<code>True</code> and <code>True</code>) expected <code>True</code>:</h4>
+<p>To test if the user source ip address is in the subnet to <code>80.0.0.0/8</code> <code>and</code> is <code>memberOf</code> ldap group DN 'cn=ship_crew,ou=people,dc=planetexpress,dc=com' </p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">sample&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w"> </span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">80.0.0.0</span><span class="err">/</span><span class="mi">8</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;memberO</span><span class="kc">f</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;c</span><span class="kc">n</span><span class="err">=ship_crew</span><span class="p">,</span><span class="err">ou=people</span><span class="p">,</span><span class="err">dc=pla</span><span class="kc">nete</span><span class="err">xpress</span><span class="p">,</span><span class="err">dc=com&#39;</span><span class="p">,</span><span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span><span class="w"> </span>
+<span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">  </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;shipcrewa</span><span class="kc">n</span><span class="err">d</span><span class="kc">net</span><span class="mi">80</span><span class="err">&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>This rule adds the labels 'shipcrewandnet80', if the 'expected' value is <code>True</code></p>
+<h4 id="example-true-and-true-expected-false">Example (<code>True</code> and <code>True</code>) expected <code>False</code>:</h4>
+<p>To test if the user source IP address is <code>NOT</code> in the subnet to <code>80.0.0.0/8</code> <code>AND</code> is  <code>NOT</code> a <code>memberOf</code> ldap group DN 'cn=ship_crew,ou=people,dc=planetexpress,dc=com' </p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">sample&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w"> </span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">80.0.0.0</span><span class="err">/</span><span class="mi">8</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;memberO</span><span class="kc">f</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;c</span><span class="kc">n</span><span class="err">=ship_crew</span><span class="p">,</span><span class="err">ou=people</span><span class="p">,</span><span class="err">dc=pla</span><span class="kc">nete</span><span class="err">xpress</span><span class="p">,</span><span class="err">dc=com&#39;</span><span class="p">,</span><span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span>
+<span class="w">   </span><span class="p">],</span><span class="w"> </span>
+<span class="w">   </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">   </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">oshipcrewa</span><span class="kc">n</span><span class="err">d</span><span class="kc">net</span><span class="mi">80</span><span class="err">&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>Add the labels 'noshipcrewandnonet80', if the 'expected' value is <code>False</code></p>
+<h4 id="example-true-and-false-expected-true">Example (<code>True</code> and <code>False</code>) expected <code>True</code>:</h4>
+<p>To test if the user source IP address is in the subnet to <code>80.0.0.0/8</code> <code>AND</code> is  <code>NOT</code> a <code>memberOf</code> ldap group DN 'cn=ship_crew,ou=people,dc=planetexpress,dc=com' </p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">sample&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w"> </span>
+<span class="w">     </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">80.0.0.0</span><span class="err">/</span><span class="mi">8</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">},</span>
+<span class="w">     </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;memberO</span><span class="kc">f</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;c</span><span class="kc">n</span><span class="err">=ship_crew</span><span class="p">,</span><span class="err">ou=people</span><span class="p">,</span><span class="err">dc=pla</span><span class="kc">nete</span><span class="err">xpress</span><span class="p">,</span><span class="err">dc=com&#39;</span><span class="p">,</span><span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="w"> </span><span class="p">}</span>
+<span class="w">   </span><span class="p">],</span><span class="w"> </span>
+<span class="w">   </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">   </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">oshipcrewa</span><span class="kc">n</span><span class="err">d</span><span class="kc">net</span><span class="mi">80</span><span class="err">&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>adds the labels 'noshipcrewandnet80', if the 'expected' value is <code>True</code></p>
+<h4 id="example-false-and-true-expected-true">Example (<code>False</code> and <code>True</code>) expected <code>True</code>:</h4>
+<p>To test if the user's source IP address is <code>NOT</code> in the subnet to <code>80.0.0.0/8</code> <code>AND</code> is a <code>memberOf</code> ldap group DN 'cn=ship_crew,ou=people,dc=planetexpress,dc=com' </p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">sample&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w"> </span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">80.0.0.0</span><span class="err">/</span><span class="mi">8</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;memberO</span><span class="kc">f</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;c</span><span class="kc">n</span><span class="err">=ship_crew</span><span class="p">,</span><span class="err">ou=people</span><span class="p">,</span><span class="err">dc=pla</span><span class="kc">nete</span><span class="err">xpress</span><span class="p">,</span><span class="err">dc=com&#39;</span><span class="p">,</span><span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span><span class="w"> </span>
+<span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">  </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;shipcrewa</span><span class="kc">n</span><span class="err">d</span><span class="kc">n</span><span class="err">o</span><span class="kc">net</span><span class="mi">80</span><span class="err">&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>Add the labels 'shipcrewandnonet80', if the 'expected' value is <code>True</code></p>
+<h3 id="the-condition-value">The condition value</h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>boolean</code></td>
+<td>always true or false</td>
+<td><code>'boolean' : 'true'</code></td>
+</tr>
+<tr>
+<td><code>existhttpheader</code></td>
+<td>test if a http header exists</td>
+<td></td>
+</tr>
+<tr>
+<td><code>httpheader</code></td>
+<td>test a HTTP header value is equal to</td>
+<td><code>'httpheader': { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36' }</code></td>
+</tr>
+<tr>
+<td><code>memberOf</code></td>
+<td>test if the LDAP user object is member of group</td>
+<td><code>'memberOf': [ 'cn=ship_crew,ou=people,dc=planetexpress,dc=com']</code></td>
+</tr>
+<tr>
+<td><code>network</code></td>
+<td>test if the client user IP Address is in a network subnet</td>
+<td><code>'network': [ '1.2.3.4/24']</code></td>
+</tr>
+<tr>
+<td> <code>network-x-forwarded-for</code></td>
+<td>read the <code>X-Forwarded-For</code> http attribut, then test if it is in a network subnet</td>
+<td></td>
+</tr>
+<tr>
+<td><code>network-x-real-ip</code></td>
+<td>read the <code>X-Real-IP</code> http attribut, then test if it is in a network subnet</td>
+<td></td>
+</tr>
+<tr>
+<td><code>attribut</code></td>
+<td>test a HTTP header value is equal to</td>
+<td><code>'httpheader': { 'User-Agent': 'Mozilla/5.0</code></td>
+</tr>
+<tr>
+<td><code>primarygroupid</code></td>
+<td>test if the LDAP user object has a attibute primaryGroupID and is equal to value</td>
+<td><code>'primarygroupid': '513'</code></td>
+</tr>
+<tr>
+<td><code>asnumber</code></td>
+<td>test if a source IP address is in an AS number</td>
+<td><code>'asnumber': [ '3215', '12807']</code></td>
+</tr>
+<tr>
+<td><code>geolocation</code></td>
+<td>test if a user is geolocalised in a particular region. The geolocation's data comes from the web browser, this can be spoofed</td>
+<td><code>'geolocation': {'accuracy': 14.884, 'latitude': 48.8555131, 'longitude': 2.3752174 }</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="condition-boolean">condition boolean</h4>
+<p>This condition is a dummy condition.<br />
+The usage forces a label or to disable a test.</p>
+<div class="highlight"><pre><span></span><code>&#39;boolean&#39;: boolean
+</code></pre></div>
+<p>The common usage is </p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">dummy&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;boolea</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">  </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;dummy&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>or always <code>False</code></p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">dummy&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;boolea</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">   </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">   </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;dummy&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h4 id="condition-httpheader">condition httpheader</h4>
+<p>This condition is test if a HTTP Header value is equal to a string. </p>
+<div class="highlight"><pre><span></span><code>&#39;httpheader&#39;: dict
+</code></pre></div>
+<p>example : if the 'User-Agent' is equal to <code>'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36' then add the label 'chromemaxosx112'</code></p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">h</span><span class="kc">tt</span><span class="err">pheader&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;h</span><span class="kc">tt</span><span class="err">pheader&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;User</span><span class="mi">-</span><span class="err">Age</span><span class="kc">nt</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Mozilla/</span><span class="mf">5.0</span><span class="w"> </span><span class="err">(Maci</span><span class="kc">nt</span><span class="err">osh;</span><span class="w"> </span><span class="err">I</span><span class="kc">ntel</span><span class="w"> </span><span class="err">Mac</span><span class="w"> </span><span class="err">OS</span><span class="w"> </span><span class="err">X</span><span class="w"> </span><span class="mi">11</span><span class="err">_</span><span class="mi">2</span><span class="err">_</span><span class="mi">0</span><span class="err">)</span><span class="w"> </span><span class="err">AppleWebKi</span><span class="kc">t</span><span class="err">/</span><span class="mf">537.36</span><span class="w"> </span><span class="err">(KHTML</span><span class="p">,</span><span class="w"> </span><span class="err">like</span><span class="w"> </span><span class="err">Gecko)</span><span class="w"> </span><span class="err">Chrome/</span><span class="mf">88.0.4324.146</span><span class="w"> </span><span class="err">Sa</span><span class="kc">far</span><span class="err">i/</span><span class="mf">537.36</span><span class="err">&#39;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">  </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;chromemaxosx</span><span class="mi">112</span><span class="err">&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h4 id="condition-network">condition network</h4>
+<p>This condition is test if the client source ip address is in a subnet. IPv4 and IPv6 are supported.</p>
+<div class="highlight"><pre><span></span><code>&#39;network&#39;: string or list of string, each string must be a subnet ipv4 or ipv6
+</code></pre></div>
+<p>To read the source IP adress, the service tries to read in order </p>
+<ul>
+<li><code>X-Forwarded-For</code> http header</li>
+<li><code>X-Real-IP</code> http header</li>
+<li><code>remoteip</code> the read socket IP source</li>
+</ul>
+<p>For example</p>
+<p>To test if the user source IP address is equal to <code>8.8.8.1/32</code></p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">home&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">    </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">8.8.8.1</span><span class="err">/</span><span class="mi">32</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">    </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">    </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;homeipsource&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>To test if the user source IP address is in the subnet <code>10.0.0.0/8</code></p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">local</span><span class="kc">net</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">    </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">10.0.0.0</span><span class="err">/</span><span class="mi">8</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">    </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">    </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;local</span><span class="kc">net</span><span class="err">&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>To test if the user source IP address is NOT in the subnet <code>192.168.0.0/24</code></p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">local</span><span class="kc">net</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">192.168.0.0</span><span class="err">/</span><span class="mi">24</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">  </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">o</span><span class="mi">192168</span><span class="kc">net</span><span class="err">&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<p>same as </p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">local</span><span class="kc">net</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">    </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">192.168.0.0</span><span class="err">/</span><span class="mi">24</span><span class="err">&#39;</span><span class="p">]</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">    </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">False</span><span class="p">,</span>
+<span class="w">    </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">n</span><span class="err">o</span><span class="mi">192168</span><span class="kc">net</span><span class="err">&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h5 id="ipv4-and-ipv6-subnets-support">IPv4 and IPv6 subnets support</h5>
+<p>To support private ip addresses subnet in the <a href="https://tools.ietf.org/html/rfc1918">rfc 1918</a> and <a href="https://tools.ietf.org/html/rfc3927">rfc 3927</a>, write separated rules. Both IPv4 and IPv6 addresses are supported. 
+You can share the same label <code>privatenetwork</code> a separated rule. </p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;policies&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="err">&#39;acl&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">    </span><span class="err">&#39;rules&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">          </span><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">priva</span><span class="kc">tenet</span><span class="err">work</span><span class="mi">-10</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">   </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">10.0.0.0</span><span class="err">/</span><span class="mi">8</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span><span class="w"> </span>
+<span class="w">                                        </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                                        </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;priva</span><span class="kc">tenet</span><span class="err">work&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">          </span><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">priva</span><span class="kc">tenet</span><span class="err">work</span><span class="mi">-172</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">172.16.0.0</span><span class="err">/</span><span class="mi">12</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span><span class="w"> </span>
+<span class="w">                                        </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                                        </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;priva</span><span class="kc">tenet</span><span class="err">work&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">          </span><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">priva</span><span class="kc">tenet</span><span class="err">work</span><span class="mi">-192</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">192.168.0.0</span><span class="err">/</span><span class="mi">16</span><span class="err">&#39;</span><span class="p">,</span><span class="w">     </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span><span class="w"> </span>
+<span class="w">                                        </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                                        </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;priva</span><span class="kc">tenet</span><span class="err">work&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">          </span><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">priva</span><span class="kc">tenet</span><span class="err">work</span><span class="mi">-169</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">169.254.0.0</span><span class="err">/</span><span class="mi">16</span><span class="err">&#39;</span><span class="p">,</span><span class="w">     </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span><span class="w"> </span>
+<span class="w">                                        </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                                        </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;priva</span><span class="kc">tenet</span><span class="err">work&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">          </span><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">priva</span><span class="kc">tenet</span><span class="err">work</span><span class="mi">-</span><span class="kc">fe</span><span class="mi">80</span><span class="err">&#39;</span><span class="p">:{</span><span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">fe</span><span class="mi">80</span><span class="p">::</span><span class="err">/</span><span class="mi">10</span><span class="err">&#39;</span><span class="p">,</span><span class="w">     </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span><span class="w"> </span>
+<span class="w">                                        </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span><span class="w"> </span>
+<span class="w">                                        </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;priva</span><span class="kc">tenet</span><span class="err">work&#39;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<blockquote>
+<p>Multiple rules can set the same label</p>
+</blockquote>
+<p>You can write the previous rules in one simplest rule</p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;policies&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="err">&#39;acl&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">    </span><span class="err">&#39;rules&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">      </span><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">priva</span><span class="kc">tenet</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">net</span><span class="err">work&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">10.0.0.0</span><span class="err">/</span><span class="mi">8</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">172.16.0.0</span><span class="err">/</span><span class="mi">12</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">192.168.0.0</span><span class="err">/</span><span class="mi">16</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="mf">169.254.0.0</span><span class="err">/</span><span class="mi">16</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="kc">fe</span><span class="mi">80</span><span class="p">::</span><span class="err">/</span><span class="mi">10</span><span class="err">&#39;</span><span class="w"> </span><span class="p">],</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">        </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span><span class="w"> </span>
+<span class="w">        </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;priva</span><span class="kc">tenet</span><span class="err">work&#39;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h4 id="condition-memberof">condition memberof</h4>
+<p>This condition test if the user is a member of a LDAP <code>Distinguished Name</code>. </p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;memberO</span><span class="kc">f</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">sample&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;memberO</span><span class="kc">f</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;c</span><span class="kc">n</span><span class="err">=ship_crew</span><span class="p">,</span><span class="err">ou=people</span><span class="p">,</span><span class="err">dc=pla</span><span class="kc">nete</span><span class="err">xpress</span><span class="p">,</span><span class="err">dc=com&#39;</span><span class="p">,</span><span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span><span class="w"> </span>
+<span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">  </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;shipcrewgrp&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="condition-primarygroupid">condition primarygroupid</h4>
+<p>This test is only used with Microsoft Active Directory.
+<code>primarygroupid</code> test if the user attibute primaryGroupID is equal to a string.</p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;primarygroupid&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span>
+</code></pre></div>
+<p>To check is a user is memberof a <code>DOMAIN\USER</code> the primary group id is <code>513</code></p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">domai</span><span class="kc">nuser</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;primarygroupid&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">513</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">  </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;domai</span><span class="kc">nuser</span><span class="err">&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>However, if the user needed to be seen as a <code>Domain Admin for POSIX</code>, the <code>PrimaryGroupID</code> is <code>512</code>, the RID for that group. </p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mi">-</span><span class="err">posixdomai</span><span class="kc">na</span><span class="err">dmi</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w">  </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;primarygroupid&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">512</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">  </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;posixdomai</span><span class="kc">na</span><span class="err">dmi</span><span class="kc">n</span><span class="err">&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The <code>Enterprise Admins group</code>, <code>519</code>, is also used to grant this level in POSIX.</p>
+<div class="highlight"><pre><span></span><code><span class="err">&#39;rule</span><span class="mf">-e</span><span class="kc">nter</span><span class="err">priseadmi</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="err">&#39;co</span><span class="kc">n</span><span class="err">di</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">&#39;primarygroupid&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">519</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="err">&#39;expec</span><span class="kc">te</span><span class="err">d&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">True</span><span class="p">,</span>
+<span class="w">  </span><span class="err">&#39;label&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;e</span><span class="kc">nter</span><span class="err">priseadmi</span><span class="kc">n</span><span class="err">&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="condition-asnumber">condition <code>asnumber</code></h4>
+<p>BGP public AS numbers are globally unique identifiers assigned by IANA for routing on the Internet, ranging from 1-64495 (16-bit) and extended to 32-bit for more availability. The public AS numbers have to be unique on the Internet and BGP uses the AS number for its loop prevention mechanism.</p>
+<div class="highlight"><pre><span></span><code>&#39;rule-asnumber&#39; : {
+  &#39;conditions&#39; : [ {&#39;asnumber&#39;: [ &#39;3215&#39; ] , &#39;expected&#39;:True } ],
+  &#39;expected&#39; : True,
+  &#39;label&#39;:&#39;orangenetwork&#39;
+}
+</code></pre></div>
+<p>The source IP adress is in the AS number <code>3215</code> then the label <code>orangenetwork</code> is set.
+You can build filter for your own AS to allow or denied access.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.top", "navigation.tabs", "navigation.instant", "content.action.edit", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../../../js/tabbed-toc.js"></script>
+      
+        <script src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+      
+        <script src="../../../../js/drawio-reload.js"></script>
+      
+    
+  </body>
+</html>

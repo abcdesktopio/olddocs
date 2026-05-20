@@ -1,1675 +1,371 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://old.abcdesktop.com/</loc>
+         <loc>https://www.abcdesktop.io/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/adopters/</loc>
+         <loc>https://www.abcdesktop.io/requirements/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/applicationsformat/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/applications/simplestapplicationchromium/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/architecture/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/applications/simplestapplicationxedit/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/buildapplications.wine/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/applications/simplestapplicationxeyes/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/buildapplicationsgnulinux/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/applications/templateanotherapplication/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/faq/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/applications/templateapplication/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/guiappsoddocker/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/authentication/authentification-rules/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/overview/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/authentication/authexplicit-activedirectory/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/rdgp/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/authentication/authexplicit-ldap/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/requirements/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/authentication/authexplicit/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/runapplications.wine/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/authentication/authexternal/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/features/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/authentication/authimplicit/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/authentification-rules/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/authentication/authmetaexplicit/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/authentification/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/authentication/logmein/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/authexplicit-activedirectory/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/authentication/overview/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/authexplicit-ldap/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/configure/customfrontend/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/authexplicit/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/configure/garbagecollector/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/authexternal/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/configure/logging/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/authimplicit/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/configure/overview/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/balloon/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/configure/share_pod_GPU_access_to_ephemeral_container_with_abcdesktop/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/controllers/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/configure/updateconfiguration/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/editconfig/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/configure/welcome/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/frontjs/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/controllers/controllers/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/host_config/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/desktop/executeclasses/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/jira/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/desktop/overview/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/language/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/desktop/pod/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/linux_syslog_config/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/desktop/policies/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/logging/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/desktop/resources/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/stack/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/install/onpremises/kind/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/syslog/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/install/onpremises/kubernetes/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/webrtc/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/install/onpremises/minikube/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/config/controllers/manager/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/networkpolicy/install/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/setup/k8smacosinstallation/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/networkpolicy/netpol/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/setup/k8swindows10installation/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/networkpolicy/uninstall/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/setup/kubernetes_secure_etcd/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/rulesandlabels/rules/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/setup/novnc/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/storage/cache/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/setup/retrieve_all_images/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/storage/hostpath/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/setup/uninstalldockermode/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/storage/nfs/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/1.0/setup/vnc/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/storage/overview/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/features/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/storage/s3/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/authentification-rules/</loc>
+         <loc>https://www.abcdesktop.io/advanced/4.4/storage/sharedvolumes/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/authexplicit-activedirectory/</loc>
+         <loc>https://www.abcdesktop.io/architecture/overview/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/authexplicit-ldap/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/aws/aws-loadbalancer/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/authexplicit/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/aws/aws-nginx-ingress-controller/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/authexternal/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/aws/aws/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/authimplicit/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/azure/azure-loadbalancer/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/authmetaexplicit/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/azure/azure-nginx-ingress-controller/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/balloon/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/azure/azure/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/controllers/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/digitalocean/digitalocean-loadbalancer/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/desktop/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/digitalocean/digitalocean-nginx-ingress-controller/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/editconfig/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/digitalocean/digitalocean/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/frontjs/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/gcp/gcp-gke-ingress-controller/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/host_config/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/gcp/gcp-loadbalancer/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/jira/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/gcp/gcp/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/language/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/ovh/ovh-loadbalancer/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/linux_syslog_config/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/ovh/ovh-nginx-ingress-controller/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/logging/</loc>
+         <loc>https://www.abcdesktop.io/cloudproviders/4.4/ovh/ovh/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/stack/</loc>
+         <loc>https://www.abcdesktop.io/common/firefox-extension/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/syslog/</loc>
+         <loc>https://www.abcdesktop.io/contribute/overview/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/webrtc/</loc>
+         <loc>https://www.abcdesktop.io/contribute/4.4/services/console/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/2.0/config/controllers/manager/</loc>
+         <loc>https://www.abcdesktop.io/contribute/4.4/services/keygenerator/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/features/</loc>
+         <loc>https://www.abcdesktop.io/contribute/4.4/services/mongo/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/application/applicationruntime_ephemeralcontainer_pod/</loc>
+         <loc>https://www.abcdesktop.io/contribute/4.4/services/pyos/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/application/createsampleapplication/</loc>
+         <loc>https://www.abcdesktop.io/contribute/4.4/services/router/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/applications/</loc>
+         <loc>https://www.abcdesktop.io/contribute/4.4/services/webmodules/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/authentification-rules/</loc>
+         <loc>https://www.abcdesktop.io/contribute/4.4/userpod/cups/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/authentification/</loc>
+         <loc>https://www.abcdesktop.io/contribute/4.4/userpod/filer/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/authexplicit-activedirectory/</loc>
+         <loc>https://www.abcdesktop.io/contribute/4.4/userpod/graphical/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/authexplicit-ldap/</loc>
+         <loc>https://www.abcdesktop.io/contribute/4.4/userpod/sound/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/authexplicit/</loc>
+         <loc>https://www.abcdesktop.io/faq/add-reverseproxy-infrontof-abcdesktop/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/authexternal/</loc>
+         <loc>https://www.abcdesktop.io/faq/adopters/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/authimplicit/</loc>
+         <loc>https://www.abcdesktop.io/faq/applications/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/authmetaexplicit/</loc>
+         <loc>https://www.abcdesktop.io/faq/disable-firefox-connections/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/balloon/</loc>
+         <loc>https://www.abcdesktop.io/faq/faq/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/cloudprovider.loadbalancing/</loc>
+         <loc>https://www.abcdesktop.io/faq/firefox-extension/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/controllers/</loc>
+         <loc>https://www.abcdesktop.io/faq/ingresscontroller/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/desktop/</loc>
+         <loc>https://www.abcdesktop.io/faq/issue/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/desktop.pod/</loc>
+         <loc>https://www.abcdesktop.io/faq/mongodb/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/editconfig/</loc>
+         <loc>https://www.abcdesktop.io/faq/release/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/frontjs/</loc>
+         <loc>https://www.abcdesktop.io/faq/webbrowser/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/host_config/</loc>
+         <loc>https://www.abcdesktop.io/frnog/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/jira/</loc>
+         <loc>https://www.abcdesktop.io/install/4.4/applicationoverview/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/language/</loc>
+         <loc>https://www.abcdesktop.io/install/4.4/applicationwithconsole/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/linux_syslog_config/</loc>
+         <loc>https://www.abcdesktop.io/install/4.4/helm/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/logging/</loc>
+         <loc>https://www.abcdesktop.io/install/4.4/install-applications/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/networkpolicy/</loc>
+         <loc>https://www.abcdesktop.io/install/4.4/script/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/stack/</loc>
+         <loc>https://www.abcdesktop.io/uninstall/4.4/helm/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/sudo-kubernetes/</loc>
+         <loc>https://www.abcdesktop.io/uninstall/4.4/script/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/syslog/</loc>
+         <loc>https://www.abcdesktop.io/usecases/4.4/configure-keycloak/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/volumes/</loc>
+         <loc>https://www.abcdesktop.io/usecases/4.4/filter-traffic-per-group/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://old.abcdesktop.com/3.0/config/webrtc/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.0/config/controllers/manager/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.0/setup/k8slinuxinstallation/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.0/setup/kubernetes_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.0/setup/kubernetes_abcdesktop_applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.0/setup/kubernetesmode/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.0/setup/requirements/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.0/setup/troubleshooting_core_services/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.0/setup/uninstall_kubernetes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.1/config/persistentvolumes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.1/setup/k8slinuxinstallation/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.1/setup/kubernetes_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.1/setup/kubernetes_abcdesktop_applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.1/setup/troubleshooting_core_services/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.1/setup/uninstall_kubernetes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.2/config/persistentvolumes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.2/config/webrtc/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.2/setup/k8slinuxinstallation/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.2/setup/kubernetes_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.2/setup/kubernetes_abcdesktop_applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.2/setup/kubernetes_abcdesktop_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.2/setup/uninstall_kubernetes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.2/setup/uninstall_kubernetes_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.3/config/networkpolicy/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.3/setup/kubernetes_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.3/setup/kubernetes_abcdesktop_applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.3/setup/kubernetes_abcdesktop_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.3/setup/uninstall_kubernetes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.3/setup/uninstall_kubernetes_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.4/config/simplestapplicationedge/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.4/config/simplestapplicationxedit/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.4/config/simplestapplicationxeyes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.4/config/update_frontend_image/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.4/setup/kubernetes_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.4/setup/kubernetes_abcdesktop_applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.4/setup/kubernetes_abcdesktop_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.4/setup/uninstall_kubernetes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.4/setup/uninstall_kubernetes_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.5/setup/kubernetes_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.5/setup/kubernetes_abcdesktop_applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.5/setup/kubernetes_abcdesktop_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.5/setup/uninstall_kubernetes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/3.5/setup/uninstall_kubernetes_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.0/setup/changelog/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.0/setup/kubernetes_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.0/setup/kubernetes_abcdesktop_applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.0/setup/kubernetes_abcdesktop_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.0/setup/uninstall_kubernetes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.0/setup/uninstall_kubernetes_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.1/config/add_external_provider/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.1/setup/changelog/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.1/setup/kubernetes_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.1/setup/kubernetes_abcdesktop_applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.1/setup/kubernetes_abcdesktop_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.1/setup/uninstall_kubernetes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.1/setup/uninstall_kubernetes_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.2/snapshot/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.2/config/NVIDIA_CONTAINER_TOOLKIT_1.17/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.2/config/NVIDIA_CONTAINER_TOOLKIT_1.18/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.2/config/cronjob/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.2/config/networkpolicy/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.2/setup/changelog/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.2/setup/kubernetes_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.2/setup/kubernetes_abcdesktop_applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.2/setup/kubernetes_abcdesktop_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.2/setup/uninstall_kubernetes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.2/setup/uninstall_kubernetes_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/snapshot/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/config/add_hostpath_volume_using_rules/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/config/authexternal/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/config/cronjob/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/config/networkpolicy/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/config/share_pod_GPU_access_to_ephemeral_container/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/config/share_pod_GPU_access_to_ephemeral_container_with_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/setup/changelog/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/setup/kubernetes_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/setup/kubernetes_abcdesktop_applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/setup/kubernetes_abcdesktop_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/setup/uninstall_kubernetes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.3/setup/uninstall_kubernetes_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.4/setup/changelog/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.4/setup/kubernetes_abcdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.4/setup/kubernetes_abcdesktop_applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.4/setup/kubernetes_abcdesktop_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.4/setup/uninstall_kubernetes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/4.4/setup/uninstall_kubernetes_windows/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/about/authors/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/about/gnu-gpl-v2.0/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/about/howreadthisdoc/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/about/howtodolabsexercices/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/about/opensource/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/about/otherrelatedprojects/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/about/play_sound_in_docker/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/about/version/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/api/backend/launchdesktop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/2048-alpine-error/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/2048-alpine/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/2048-ubuntu/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/2048/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/apachedirectorystudio/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/astromenace/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/atom/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/base/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/beekeeperstudio/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/blender/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/bless/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/blobby/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/boxes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/brackets/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/calc/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/calculator/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/chess/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/chrome/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/chromium/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/citrix/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/cloudfoundry/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/cmd.exe/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/cntlm/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/corsix-th/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/cuda/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/cudademo/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/cudadev/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/dia/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/doom/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/draw/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/drawio/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/dummy/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/eclipse/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/eclipse_sts4/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/edge/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/elementary.terminal/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/eog/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/evince/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/evolution/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/file-roller/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/filelight/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/filezilla/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/firefox-esr/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/firefox/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/firefoxrest/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/flare/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/frozen-bubble/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/gcompris/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/geany/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/gedit/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/gelemental/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/geogebra/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/gephi/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/gimagereader/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/gimp/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/gnumeric/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/golly/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/gretl/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/hyper/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/impress/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/inkscape/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/jupyter/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/jupyternvidia/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/kalzium/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/kdiamond/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/kgeography/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/kigo/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/klickety/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/klotski/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/konsole/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/ksquares/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/kturtle/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/leocad/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/librecad/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/list/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/mahjongg/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/maps/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/math/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/mathwar/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/minecraft/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/mines/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/nautilus/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/netbeans/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/notepad-wine/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/notepadqq/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/octave/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/onlyoffice/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/openshift/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/pinta/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/planner/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/postman/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/powershell/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/putty-unix/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/putty-wine/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/qelectrotech/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/remarkable/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/remmina/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/remotedesktopmanager/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/rhythmbox/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/robots/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/shotcut/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/stellarium/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/step/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/stress/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/sublime-text/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/sudoku/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/supertux2/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/swell-foop/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/taquin/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/teams/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/terminal/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/terminalai/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/terminalephemeral/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/terminalpod/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/tetravex/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/thunderbird/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/vice/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/vlc/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/vmmacos/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/vmrc/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/vmubuntu/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/vscode/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/weather/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/whatsdesk/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/winefile-wine/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/winemine-wine/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/winhelp-wine/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/winscp-wine/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/wireshark/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/writer/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/xclock/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/xedit/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/xeyes/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/xman/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/xpad/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/xterm/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/youtube/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.3.17/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.3.18/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.edge.gtk.libreoffice/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.edge.gtk/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.edge/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.gtk/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.libreoffice/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.minimal.3.17/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.minimal.3.18/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.minimal.3.19/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.minimal.3.20/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.minimal.edge/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.minimal/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.alpine.wine/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.debian.gtk/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.debian/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.debian.minimal/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.rockylinux.8/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.rockylinux.9/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.rockylinux.gtk.8/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.rockylinux.gtk.9/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.rockylinux.gtk.libreoffice.9/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.rockylinux.minimal.8/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.rockylinux.minimal.9/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.rockylinux.nvidia.8/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.rockylinux.nvidia.9/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.18.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.20.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.22.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.24.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.gtk.18.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.gtk.20.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.gtk.22.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.gtk.24.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.gtk.java/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.gtk.language-pack-all/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.gtk.libreoffice/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.gtk/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.minimal.18.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.minimal.20.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.minimal.22.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.minimal.24.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.nvidia.20.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.nvidia.22.04/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.wine/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/applications/abcdesktopio/oc.template.ubuntu.wine.mswindow/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cheatsheets/bash/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cheatsheets/docker/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cheatsheets/macos/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/aws/aws-loadbalancer/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/aws/aws-nginx-ingress-controller/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/aws/aws/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/azure/azure-loadbalancer/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/azure/azure-nginx-ingress-controller/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/azure/azure/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/digitalocean/digitalocean-loadbalancer/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/digitalocean/digitalocean-nginx-ingress-controller/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/digitalocean/digitalocean/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/gcp/gcp-gke-ingress-controller/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/gcp/gcp-loadbalancer/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/gcp/gcp/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/ovh/ovh-loadbalancer/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/ovh/ovh-nginx-ingress-controller/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/cloudproviders/ovh/ovh/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/acl/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/custom-wallpaper/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/debug_application/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/disable-firefox-connections/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/exec_command_as_root_inside_container_without_docker/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/firefox-extension/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/flash-firefox-esr/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/non-free-applications/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/shm/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/upload_and_download_files/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/1.0/abcdesktop.bastion/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/1.0/docker_macvlan/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/1.0/update_frontend_image/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/3.0/createcontainerisedapplicationdebug/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/3.0/mount_nfs_tag/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/3.0/multiplegroupsfeature/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/3.0/update_frontend_image/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/common/3.3/update_frontend_image/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/core/memcached/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/core/mongodb/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/core/nginx/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/core/ocuser/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/core/pyos/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/core/speedtest/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/frnog/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/services/file-service/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/services/spawner-service/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/setup/kubernetes_flexvolume/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://old.abcdesktop.com/setup/kubernetes_networkpolicies/</loc>
+         <loc>https://www.abcdesktop.io/usecases/4.4/multus-user-pod/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
 </urlset>
