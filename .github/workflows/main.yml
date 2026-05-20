@@ -28,10 +28,11 @@ jobs:
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Clone sources
-        run: |
-          rm -rf ..?* .[!.]* *
-          git clone "https://github.com/abcdesktopio/olddocs.git" .
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - name: dump vars 
         run: | 
